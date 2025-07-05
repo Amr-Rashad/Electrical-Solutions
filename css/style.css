@@ -386,7 +386,7 @@ footer.footer {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 10px;
   color: var(--white);
   font-weight: bold;
 }
