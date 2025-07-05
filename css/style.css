@@ -2736,7 +2736,24 @@ footer.footer {
   background-color: var(--primary-color);
   color: var(--white);
 }
+@media(min-width : 1200px){
+  .product-detail .list-content ,
+  .product-detail .fun-btn-content{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-detail .list-content ,
+  .product-detail .fun-btn-content{
+    display: flex;
+    justify-content: space-between;
+  }
 
+}
+
+@media(max-width : 991px){
+}
 /* Vision and Mission Sections */
 .vision-section,
 .mission-section {
