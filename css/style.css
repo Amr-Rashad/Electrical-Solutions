@@ -259,6 +259,14 @@ footer.footer {
   transition: all 0.3s ease;
 }
 
+@media(max-width : 991px){
+  
+  .dropdown-item {
+    color: rgb(0, 3, 5) !important ;
+
+  }
+}
+
 .dropdown-item:hover {
   background: var(--accent-color);
   color: var(--dark);
