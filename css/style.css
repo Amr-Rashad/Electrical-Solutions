@@ -2241,7 +2241,7 @@ footer.footer {
 }
 
 .about-content h2 {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   font-size: 2rem;
   margin-bottom: 25px;
   position: relative;
