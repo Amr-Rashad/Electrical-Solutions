@@ -837,7 +837,7 @@ footer.footer {
   line-height: 1.5;
 }
 .contact-item .action {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .contact-btn {
@@ -852,7 +852,7 @@ footer.footer {
 }
 
 .contact-btn:hover {
-  background-color: #15325c;
+  background-color: var(--primary-color);
 }
 @media (max-width: 576px) {
   .contact-item {
@@ -3220,7 +3220,12 @@ footer.footer {
   padding: 40px;
   min-width: 300px;
 }
+@media(max-width :992px){
+  .contact-info-section {
+    padding:  40px 0;
+  }
 
+}
 .contact-item {
   display: flex;
   align-items: flex-start;
