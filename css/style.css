@@ -45,7 +45,7 @@ body {
 
 /* Footer Styles */
 footer.footer {
-  background-color: #00A8E1 !important;
+  background-color: #1B3E6D !important;
   color: #fff !important;
   padding: 60px 0 0 0;
 }
@@ -61,7 +61,7 @@ footer.footer {
 }
 
 .footer h4 {
-  color: #fff;
+  color: #e0e0e0 !important;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -195,7 +195,7 @@ footer.footer {
 }
 
 .footer-bottom {
-  background-color: #193E6D;
+  background-color: #0e233d !important;
   padding: 20px 0;
   margin-top: 40px;
 }
@@ -1120,6 +1120,8 @@ footer.footer {
 
 .footer-links li a:hover {
   transform: translateX(10px);
+  opacity: 1 !important;
+  color: #c7c7c7 !important;
 }
 
 .footer-links .dropdown-menu {
@@ -1138,7 +1140,16 @@ footer.footer {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateX(10px);
 }
-
+@media(max-width : 991px){
+  .footer .footer-contact{
+    margin-top: 60px;
+  }
+}
+@media(max-width :767px){
+  .footer .footer-links{
+    margin-top: 60px;
+  }
+}
 /* Working Hours */
 .working-hours {
   list-style: none;
