@@ -344,6 +344,7 @@ footer.footer {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1s ease forwards 0.9s;
+  display:flex;
 }
 
 @keyframes fadeInUp {
@@ -1260,6 +1261,9 @@ footer.footer {
 @media (max-width: 768px) {
   .product-card {
     margin-bottom: 30px;
+  }
+  .hero-buttons a{
+    font-size:12px;
   }
 }
 
