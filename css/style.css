@@ -279,8 +279,9 @@ footer.footer {
 
 .dropdown-item:hover {
   background: var(--accent-color);
-  color: var(--dark);
+  color: var(--dark) !important;
 }
+
 
 /* Hero Section */
 .hero-section {
@@ -1342,7 +1343,7 @@ footer.footer {
 .gallery-content h3 {
   color: #333;
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-weight: 600;
 }
 
@@ -1350,7 +1351,7 @@ footer.footer {
   color: #666;
   margin-bottom: 20px;
   width: 300px;
-  height: 150px;
+  height: 90px;
   padding: 10px;
 }
 
