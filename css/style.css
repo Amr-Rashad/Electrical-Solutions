@@ -1166,6 +1166,12 @@ footer.footer {
   .footer-section {
     margin-bottom: 30px;
   }
+  footer .col{
+    padding-top:50px;
+  }
+  footer div{
+    font-size:13px !important;
+  }
 }
 
 /* Products Section */
