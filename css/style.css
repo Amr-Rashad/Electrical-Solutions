@@ -229,7 +229,7 @@ footer.footer {
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--dark);
+  background: var(--primary-color);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -488,6 +488,7 @@ footer.footer {
   position: relative;
   padding-bottom: var(--spacing-md);
   color: var(--secondary-color);
+  text-shadow: none !important;
 }
 /*
 .section-title::after {
