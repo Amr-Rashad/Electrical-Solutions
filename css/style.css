@@ -1275,6 +1275,9 @@ footer.footer {
   .product-card {
     margin-bottom: 30px;
   }
+  .hero-buttons .btn{
+  padding: 12px 9px;
+  }
   .hero-buttons a{
     font-size:12px;
   }
