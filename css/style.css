@@ -3353,3 +3353,28 @@ footer.footer {
   border: 0;
   display: block;
 }
+/* Start Get In touch Section */
+.address-icons ul {
+  padding: 0;
+  list-style: none;
+}
+
+.address-icons ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.address-icons ul li i {
+  margin-right: 10px;
+  color: #1e88e5;
+  border: solid 1px #1e88e5;
+  padding: 8px;
+  border-radius: calc(100% / 2);
+  transition: all 0.8s ease;
+}
+.address-icons ul li i:hover{
+  background:#1e88e5;
+  color:#fff !important
+}
