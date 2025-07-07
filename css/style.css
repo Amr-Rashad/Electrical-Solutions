@@ -94,7 +94,7 @@ footer.footer {
   margin-bottom: 15px;
   display: flex;
   align-items: flex-start;
-  
+  align-items: center;
 }
 
 .footer-contact ul li i {
@@ -3363,7 +3363,7 @@ footer.footer {
   margin-bottom: 15px;
   display: flex;
   align-items: flex-start;
-  
+  align-items: center;
 }
 
 .address-icons ul li i {
