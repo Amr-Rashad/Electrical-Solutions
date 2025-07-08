@@ -207,11 +207,11 @@ footer.footer {
   text-align: center;
   margin: 0;
 }
-
+/*
 .navbar-brand:hover img {
   transform: scale(1.05);
 }
-
+*/
 .navbar-nav {
   margin-left: auto;
 }
