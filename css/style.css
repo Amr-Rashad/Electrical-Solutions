@@ -1165,6 +1165,9 @@ footer.footer {
   .footer .footer-links{
     margin-top: 60px;
   }
+  .card-vision p, .card-mision p{
+    font-size:18px;
+  }
 }
 /* Working Hours */
 .working-hours {
