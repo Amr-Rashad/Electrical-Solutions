@@ -28,6 +28,9 @@ body {
 .justify{
 text-align: justify;
 }
+b{
+  color: var(--primary-color);
+}
 /* Navbar Styles */
 .navbar {
   padding: 20px 0;
