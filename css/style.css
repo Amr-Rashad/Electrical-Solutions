@@ -1990,6 +1990,7 @@ footer.footer {
 }
 .value-card p{
   font-size:14px;
+  text-align: justify;
 }
 .team-section {
   padding: 80px 0;
