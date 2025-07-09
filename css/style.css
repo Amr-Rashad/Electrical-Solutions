@@ -135,11 +135,11 @@ footer.footer {
   color:#00a8e1 !important
 }
 
-/* @media (min-width : 992px){
-  .footer .footer p{
-    max-width: 40px;
+ @media (min-width : 768px){
+  .jcc{
+    justify-content:center;
   }
-} */
+} 
 
 .social-links {
   margin-top: 20px;
