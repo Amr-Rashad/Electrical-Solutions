@@ -4,12 +4,12 @@ const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll <= 0) {
         navbar.classList.remove('hidden');
         return;
     }
-    
+
     if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
         // Scrolling Down
         navbar.classList.add('hidden');
@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
         // Scrolling Up
         navbar.classList.remove('hidden');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -66,7 +66,7 @@ AOS.init({
 });
 
 // Navbar Scroll Effect
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -95,22 +95,22 @@ const heroSwiper = new Swiper('.hero-slider', {
 });
 
 // Load Navbar and Footer
-$(document).ready(function() {
+$(document).ready(function () {
     // Load Navbar
-    $('#navbar-placeholder').load('components/navbar.html', function() {
+    $('#navbar-placeholder').load('components/navbar.html', function () {
         // Mobile Menu
-        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
             this.classList.toggle('active');
         });
     });
-    
+
     // Load Footer
     $('#footer').load('common/footer.html');
 });
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -125,7 +125,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form validation
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
         // Add your form submission logic here
         alert('Thank you for your message. We will get back to you soon!');
@@ -136,7 +136,7 @@ if (contactForm) {
 // Newsletter form
 const newsletterForm = document.querySelector('.footer-newsletter form');
 if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
+    newsletterForm.addEventListener('submit', function (e) {
         e.preventDefault();
         // Add your newsletter subscription logic here
         alert('Thank you for subscribing to our newsletter!');
@@ -146,10 +146,79 @@ if (newsletterForm) {
 
 // Project image hover effect
 document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         this.querySelector('.project-overlay').style.opacity = '1';
     });
-    card.addEventListener('mouseleave', function() {
+    card.addEventListener('mouseleave', function () {
         this.querySelector('.project-overlay').style.opacity = '0';
     });
+});
+// Features Slider
+const track = document.getElementById("slider-track");
+const leftBtn = document.querySelector(".slider-btn.left");
+const rightBtn = document.querySelector(".slider-btn.right");
+const dotsContainer = document.getElementById("slider-dots");
+
+let cards = document.querySelectorAll(".slider-card");
+const cardWidth = 390; // 360px + 2*15px margin
+let index = 0;
+
+// Clone first and last for infinite loop
+const cloneFirst = cards[0].cloneNode(true);
+const cloneLast = cards[cards.length - 1].cloneNode(true);
+track.appendChild(cloneFirst);
+track.insertBefore(cloneLast, track.firstChild);
+
+cards = document.querySelectorAll(".slider-card");
+index = 1;
+track.style.transform = `translateX(-${cardWidth * index}px)`;
+
+const realCount = cards.length - 2;
+for (let i = 0; i < realCount; i++) {
+    const dot = document.createElement("span");
+    dot.className = 'slider-dot';
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => goToSlide(i + 1));
+    dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll(".slider-dot");
+
+function updateDots() {
+    dots.forEach(d => d.classList.remove("active"));
+    dots[(index - 1 + realCount) % realCount].classList.add("active");
+}
+
+function goToSlide(i) {
+    index = i;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
+    updateDots();
+}
+
+rightBtn.addEventListener("click", () => {
+    index++;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
+    updateDots();
+});
+
+leftBtn.addEventListener("click", () => {
+    index--;
+    track.style.transition = "transform 0.4s ease";
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
+    updateDots();
+});
+
+track.addEventListener("transitionend", () => {
+    if (index === cards.length - 1) {
+        track.style.transition = "none";
+        index = 1;
+        track.style.transform = `translateX(-${cardWidth * index}px)`;
+    }
+    if (index === 0) {
+        track.style.transition = "none";
+        index = cards.length - 2;
+        track.style.transform = `translateX(-${cardWidth * index}px)`;
+    }
 });
