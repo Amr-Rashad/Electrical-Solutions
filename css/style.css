@@ -43,6 +43,9 @@ b{
 .pl-20{
   padding-left: 20px;
 }
+.w-90{
+  width:90%;
+}
 /* Navbar Styles */
 .navbar {
   padding: 20px 0;
@@ -1920,6 +1923,77 @@ background-image: url('../images/map.png');
 }
 
 /* About Section */
+.custom-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+}
+
+.gallery-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-row {
+  display: flex;
+  gap: 12px;
+}
+
+.image-small {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-large-horizontal {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-small:hover,
+.image-large-horizontal:hover {
+  transform: scale(1.02);
+}
+
+.custom-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-img-content {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
 .about-section {
   padding: 100px 0;
   background: #f8f9fa;
@@ -2126,6 +2200,11 @@ background-image: url('../images/map.png');
   color: #193E6D;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   padding-bottom:50px;
+}
+.smart-title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #193E6D;
 }
 .slider {
   width: 100%;
