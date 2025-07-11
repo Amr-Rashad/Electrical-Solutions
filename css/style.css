@@ -591,7 +591,7 @@ footer.footer {
 }
 
 .project-content {
-  padding: 20px;
+  padding: 20px 10px 0px;
 }
 
 .project-content h3 {
@@ -1318,20 +1318,6 @@ footer.footer {
    display:flex;
   }
 }
-
-
-/* dots */
-.swiper-pagination-bullet {
-  background-color: #ccc;
-  opacity: 1;
-  width: 12px;
-  height: 12px;
-  margin: 0 6px !important;
-}
-.swiper-pagination-bullet-active {
-  background-color: #00a8e1;
-}
-
 
 /* Project Buttons */
 .project-buttons .btn {
@@ -3527,3 +3513,149 @@ max-width: 80% !important;
 .slider-dot.active {
   background-color: #007bff;
 }
+/* Product carousel */
+.card-list .card-item .card-link{
+  width: 400px;
+  display:block;
+  background:#fff;
+  padding:18px;
+  border-radius:12px;
+  text-decoration:none;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+}
+.card-list .card-item .card-link:hover{
+  border-color: var(--primary-color);
+}
+.card-list .card-item{
+  list-style:none;
+}
+.card-list .card-link .card-image{
+  width:100%;
+  aspect-ratio: 16 / 9;
+  object-fit:cover;
+  border-radius:12px;
+}
+.card-list .card-item .p-card-title{
+  font-weight:600;
+  margin:20px 0px 20px 0px;
+}
+.card-list .card-item Button{
+  color:#fff;
+  background-color: var(--primary-color);
+  padding:10px 20px;
+  font-size:18px;
+  border:none;
+  border-radius:7px;
+}
+
+/* Start Product carousel */
+   .custom-carousel-wrapper {
+      position: relative;
+      max-width: 1170px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .custom-carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .custom-carousel-card {
+      flex: 0 0 25%;
+      padding: 10px;
+    }
+
+    .custom-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px 0px 30px;
+    }
+
+    .custom-card img {
+      max-width: 230px;
+      height:200px;
+      border-radius: 8px;
+    }
+
+    .custom-card h3 {
+      margin: 25px 0px 20px;
+    }
+
+    .custom-card a {
+      padding: 10px 15px;
+      background: var(--primary-color);
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration:none;
+      transition: all 0.5s ease;
+      
+    }
+
+    .custom-card a:hover{
+      background: #007bff;
+    }
+
+    .custom-carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 123, 255, 0.7);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 18px;
+      transition:all 0.5s ease;
+    }
+
+    .custom-carousel-arrow:hover{
+      background: var(--primary-color);
+
+    }
+
+    .custom-carousel-arrow.prev-btn {
+      left: 0;
+    }
+
+    .custom-carousel-arrow.next-btn {
+      right: 0;
+    }
+
+    .custom-carousel-dots {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .custom-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 5px;
+      background-color: gray;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .custom-dot.active {
+      background-color: #007bff;
+    }
+
+    @media (max-width: 992px) {
+      .custom-carousel-card {
+        flex: 0 0 33.333%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .custom-carousel-card {
+        flex: 0 0 100%;
+      }
+    }
