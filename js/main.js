@@ -310,3 +310,16 @@ window.addEventListener('resize', () => {
 customCloneSlides();
 customUpdatePosition(false);
 customCreateDots();
+
+// Gallery lightbox
+function openCustomLightbox(imgElement) {
+    const lightbox = document.getElementById('custom-lightbox');
+    const lightboxImage = document.getElementById('custom-lightbox-img');
+    lightboxImage.src = imgElement.src;
+    lightbox.style.display = 'flex';
+}
+
+function closeCustomLightbox() {
+    document.getElementById('custom-lightbox').style.display = 'none';
+}
+
