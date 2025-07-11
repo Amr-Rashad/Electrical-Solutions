@@ -1319,6 +1319,20 @@ footer.footer {
   }
 }
 
+
+/* dots */
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #00a8e1;
+}
+
+
 /* Project Buttons */
 .project-buttons .btn {
   transition: all 0.3s ease;

@@ -222,3 +222,4 @@ track.addEventListener("transitionend", () => {
         track.style.transform = `translateX(-${cardWidth * index}px)`;
     }
 });
+
