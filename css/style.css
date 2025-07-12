@@ -3760,4 +3760,8 @@ padding-bottom:50px;
       .custom-carousel-card {
         flex: 0 0 100%;
       }
+      .slider-btn.left, .slider-btn.right { display:none; }
+      .slider-container{width:95%;}
+      .slider-card{margin: 0 20px;}
+      .features-title{padding:0px 30px;}
     }
