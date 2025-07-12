@@ -21,9 +21,8 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: "MyRFont", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .justify{
 text-align: justify;
