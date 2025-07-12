@@ -243,6 +243,44 @@ cloneSolutionsSlides();
 updateSolutionsPosition(false);
 createSolutionsDots();
 
+//swipe on phone
+let startX = 0;
+let isDragging = false;
+
+solutionsTrack.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+}, { passive: true });
+
+solutionsTrack.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const currentX = e.touches[0].clientX;
+  const diffX = currentX - startX;
+
+}, { passive: true });
+
+solutionsTrack.addEventListener('touchend', (e) => {
+  isDragging = false;
+  const endX = e.changedTouches[0].clientX;
+  const diffX = endX - startX;
+
+  const threshold = 50; // The minimum distance you need to move to calculate it 
+
+  if (diffX > threshold) {
+    // Swipe Prev
+    solutionsIndex--;
+    updateSolutionsPosition();
+    resetSolutionsLoop();
+    updateSolutionsDots();
+  } else if (diffX < -threshold) {
+    // Swipe Next
+    solutionsIndex++;
+    updateSolutionsPosition();
+    resetSolutionsLoop();
+    updateSolutionsDots();
+  }
+});
+
 // Products Carousel
 
 const customTrack = document.getElementById('customCarouselTrack');
