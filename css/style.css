@@ -3601,7 +3601,7 @@ padding-bottom:50px;
   transition: background 0.3s;
 }
 
-.solutions-dot.active {
+.solutions-dot.active, .custom-dot.active {
   background-color: var(--primary-color);
   width: 40px;
   height: 15px;
