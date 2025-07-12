@@ -465,6 +465,16 @@ footer.footer {
   background-color: #f8f9fa;
 }
 
+.features-title{
+  color: var(--primary-color) ;
+  font-weight: 400 ;
+  font-size: 32px ;
+  line-height: 40px ;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 28px;
+}
+
 .feature-box {
   text-align: center;
   padding: 40px 20px;
@@ -3509,8 +3519,8 @@ padding-bottom:50px;
   bottom: 0;
   width: 100%;
   padding: 15px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
   color: white;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   text-shadow: 0 2px 4px rgba(0,0,0,0.7);
@@ -3530,7 +3540,7 @@ padding-bottom:50px;
   transform: translateY(100%);
   opacity: 0;
   transition: all 0.4s ease;
-  z-index: 3;
+  z-index: 9;
   transform: translateY(30);
   height: inherit;
   text-align: center;
@@ -3539,16 +3549,27 @@ padding-bottom:50px;
 .slider-card:hover .card-overlay {
   transform: translateY(0);
   opacity: 1;
-  
 }
+
+.card-overlay-title{
+  height:48px;
+  font-size:18px;
+}
+
 .slider-card:hover{
 .card-title{
     opacity: 0;
   }
 }
 .card-overlay p {
+ color: #fff;
+  font-weight: 400;
   font-size: 15px;
-  margin-bottom: 10px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 12px;
+  border-top: 1px solid #fff;
+  padding: 12px 12px 0;
 }
 
 .card-overlay a {
@@ -3562,21 +3583,16 @@ padding-bottom:50px;
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  border: 2px solid #007bff;
-  border-radius: 50%;
-  width: 45px; height: 45px;
-  font-size: 20px;
+  border: none;
+  width: 18px; height: 32px;
+  font-size: 50px;
   cursor: pointer;
   z-index: 5;
-  color:#007bff;
-  transition: all 0.4s ease;
+  color:#b5b5b5;
 }
-.slider-btn:hover{
-  background: #007bff;
-  color:#fff;
-}
-.slider-btn.left { left: -60px; }
-.slider-btn.right { right: -60px; }
+
+.slider-btn.left { left: -40px; }
+.slider-btn.right { right: -7px; }
 
 .slider-dots {
   text-align: center;
@@ -3594,7 +3610,10 @@ padding-bottom:50px;
 }
 
 .slider-dot.active {
-  background-color: #007bff;
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 15px;
+  border-radius: 20px;
 }
 /* Product carousel */
 .card-list .card-item .card-link{
