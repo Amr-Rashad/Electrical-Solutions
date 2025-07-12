@@ -21,8 +21,9 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "MyRFont", sans-serif;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 .justify{
 text-align: justify;
@@ -325,7 +326,7 @@ footer.footer {
   height: 100vh;
   min-height: 600px;
   overflow: hidden;
-
+margin-bottom:100px;
 }
 
 .hero-slide {
@@ -3483,37 +3484,38 @@ padding-bottom:50px;
   background:#1e88e5;
   color:#fff !important
 }
-/* Features Slider*/
-.slider-wrapper {
+
+/* Solution Slider */
+.solutions-wrapper {
   position: relative;
   max-width: 1180px;
   margin: 60px auto;
 }
 
-.slider-container {
+.solutions-container {
   overflow: hidden;
 }
 
-.slider-track {
+.solutions-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.slider-card {
-  flex: 0 0 360px;
+.solutions-card {
+  flex: 0 0 362px;
   margin: 0 15px;
   position: relative;
   height: 255px;
   overflow: hidden;
 }
 
-.slider-card img {
+.solutions-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card-title {
+.solutions-title {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -3528,7 +3530,7 @@ padding-bottom:50px;
   transition: all 0.4s ease;
 }
 
-.card-overlay {
+.solutions-overlay {
   position: absolute;
   bottom: 0;
   left: 0; right: 0;
@@ -3540,28 +3542,26 @@ padding-bottom:50px;
   opacity: 0;
   transition: all 0.4s ease;
   z-index: 9;
-  transform: translateY(30);
   height: inherit;
   text-align: center;
 }
 
-.slider-card:hover .card-overlay {
+.solutions-card:hover .solutions-overlay {
   transform: translateY(0);
   opacity: 1;
 }
 
-.card-overlay-title{
-  height:48px;
-  font-size:18px;
+.solutions-overlay-title {
+  height: 48px;
+  font-size: 18px;
 }
 
-.slider-card:hover{
-.card-title{
-    opacity: 0;
-  }
+.solutions-card:hover .solutions-title {
+  opacity: 0;
 }
-.card-overlay p {
- color: #fff;
+
+.solutions-overlay p {
+  color: #fff;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
@@ -3571,36 +3571,30 @@ padding-bottom:50px;
   padding: 12px 12px 0;
 }
 
-.card-overlay a {
+.solutions-overlay a {
   color: #fff;
   text-decoration: none;
-  
 }
 
-.slider-btn {
+.solutions-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
+  background: transparent;
   border: none;
-  width: 18px; height: 32px;
-  font-size: 50px;
   cursor: pointer;
   z-index: 5;
-  color:#b5b5b5;
 }
 
-.slider-btn.left { left: -40px; }
-.slider-btn.right { right: -7px; }
-
-.slider-dots {
+.solutions-dots {
   text-align: center;
   margin-top: 20px;
 }
 
-.slider-dot {
+.solutions-dot {
   display: inline-block;
-  width: 12px; height: 12px;
+  width: 12px;
+  height: 12px;
   margin: 0 6px;
   background-color: #ccc;
   border-radius: 50%;
@@ -3608,12 +3602,16 @@ padding-bottom:50px;
   transition: background 0.3s;
 }
 
-.slider-dot.active {
+.solutions-dot.active {
   background-color: var(--primary-color);
   width: 40px;
   height: 15px;
   border-radius: 20px;
 }
+
+.solutions-btn.left { left: -40px; }
+.solutions-btn.right { right: -25px; }
+
 /* Product carousel */
 .card-list .card-item .card-link{
   width: 400px;
@@ -3656,7 +3654,7 @@ padding-bottom:50px;
       position: relative;
       max-width: 1170px;
       margin: auto;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .custom-carousel-track {
@@ -3706,29 +3704,24 @@ padding-bottom:50px;
     .custom-carousel-arrow {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 123, 255, 0.7);
+      background: rgba(0, 123, 255, 0);
       border: none;
-      color: white;
-      padding: 10px;
       cursor: pointer;
-      z-index: 1;
-      font-size: 18px;
-      transition:all 0.5s ease;
+      z-index: 9;
     }
 
-    .custom-carousel-arrow:hover{
-      background: var(--primary-color);
+.custom-carousel-track-container{
+  overflow: hidden; 
+  width: 100%;
+}
 
-    }
+.custom-carousel-arrow.prev-btn {
+  left: -45px; 
+}
 
-    .custom-carousel-arrow.prev-btn {
-      left: 0;
-    }
-
-    .custom-carousel-arrow.next-btn {
-      right: 0;
-    }
+.custom-carousel-arrow.next-btn {
+  right: -45px; 
+}
 
     .custom-carousel-dots {
       text-align: center;
@@ -3763,4 +3756,8 @@ padding-bottom:50px;
       .slider-container{width:95%;}
       .slider-card{margin: 0 20px;}
       .features-title{padding:0px 30px;}
+      /* Solutions slider */
+      .solutions-card{
+        flex: 0 0 395px;
+      }
     }
