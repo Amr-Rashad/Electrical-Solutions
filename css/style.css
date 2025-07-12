@@ -147,6 +147,7 @@ footer.footer {
   .jcc{
     justify-content:center;
   }
+
 } 
 
 .social-links {
@@ -308,6 +309,9 @@ footer.footer {
     color: rgb(0, 3, 5) !important ;
 
   }
+   .about-content {
+  padding-left: 15px;
+}
 }
 
 .dropdown-item:hover {
@@ -1999,9 +2003,7 @@ background-image: url('../images/map.png');
   background: #f8f9fa;
 }
 
-.about-content {
-  padding-left: 30px;
-}
+
 
 .about-content .section-title {
   margin-bottom: 20px;
@@ -2017,24 +2019,7 @@ background-image: url('../images/map.png');
   margin-bottom: 20px;
 }
 
-.about-features {
-  list-style: none;
-  padding-left: 20px;
-  margin: 30px 0;
-}
 
-.about-features li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-}
-
-.about-features li i {
-  color: var(--primary-color);
-  margin-right: 10px;
-  font-size: 1.2rem;
-}
 
 .values-section {
   padding: 80px 0;
@@ -2398,37 +2383,50 @@ background-image: url('../images/map.png');
 
 .about-content h2 {
   /* color: var(--primary-color); */
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 25px;
   position: relative;
 }
-
+.text-capitalize{
+  color: #1e88e5;
+}
 .about-content .lead {
   color: var(--secondary-color);
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.about-features {
-  list-style: none;
-  margin: 30px 0;
-}
-
-.about-features li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  font-size: 1.1rem;
-}
-
-.about-features li i {
-  color: var(--primary-color);
-  margin-right: 15px;
-  font-size: 1.2rem;
-}
-
 .about-image {
 max-width: 80% !important;
+}
+
+.mision i, .vision i, .our-parteners p, .details{
+  font-size:18px;
+  color:#000;
+  line-height:1.6;
+  font-style: normal;
+}
+.our-parteners{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.our-parteners .partener-image{
+  align-content:center;
+}
+.our-parteners p{
+padding-bottom:50px;
+}
+.our-parteners .projects-button{
+  padding: 15px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius:50px;
+  text-decoration:none;
+  transition: all 0.8s easeinout;
+}
+
+.our-parteners .projects-button:hover{
+  background:var(--primary-color);
+  color:#fff;
 }
 /* start value section */
 .values-section .value-card p{
@@ -2818,8 +2816,7 @@ max-width: 80% !important;
   font-weight: 600;
 }
 
-.product-detail .product-description p {
-  color: #666;
+.product-detail .product-description p{
   line-height: 1.8;
   margin-bottom: 15px;
 }
@@ -2889,6 +2886,13 @@ max-width: 80% !important;
 }
 
 @media(max-width : 991px){
+  .our-parteners .partener-image{
+  margin-top:50px
+}
+.our-parteners p {
+  padding-bottom: 25px;
+
+}
 }
 /* Vision and Mission Sections */
 .vision-section,
