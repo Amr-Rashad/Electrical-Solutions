@@ -243,7 +243,6 @@ cloneSolutionsSlides();
 updateSolutionsPosition(false);
 createSolutionsDots();
 
-//swipe on phone
 let startX = 0;
 let isDragging = false;
 
@@ -381,4 +380,114 @@ function closeCustomLightbox() {
     document.getElementById('custom-lightbox').style.display = 'none';
 }
 
-//Solutions Clone
+//Our clients slider
+const clientsTrack = document.getElementById('clientsTrack');
+const clientsPrevBtn = document.querySelector('.clients-btn.left');
+const clientsNextBtn = document.querySelector('.clients-btn.right');
+const clientsDots = document.getElementById('clientsDots');
+
+let clientsCards = Array.from(clientsTrack.children);
+let clientsVisible = getClientsVisible();
+let clientsIndex = clientsVisible;
+
+function getClientsVisible() {
+  const w = window.innerWidth;
+  if (w <= 768) return 1;
+  if (w <= 992) return 3;
+  return 4;
+}
+
+function cloneClientsSlides() {
+  const firstClones = clientsCards.slice(0, clientsVisible).map(el => el.cloneNode(true));
+  const lastClones = clientsCards.slice(-clientsVisible).map(el => el.cloneNode(true));
+  firstClones.forEach(el => clientsTrack.appendChild(el));
+  lastClones.reverse().forEach(el => clientsTrack.insertBefore(el, clientsTrack.firstChild));
+}
+
+function updateClientsPosition(animate = true) {
+  const width = clientsTrack.clientWidth / clientsVisible;
+  clientsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+  clientsTrack.style.transform = `translateX(-${clientsIndex * width}px)`;
+}
+
+function resetClientsLoop() {
+  clientsTrack.addEventListener('transitionend', () => {
+    if (clientsIndex >= clientsCards.length + clientsVisible) {
+      clientsIndex = clientsVisible;
+      updateClientsPosition(false);
+    } else if (clientsIndex < clientsVisible) {
+      clientsIndex = clientsCards.length;
+      updateClientsPosition(false);
+    }
+  }, { once: true });
+}
+
+function updateClientsDots() {
+  const allDots = clientsDots.querySelectorAll('.clients-dot');
+  allDots.forEach(dot => dot.classList.remove('active'));
+  let visibleIndex = (clientsIndex - clientsVisible) % clientsCards.length;
+  if (visibleIndex < 0) visibleIndex += clientsCards.length;
+  if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+}
+
+function createClientsDots() {
+  clientsDots.innerHTML = '';
+  for (let i = 0; i < clientsCards.length; i++) {
+    const dot = document.createElement('span');
+    dot.classList.add('clients-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      clientsIndex = i + clientsVisible;
+      updateClientsPosition();
+      updateClientsDots();
+    });
+    clientsDots.appendChild(dot);
+  }
+}
+
+clientsPrevBtn.addEventListener('click', () => {
+  clientsIndex--;
+  updateClientsPosition();
+  resetClientsLoop();
+  updateClientsDots();
+});
+
+clientsNextBtn.addEventListener('click', () => {
+  clientsIndex++;
+  updateClientsPosition();
+  resetClientsLoop();
+  updateClientsDots();
+});
+
+window.addEventListener('resize', () => location.reload());
+
+// Touch Support
+let startXClients = 0;
+let isDraggingClients = false;
+clientsTrack.addEventListener('touchstart', (e) => {
+  startXClients = e.touches[0].clientX;
+  isDraggingClients = true;
+}, { passive: true });
+
+clientsTrack.addEventListener('touchend', (e) => {
+  isDraggingClients = false;
+  const endXClients = e.changedTouches[0].clientX;
+  const diffXClients = endXClients - startXClients;
+  const threshold = 50;
+  if (diffXClients > threshold) {
+    clientsIndex--;
+    updateClientsPosition();
+    resetClientsLoop();
+    updateClientsDots();
+  } else if (diffXClients < -threshold) {
+    clientsIndex++;
+    updateClientsPosition();
+    resetClientsLoop();
+    updateClientsDots();
+  }
+});
+
+// Init
+cloneClientsSlides();
+updateClientsPosition(false);
+createClientsDots();
