@@ -1828,6 +1828,87 @@ background-image: url('../images/map.png');
   transform: translateY(-2px);
 }
 
+/* Our Clients Slider */
+
+.slider-wrapper-clients {
+  position: relative;
+  max-width: 1180px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.slider-container-clients {
+  overflow: hidden;
+}
+
+.clients-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.clients-card {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.clients-card img {
+  width: 70%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.clients-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.clients-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.clients-btn.left { left: -40px; }
+.clients-btn.right { right: -25px; }
+
+.clients-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clients-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.clients-dot.active {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 15px;
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .clients-card { flex: 0 0 33.333%; }
+}
+@media (max-width: 768px) {
+  .clients-card { flex: 0 0 100%; }
+}
+
 /* Projects Section */
 .project-card {
   background: #fff;
