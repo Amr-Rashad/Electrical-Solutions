@@ -76,7 +76,7 @@ b{
 
 /* Footer Styles */
 footer.footer {
-  background-color: #1B3E6D !important;
+  background-color: #313131 !important;
   color: #fff !important;
   padding: 60px 0 0 0;
 }
@@ -96,7 +96,7 @@ footer.footer {
 }
 
 .footer h4 {
-  color: #00a9e2 !important;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
@@ -149,11 +149,11 @@ footer.footer {
   }
 
 } 
-
+/*
 .social-links {
   margin-top: 20px;
 }
-
+*/
 
 /* Social Media Icons */
 .social-links a {
@@ -229,15 +229,26 @@ footer.footer {
 }
 
 .footer-bottom {
-  background-color: #0e233d !important;
+  background-color: #313131 !important;
   padding: 20px 0;
   margin-top: 40px;
+  border-top: 1px solid #4d4d4d;
 }
 
 .copyright {
   color: #fff;
   text-align: center;
   margin: 0;
+}
+@media (max-width:767px){
+  .social-links{
+    margin-top:20px;
+  }
+}
+@media (min-width:768px){
+  .social-links{
+    float:right;
+  }
 }
 /*
 .navbar-brand:hover img {
@@ -919,7 +930,6 @@ margin-bottom:100px;
 }
 
 .footer h4 {
-  color: #193E6D;
   font-size: 22px;
   margin-bottom: 20px;
   font-weight:500;
@@ -1091,7 +1101,7 @@ margin-bottom:100px;
 .footer-bottom .copyright {
   color: var(--white);
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -1724,7 +1734,7 @@ margin-bottom:100px;
   }
 }
 
-/* Clients & Consultants Section */
+/* Clients Section */
 .clients-section,
 .consultants-section {
   padding: 80px 0;
