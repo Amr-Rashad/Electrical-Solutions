@@ -3000,6 +3000,9 @@ padding-bottom:50px;
   .our-parteners .partener-image{
   margin-top:50px
 }
+.our-parteners .partener-image img{
+width:50%
+}
 .our-parteners p {
   padding-bottom: 25px;
 
