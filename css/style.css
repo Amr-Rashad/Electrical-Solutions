@@ -2025,6 +2025,7 @@ background-image: url('../images/map.png');
   color: #666;
   margin-bottom: 5px;
 }
+/* about gallery */
 
 /* About Section */
 .custom-gallery {
@@ -2055,8 +2056,14 @@ background-image: url('../images/map.png');
   transition: transform 0.3s ease;
 }
 @media(max-width:767px){
-  .image-small, .image-large-horizontal {
+  .image-small {
   width: 50%;
+}
+.custom-gallery{
+  padding:0px;
+}
+.custom-gallery img{
+  width:100%;
 }
 }
 .image-large-horizontal {
