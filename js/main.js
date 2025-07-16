@@ -247,37 +247,37 @@ let startX = 0;
 let isDragging = false;
 
 solutionsTrack.addEventListener('touchstart', (e) => {
-  startX = e.touches[0].clientX;
-  isDragging = true;
+    startX = e.touches[0].clientX;
+    isDragging = true;
 }, { passive: true });
 
 solutionsTrack.addEventListener('touchmove', (e) => {
-  if (!isDragging) return;
-  const currentX = e.touches[0].clientX;
-  const diffX = currentX - startX;
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diffX = currentX - startX;
 
 }, { passive: true });
 
 solutionsTrack.addEventListener('touchend', (e) => {
-  isDragging = false;
-  const endX = e.changedTouches[0].clientX;
-  const diffX = endX - startX;
+    isDragging = false;
+    const endX = e.changedTouches[0].clientX;
+    const diffX = endX - startX;
 
-  const threshold = 50; // The minimum distance you need to move to calculate it 
+    const threshold = 50; // The minimum distance you need to move to calculate it 
 
-  if (diffX > threshold) {
-    // Swipe Prev
-    solutionsIndex--;
-    updateSolutionsPosition();
-    resetSolutionsLoop();
-    updateSolutionsDots();
-  } else if (diffX < -threshold) {
-    // Swipe Next
-    solutionsIndex++;
-    updateSolutionsPosition();
-    resetSolutionsLoop();
-    updateSolutionsDots();
-  }
+    if (diffX > threshold) {
+        // Swipe Prev
+        solutionsIndex--;
+        updateSolutionsPosition();
+        resetSolutionsLoop();
+        updateSolutionsDots();
+    } else if (diffX < -threshold) {
+        // Swipe Next
+        solutionsIndex++;
+        updateSolutionsPosition();
+        resetSolutionsLoop();
+        updateSolutionsDots();
+    }
 });
 
 // Products Carousel
@@ -368,18 +368,6 @@ customCloneSlides();
 customUpdatePosition(false);
 customCreateDots();
 
-// Gallery lightbox
-function openCustomLightbox(imgElement) {
-    const lightbox = document.getElementById('custom-lightbox');
-    const lightboxImage = document.getElementById('custom-lightbox-img');
-    lightboxImage.src = imgElement.src;
-    lightbox.style.display = 'flex';
-}
-
-function closeCustomLightbox() {
-    document.getElementById('custom-lightbox').style.display = 'none';
-}
-
 //Our clients slider
 const clientsTrack = document.getElementById('clientsTrack');
 const clientsPrevBtn = document.querySelector('.clients-btn.left');
@@ -391,72 +379,72 @@ let clientsVisible = getClientsVisible();
 let clientsIndex = clientsVisible;
 
 function getClientsVisible() {
-  const w = window.innerWidth;
-  if (w <= 768) return 1;
-  if (w <= 992) return 3;
-  return 4;
+    const w = window.innerWidth;
+    if (w <= 768) return 1;
+    if (w <= 992) return 3;
+    return 4;
 }
 
 function cloneClientsSlides() {
-  const firstClones = clientsCards.slice(0, clientsVisible).map(el => el.cloneNode(true));
-  const lastClones = clientsCards.slice(-clientsVisible).map(el => el.cloneNode(true));
-  firstClones.forEach(el => clientsTrack.appendChild(el));
-  lastClones.reverse().forEach(el => clientsTrack.insertBefore(el, clientsTrack.firstChild));
+    const firstClones = clientsCards.slice(0, clientsVisible).map(el => el.cloneNode(true));
+    const lastClones = clientsCards.slice(-clientsVisible).map(el => el.cloneNode(true));
+    firstClones.forEach(el => clientsTrack.appendChild(el));
+    lastClones.reverse().forEach(el => clientsTrack.insertBefore(el, clientsTrack.firstChild));
 }
 
 function updateClientsPosition(animate = true) {
-  const width = clientsTrack.clientWidth / clientsVisible;
-  clientsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-  clientsTrack.style.transform = `translateX(-${clientsIndex * width}px)`;
+    const width = clientsTrack.clientWidth / clientsVisible;
+    clientsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+    clientsTrack.style.transform = `translateX(-${clientsIndex * width}px)`;
 }
 
 function resetClientsLoop() {
-  clientsTrack.addEventListener('transitionend', () => {
-    if (clientsIndex >= clientsCards.length + clientsVisible) {
-      clientsIndex = clientsVisible;
-      updateClientsPosition(false);
-    } else if (clientsIndex < clientsVisible) {
-      clientsIndex = clientsCards.length;
-      updateClientsPosition(false);
-    }
-  }, { once: true });
+    clientsTrack.addEventListener('transitionend', () => {
+        if (clientsIndex >= clientsCards.length + clientsVisible) {
+            clientsIndex = clientsVisible;
+            updateClientsPosition(false);
+        } else if (clientsIndex < clientsVisible) {
+            clientsIndex = clientsCards.length;
+            updateClientsPosition(false);
+        }
+    }, { once: true });
 }
 
 function updateClientsDots() {
-  const allDots = clientsDots.querySelectorAll('.clients-dot');
-  allDots.forEach(dot => dot.classList.remove('active'));
-  let visibleIndex = (clientsIndex - clientsVisible) % clientsCards.length;
-  if (visibleIndex < 0) visibleIndex += clientsCards.length;
-  if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+    const allDots = clientsDots.querySelectorAll('.clients-dot');
+    allDots.forEach(dot => dot.classList.remove('active'));
+    let visibleIndex = (clientsIndex - clientsVisible) % clientsCards.length;
+    if (visibleIndex < 0) visibleIndex += clientsCards.length;
+    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
 }
 
 function createClientsDots() {
-  clientsDots.innerHTML = '';
-  for (let i = 0; i < clientsCards.length; i++) {
-    const dot = document.createElement('span');
-    dot.classList.add('clients-dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-      clientsIndex = i + clientsVisible;
-      updateClientsPosition();
-      updateClientsDots();
-    });
-    clientsDots.appendChild(dot);
-  }
+    clientsDots.innerHTML = '';
+    for (let i = 0; i < clientsCards.length; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('clients-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            clientsIndex = i + clientsVisible;
+            updateClientsPosition();
+            updateClientsDots();
+        });
+        clientsDots.appendChild(dot);
+    }
 }
 
 clientsPrevBtn.addEventListener('click', () => {
-  clientsIndex--;
-  updateClientsPosition();
-  resetClientsLoop();
-  updateClientsDots();
+    clientsIndex--;
+    updateClientsPosition();
+    resetClientsLoop();
+    updateClientsDots();
 });
 
 clientsNextBtn.addEventListener('click', () => {
-  clientsIndex++;
-  updateClientsPosition();
-  resetClientsLoop();
-  updateClientsDots();
+    clientsIndex++;
+    updateClientsPosition();
+    resetClientsLoop();
+    updateClientsDots();
 });
 
 window.addEventListener('resize', () => location.reload());
@@ -465,29 +453,31 @@ window.addEventListener('resize', () => location.reload());
 let startXClients = 0;
 let isDraggingClients = false;
 clientsTrack.addEventListener('touchstart', (e) => {
-  startXClients = e.touches[0].clientX;
-  isDraggingClients = true;
+    startXClients = e.touches[0].clientX;
+    isDraggingClients = true;
 }, { passive: true });
 
 clientsTrack.addEventListener('touchend', (e) => {
-  isDraggingClients = false;
-  const endXClients = e.changedTouches[0].clientX;
-  const diffXClients = endXClients - startXClients;
-  const threshold = 50;
-  if (diffXClients > threshold) {
-    clientsIndex--;
-    updateClientsPosition();
-    resetClientsLoop();
-    updateClientsDots();
-  } else if (diffXClients < -threshold) {
-    clientsIndex++;
-    updateClientsPosition();
-    resetClientsLoop();
-    updateClientsDots();
-  }
+    isDraggingClients = false;
+    const endXClients = e.changedTouches[0].clientX;
+    const diffXClients = endXClients - startXClients;
+    const threshold = 50;
+    if (diffXClients > threshold) {
+        clientsIndex--;
+        updateClientsPosition();
+        resetClientsLoop();
+        updateClientsDots();
+    } else if (diffXClients < -threshold) {
+        clientsIndex++;
+        updateClientsPosition();
+        resetClientsLoop();
+        updateClientsDots();
+    }
 });
 
 // Init
 cloneClientsSlides();
 updateClientsPosition(false);
 createClientsDots();
+
+// About Gallery
