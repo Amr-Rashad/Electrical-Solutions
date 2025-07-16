@@ -2055,7 +2055,7 @@ background-image: url('../images/map.png');
   transition: transform 0.3s ease;
 }
 @media(max-width:767px){
-  .image-small {
+  .image-small, .image-large-horizontal {
   width: 50%;
 }
 }
