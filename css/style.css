@@ -2507,10 +2507,6 @@ background-image: url('../images/map.png');
   margin-bottom: 20px;
 }
 
-.about-image {
-max-width: 80% !important;
-}
-
 .mision i, .vision i, .our-parteners p, .details{
   font-size:18px;
   color:#000;
