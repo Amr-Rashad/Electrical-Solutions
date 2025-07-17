@@ -2025,7 +2025,7 @@ background-image: url('../images/map.png');
   color: #666;
   margin-bottom: 5px;
 }
-/* about gallery */
+
 
 /* About Section */
 .custom-gallery {
@@ -2880,7 +2880,7 @@ padding-bottom:50px;
 .page-header p {
   color: #666;
   font-size: 1.1rem;
-  max-width: 650px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -2916,11 +2916,17 @@ padding-bottom:50px;
   margin-bottom: 30px;
 }
 
-.product-detail .product-description h3 {
+.product-detail .product-description h3, .smart-integration h3 {
   color: var(--primary-color);
   font-size: 1.5rem;
   margin: 20px 0 15px;
   font-weight: 600;
+}
+.smart-integration p{
+  line-height: 1.8;
+  font-size:18px;
+  font-style: normal;
+  width:90%
 }
 
 .product-detail .product-description p{
@@ -2995,9 +3001,6 @@ padding-bottom:50px;
 @media(max-width : 991px){
   .our-parteners .partener-image{
   margin-top:50px
-}
-.our-parteners .partener-image img{
-width:50%
 }
 .our-parteners p {
   padding-bottom: 25px;
