@@ -480,4 +480,115 @@ cloneClientsSlides();
 updateClientsPosition(false);
 createClientsDots();
 
-// About Gallery
+// Clients Page slider
+// Clients Page Slider
+const clientsPageSliderTrack = document.getElementById('clientsPageSliderTrack');
+const clientsPageSliderPrevBtn = document.querySelector('.clients-page-slider-btn.left');
+const clientsPageSliderNextBtn = document.querySelector('.clients-page-slider-btn.right');
+const clientsPageSliderDots = document.getElementById('clientsPageSliderDots');
+
+let clientsPageSliderCards = Array.from(clientsPageSliderTrack.children);
+let clientsPageSliderVisible = getClientsPageSliderVisible();
+let clientsPageSliderIndex = clientsPageSliderVisible;
+
+function getClientsPageSliderVisible() {
+    const w = window.innerWidth;
+    if (w <= 768) return 1;
+    if (w <= 992) return 3;
+    return 4;
+}
+
+function cloneClientsPageSliderSlides() {
+    const firstClones = clientsPageSliderCards.slice(0, clientsPageSliderVisible).map(el => el.cloneNode(true));
+    const lastClones = clientsPageSliderCards.slice(-clientsPageSliderVisible).map(el => el.cloneNode(true));
+    firstClones.forEach(el => clientsPageSliderTrack.appendChild(el));
+    lastClones.reverse().forEach(el => clientsPageSliderTrack.insertBefore(el, clientsPageSliderTrack.firstChild));
+}
+
+function updateClientsPageSliderPosition(animate = true) {
+    const width = clientsPageSliderTrack.clientWidth / clientsPageSliderVisible;
+    clientsPageSliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+    clientsPageSliderTrack.style.transform = `translateX(-${clientsPageSliderIndex * width}px)`;
+}
+
+function resetClientsPageSliderLoop() {
+    clientsPageSliderTrack.addEventListener('transitionend', () => {
+        if (clientsPageSliderIndex >= clientsPageSliderCards.length + clientsPageSliderVisible) {
+            clientsPageSliderIndex = clientsPageSliderVisible;
+            updateClientsPageSliderPosition(false);
+        } else if (clientsPageSliderIndex < clientsPageSliderVisible) {
+            clientsPageSliderIndex = clientsPageSliderCards.length;
+            updateClientsPageSliderPosition(false);
+        }
+    }, { once: true });
+}
+
+function updateClientsPageSliderDots() {
+    const allDots = clientsPageSliderDots.querySelectorAll('.clients-page-slider-dot');
+    allDots.forEach(dot => dot.classList.remove('active'));
+    let visibleIndex = (clientsPageSliderIndex - clientsPageSliderVisible) % clientsPageSliderCards.length;
+    if (visibleIndex < 0) visibleIndex += clientsPageSliderCards.length;
+    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+}
+
+function createClientsPageSliderDots() {
+    clientsPageSliderDots.innerHTML = '';
+    for (let i = 0; i < clientsPageSliderCards.length; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('clients-page-slider-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+            clientsPageSliderIndex = i + clientsPageSliderVisible;
+            updateClientsPageSliderPosition();
+            updateClientsPageSliderDots();
+        });
+        clientsPageSliderDots.appendChild(dot);
+    }
+}
+
+clientsPageSliderPrevBtn.addEventListener('click', () => {
+    clientsPageSliderIndex--;
+    updateClientsPageSliderPosition();
+    resetClientsPageSliderLoop();
+    updateClientsPageSliderDots();
+});
+
+clientsPageSliderNextBtn.addEventListener('click', () => {
+    clientsPageSliderIndex++;
+    updateClientsPageSliderPosition();
+    resetClientsPageSliderLoop();
+    updateClientsPageSliderDots();
+});
+
+window.addEventListener('resize', () => location.reload());
+
+// Touch Support
+let startXClientsPageSlider = 0;
+let isDraggingClientsPageSlider = false;
+clientsPageSliderTrack.addEventListener('touchstart', (e) => {
+    startXClientsPageSlider = e.touches[0].clientX;
+    isDraggingClientsPageSlider = true;
+}, { passive: true });
+
+clientsPageSliderTrack.addEventListener('touchend', (e) => {
+    isDraggingClientsPageSlider = false;
+    const endXClientsPageSlider = e.changedTouches[0].clientX;
+    const diffXClientsPageSlider = endXClientsPageSlider - startXClientsPageSlider;
+    const threshold = 50;
+    if (diffXClientsPageSlider > threshold) {
+        clientsPageSliderIndex--;
+        updateClientsPageSliderPosition();
+        resetClientsPageSliderLoop();
+        updateClientsPageSliderDots();
+    } else if (diffXClientsPageSlider < -threshold) {
+        clientsPageSliderIndex++;
+        updateClientsPageSliderPosition();
+        resetClientsPageSliderLoop();
+        updateClientsPageSliderDots();
+    }
+});
+
+// Init
+cloneClientsPageSliderSlides();
+updateClientsPageSliderPosition(false);
+createClientsPageSliderDots();
