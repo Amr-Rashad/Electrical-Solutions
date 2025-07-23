@@ -1410,6 +1410,8 @@ margin-bottom:100px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.gallery-content-voltage{
   height: 250px;
 }
 
