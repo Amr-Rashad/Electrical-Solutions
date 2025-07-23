@@ -481,114 +481,114 @@ updateClientsPosition(false);
 createClientsDots();
 
 // Clients Page slider
-// Clients Page Slider
-const clientsPageSliderTrack = document.getElementById('clientsPageSliderTrack');
-const clientsPageSliderPrevBtn = document.querySelector('.clients-page-slider-btn.left');
-const clientsPageSliderNextBtn = document.querySelector('.clients-page-slider-btn.right');
-const clientsPageSliderDots = document.getElementById('clientsPageSliderDots');
+const cPSTrack = document.getElementById("cPSTrack");
+const cPSPrev = document.querySelector(".c-p-s-btn.left");
+const cPSNext = document.querySelector(".c-p-s-btn.right");
+const cPSDots = document.getElementById("cPSDots");
 
-let clientsPageSliderCards = Array.from(clientsPageSliderTrack.children);
-let clientsPageSliderVisible = getClientsPageSliderVisible();
-let clientsPageSliderIndex = clientsPageSliderVisible;
+let cPSCards = Array.from(cPSTrack.children);
+let cPSVisible = getCPSVisible();
+let cPSIndex = cPSVisible;
 
-function getClientsPageSliderVisible() {
-    const w = window.innerWidth;
-    if (w <= 768) return 1;
-    if (w <= 992) return 3;
-    return 4;
+function getCPSVisible() {
+  const w = window.innerWidth;
+  if (w <= 768) return 1;
+  if (w <= 992) return 3;
+  return 4;
 }
 
-function cloneClientsPageSliderSlides() {
-    const firstClones = clientsPageSliderCards.slice(0, clientsPageSliderVisible).map(el => el.cloneNode(true));
-    const lastClones = clientsPageSliderCards.slice(-clientsPageSliderVisible).map(el => el.cloneNode(true));
-    firstClones.forEach(el => clientsPageSliderTrack.appendChild(el));
-    lastClones.reverse().forEach(el => clientsPageSliderTrack.insertBefore(el, clientsPageSliderTrack.firstChild));
+function cloneCPSCards() {
+  const first = cPSCards.slice(0, cPSVisible).map((el) => el.cloneNode(true));
+  const last = cPSCards
+    .slice(-cPSVisible)
+    .map((el) => el.cloneNode(true));
+  first.forEach((el) => cPSTrack.appendChild(el));
+  last.reverse().forEach((el) => cPSTrack.insertBefore(el, cPSTrack.firstChild));
 }
 
-function updateClientsPageSliderPosition(animate = true) {
-    const width = clientsPageSliderTrack.clientWidth / clientsPageSliderVisible;
-    clientsPageSliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-    clientsPageSliderTrack.style.transform = `translateX(-${clientsPageSliderIndex * width}px)`;
+function updateCPSPosition(animate = true) {
+  const width = cPSTrack.clientWidth / (cPSCards.length + cPSVisible * 2) * cPSVisible;
+  cPSTrack.style.transition = animate ? "transform 0.5s ease" : "none";
+  cPSTrack.style.transform = `translateX(-${cPSIndex * width}px)`;
 }
 
-function resetClientsPageSliderLoop() {
-    clientsPageSliderTrack.addEventListener('transitionend', () => {
-        if (clientsPageSliderIndex >= clientsPageSliderCards.length + clientsPageSliderVisible) {
-            clientsPageSliderIndex = clientsPageSliderVisible;
-            updateClientsPageSliderPosition(false);
-        } else if (clientsPageSliderIndex < clientsPageSliderVisible) {
-            clientsPageSliderIndex = clientsPageSliderCards.length;
-            updateClientsPageSliderPosition(false);
-        }
-    }, { once: true });
-}
-
-function updateClientsPageSliderDots() {
-    const allDots = clientsPageSliderDots.querySelectorAll('.clients-page-slider-dot');
-    allDots.forEach(dot => dot.classList.remove('active'));
-    let visibleIndex = (clientsPageSliderIndex - clientsPageSliderVisible) % clientsPageSliderCards.length;
-    if (visibleIndex < 0) visibleIndex += clientsPageSliderCards.length;
-    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
-}
-
-function createClientsPageSliderDots() {
-    clientsPageSliderDots.innerHTML = '';
-    for (let i = 0; i < clientsPageSliderCards.length; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('clients-page-slider-dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            clientsPageSliderIndex = i + clientsPageSliderVisible;
-            updateClientsPageSliderPosition();
-            updateClientsPageSliderDots();
-        });
-        clientsPageSliderDots.appendChild(dot);
+function resetCPSLoop() {
+  cPSTrack.addEventListener("transitionend", () => {
+    if (cPSIndex >= cPSCards.length + cPSVisible) {
+      cPSIndex = cPSVisible;
+      updateCPSPosition(false);
+    } else if (cPSIndex < cPSVisible) {
+      cPSIndex = cPSCards.length;
+      updateCPSPosition(false);
     }
+  }, { once: true });
 }
 
-clientsPageSliderPrevBtn.addEventListener('click', () => {
-    clientsPageSliderIndex--;
-    updateClientsPageSliderPosition();
-    resetClientsPageSliderLoop();
-    updateClientsPageSliderDots();
+function createCPSDots() {
+  cPSDots.innerHTML = "";
+  for (let i = 0; i < cPSCards.length; i++) {
+    const dot = document.createElement("span");
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => {
+      cPSIndex = i + cPSVisible;
+      updateCPSPosition();
+      updateCPSDots();
+    });
+    cPSDots.appendChild(dot);
+  }
+}
+
+function updateCPSDots() {
+  const dots = cPSDots.querySelectorAll("span");
+  dots.forEach((d) => d.classList.remove("active"));
+  let visibleIndex = (cPSIndex - cPSVisible) % cPSCards.length;
+  if (visibleIndex < 0) visibleIndex += cPSCards.length;
+  if (dots[visibleIndex]) dots[visibleIndex].classList.add("active");
+}
+
+cPSPrev.addEventListener("click", () => {
+  cPSIndex--;
+  updateCPSPosition();
+  resetCPSLoop();
+  updateCPSDots();
 });
 
-clientsPageSliderNextBtn.addEventListener('click', () => {
-    clientsPageSliderIndex++;
-    updateClientsPageSliderPosition();
-    resetClientsPageSliderLoop();
-    updateClientsPageSliderDots();
+cPSNext.addEventListener("click", () => {
+  cPSIndex++;
+  updateCPSPosition();
+  resetCPSLoop();
+  updateCPSDots();
 });
 
-window.addEventListener('resize', () => location.reload());
+window.addEventListener("resize", () => location.reload());
 
-// Touch Support
-let startXClientsPageSlider = 0;
-let isDraggingClientsPageSlider = false;
-clientsPageSliderTrack.addEventListener('touchstart', (e) => {
-    startXClientsPageSlider = e.touches[0].clientX;
-    isDraggingClientsPageSlider = true;
-}, { passive: true });
+// Touch support
+let startX = 0;
+let dragging = false;
 
-clientsPageSliderTrack.addEventListener('touchend', (e) => {
-    isDraggingClientsPageSlider = false;
-    const endXClientsPageSlider = e.changedTouches[0].clientX;
-    const diffXClientsPageSlider = endXClientsPageSlider - startXClientsPageSlider;
-    const threshold = 50;
-    if (diffXClientsPageSlider > threshold) {
-        clientsPageSliderIndex--;
-        updateClientsPageSliderPosition();
-        resetClientsPageSliderLoop();
-        updateClientsPageSliderDots();
-    } else if (diffXClientsPageSlider < -threshold) {
-        clientsPageSliderIndex++;
-        updateClientsPageSliderPosition();
-        resetClientsPageSliderLoop();
-        updateClientsPageSliderDots();
-    }
+cPSTrack.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  dragging = true;
+});
+
+cPSTrack.addEventListener("touchend", (e) => {
+  dragging = false;
+  const endX = e.changedTouches[0].clientX;
+  const diff = endX - startX;
+  if (diff > 50) {
+    cPSIndex--;
+    updateCPSPosition();
+    resetCPSLoop();
+    updateCPSDots();
+  } else if (diff < -50) {
+    cPSIndex++;
+    updateCPSPosition();
+    resetCPSLoop();
+    updateCPSDots();
+  }
 });
 
 // Init
-cloneClientsPageSliderSlides();
-updateClientsPageSliderPosition(false);
-createClientsPageSliderDots();
+cloneCPSCards();
+updateCPSPosition(false);
+createCPSDots();

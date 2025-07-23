@@ -1939,86 +1939,90 @@ background-image: url('../images/map.png');
 }
 
 /* Clients Page slider */
-/* Clients Page Slider */
-
-.slider-wrapper-clients-page-slider {
+.c-p-s-wrapper {
   position: relative;
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-.slider-container-clients-page-slider {
+.c-p-s-container {
   overflow: hidden;
 }
 
-.clients-page-slider-track {
+.c-p-s-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 
-.clients-page-slider-card {
+.c-p-s-card {
   flex: 0 0 25%;
-  box-sizing: border-box;
   padding: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.clients-page-slider-card img {
-  width: 70%;
+.c-p-s-card img {
+  width: 80%;
   height: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
-.clients-page-slider-card p {
-  font-size: 16px;
+.c-p-s-card p {
+  font-size: 15px;
   color: #333;
-  line-height: 1.4;
 }
 
-.clients-page-slider-btn {
+.c-p-s-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
 }
 
-.clients-page-slider-btn.left { left: -40px; }
-.clients-page-slider-btn.right { right: -25px; }
+.c-p-s-btn.left {
+  left: -30px;
+}
+.c-p-s-btn.right {
+  right: -30px;
+}
 
-.clients-page-slider-dots {
+.c-p-s-dots {
   text-align: center;
   margin-top: 20px;
 }
 
-.clients-page-slider-dot {
+.c-p-s-dots span {
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin: 0 6px;
+  margin: 0 5px;
   background-color: #ccc;
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.clients-page-slider-dot.active {
-  background-color: var(--primary-color);
-  width: 40px;
-  height: 15px;
+.c-p-s-dots .active {
+  background-color: #007bff;
+  width: 35px;
   border-radius: 20px;
 }
 
 @media (max-width: 992px) {
-  .clients-page-slider-card { flex: 0 0 33.333%; }
+  .c-p-s-card {
+    flex: 0 0 33.33%;
+  }
 }
-
 @media (max-width: 768px) {
-  .clients-page-slider-card { flex: 0 0 100%; }
+  .c-p-s-card {
+    flex: 0 0 100%;
+  }
 }
 
 /* Projects Section */
