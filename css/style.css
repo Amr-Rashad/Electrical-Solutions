@@ -2330,7 +2330,7 @@ background-image: url('../images/map.png');
 .smart-title{
   font-size: 3rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--dark);
 }
 .slider {
   width: 100%;
