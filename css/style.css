@@ -145,6 +145,21 @@ footer.footer {
   background:#fff;
   color:#00a8e1 !important
 }
+.Newsletter-btn {
+  background-color: #1b3e6d;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  /* transition: background 0.3s ease; */
+}
+
+.Newsletter-btn:hover {
+  background-color: var(--primary-color);
+}
+
 
  @media (min-width : 768px){
   .jcc{
