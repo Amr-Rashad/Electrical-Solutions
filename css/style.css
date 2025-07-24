@@ -2538,8 +2538,8 @@ background-image: url('../images/map.png');
 }
 
 .mision i, .vision i, .our-parteners p, .details{
-  font-size:18px;
-  color:#252525;
+  font-size:17px;
+  color:#666;
   line-height:1.6;
   font-style: normal;
 }
