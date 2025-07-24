@@ -49,6 +49,22 @@ b{
 .w-90{
   width:90%;
 }
+
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+    @media(min-width:1200px){
+     .container{
+        max-width:1175px;
+      }
+    }
+
+
 /* Navbar Styles */
 .navbar {
   padding: 20px 0;
@@ -672,7 +688,7 @@ max-width: 1175px;
     } */
     .contact-form {
       background: linear-gradient(165deg, #ffffff, #f0f7ff);
-      padding: 45px;
+      padding: 45px ;
       border-radius: 25px;
       box-shadow: 0 25px 50px rgba(27, 62, 109, 0.12),
                   inset 0 -2px 10px rgba(255, 255, 255, 0.5),
@@ -1452,7 +1468,7 @@ max-width: 1175px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 .product-card:hover {
@@ -3629,7 +3645,7 @@ padding-bottom:50px;
 
 .contact-info-section {
   flex: 1;
-  padding: 40px;
+  padding: 40px 0 ;
   min-width: 300px;
 }
 @media(max-width :992px){
