@@ -327,7 +327,7 @@ footer.footer {
   padding-left: 15px;
 }
 }
-.about-content b{font-size: 19px;}
+.about-content b{font-size: 18px;}
 .dropdown-item:hover {
   background: var(--accent-color);
   color: var(--dark) !important;
