@@ -1671,7 +1671,7 @@ max-width: 1175px;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
   .feature-box {
