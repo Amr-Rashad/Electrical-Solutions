@@ -2503,7 +2503,7 @@ background-image: url('../images/map.png');
   margin-top: 20px;
 }
 .section-title {
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
   font-weight: bold;
   color: #193E6D;
