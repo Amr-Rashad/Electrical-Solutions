@@ -4130,12 +4130,14 @@ padding-bottom:50px;
       display: flex;
       align-items: center;
     }
-    .new-header .new-header-icon , small{
+    .new-header .new-header-arrow-home , small{
       font-size: 13px;
+    }
+    .new-header-arrow-home{
+      color: var(--accent-color);
     }
     .new-header .new-header-arrow-icon {
       font-size: 11px;
-      /* font-weight: 900; */
     }
 
 
