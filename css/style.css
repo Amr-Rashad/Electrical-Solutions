@@ -4123,6 +4123,7 @@ padding-bottom:50px;
       width: fit-content;
       padding: 10px 30px;
       border-radius: 50px;
+      margin-left: -30px;
     }
     .new-header-content a {
       cursor: pointer;
