@@ -4111,3 +4111,31 @@ padding-bottom:50px;
     }
 
 
+    .new-header{
+      background-color: #f8f9fa;
+
+    }
+    .new-header-content{
+      background: linear-gradient(to right,rgba(30, 136, 229, 0.05),rgba(100, 181, 246, 0.1));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      padding: 10px 30px;
+      border-radius: 50px;
+    }
+    .new-header-content a {
+      cursor: pointer;
+      color: black;
+      display: flex;
+      align-items: center;
+    }
+    .new-header .new-header-icon , small{
+      font-size: 13px;
+    }
+    .new-header .new-header-arrow-icon {
+      font-size: 11px;
+      /* font-weight: 900; */
+    }
+
+
