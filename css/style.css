@@ -1084,12 +1084,6 @@ max-width: 1175px;
   padding-bottom: 8px;
 }
 
-.contact-item .info p {
-  color: #1b3e6d;
-  font-size: 15px;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
 .contact-item .action {
   /* margin-left: auto; */
 }
@@ -3675,12 +3669,7 @@ padding-bottom:50px;
   font-size: 16px;
 }
 
-.contact-item .info p {
-  color: #666;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.4;
-}
+
 
 /* Maps Section */
 /* .maps-section {
