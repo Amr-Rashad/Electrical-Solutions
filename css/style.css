@@ -64,6 +64,12 @@ b{
       }
     }
 
+  .details{
+    font-size:17px;
+    color:#666;
+    line-height:1.6;
+    font-style: normal;
+  }
 
 /* Navbar Styles */
 .navbar {
