@@ -4009,7 +4009,7 @@ padding-bottom:50px;
 
     .custom-carousel-card {
       flex: 0 0 25%;
-      padding: 10px;
+      padding: 0px 10px 0px 6px;
     }
 
     .custom-card {
@@ -4019,6 +4019,7 @@ padding-bottom:50px;
       text-align: center;
       padding: 0px 0px 30px;
       overflow:hidden;
+      width: 103%;
     }
 
     .custom-card img {
