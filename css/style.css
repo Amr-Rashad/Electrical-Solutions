@@ -1621,6 +1621,7 @@ max-width: 1175px;
   border: none;
   text-align: center;
   transition: all 0.3s ease;
+  color: #fff;
 }
 
 .gallery-content .btn:hover {
