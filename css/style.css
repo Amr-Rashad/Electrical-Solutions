@@ -1628,7 +1628,9 @@ max-width: 1175px;
   background: #00a8e1;
   transform: translateY(-2px);
 }
-
+.gallery-content .btn:active{
+  color:#fff;
+}
 @media(min-width : 767px){
   .product-gallery-container{
     display: flex;
