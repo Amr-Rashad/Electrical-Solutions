@@ -4037,7 +4037,7 @@ padding-bottom:50px;
     }
 
     .custom-card a:hover{
-      background: #007bff;
+      background: var(--dark);
     }
 
     .custom-carousel-arrow {
