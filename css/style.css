@@ -4110,6 +4110,8 @@ padding-bottom:50px;
       .features-title{padding:0px 30px;}
       .solutions-card{
         flex: 0 0 415px;
+        max-width: -moz-available;
+        
       }
     }
 
