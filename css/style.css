@@ -589,22 +589,7 @@ max-width: 1175px;
   color: var(--secondary-color);
   text-shadow: none !important;
 }
-/*
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-}
-*/
+
 .project-card {
   margin-bottom: 30px;
   border-radius: 10px;
@@ -3730,12 +3715,40 @@ padding-bottom:50px;
     border-radius: 15px 15px 0 0;
   }
 
-  .maps-section {
+  /* .maps-section {
     grid-template-columns: 1fr;
     padding: 0 20px;
-  }
+  } */
 }
 
+
+
+
+
+.address-card {
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.address-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(30, 136, 229, 0.15);
+}
+.address-card h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.address-card p{
+  font-size:14px;
+  text-align: justify;
+}
+/* 
 .map-section {
   padding: 60px 20px;
   background: #f0f4f8;
@@ -3780,7 +3793,7 @@ padding-bottom:50px;
   height: 100%;
   border: 0;
   display: block;
-}
+} */
 /* Start Get In touch Section */
 .address-icons ul {
   padding: 0;
@@ -4085,8 +4098,9 @@ padding-bottom:50px;
       .slider-container{width:95%;}
       .slider-card{margin: 0 20px;}
       .features-title{padding:0px 30px;}
-      /* Solutions slider */
       .solutions-card{
         flex: 0 0 395px;
       }
     }
+
+
