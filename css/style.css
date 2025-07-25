@@ -1062,7 +1062,7 @@ max-width: 1175px;
 
 /* Contact Info Styling */
 .contact-item {
-  margin-bottom: 25px;
+  margin-bottom: 8px;
   padding: 20px;
   background: #fff;
   border-radius: 10px;
@@ -3632,7 +3632,7 @@ padding-bottom:50px;
 
 .contact-info-section {
   flex: 1;
-  padding: 40px 0 ;
+
   min-width: 300px;
 }
 @media(max-width :992px){
