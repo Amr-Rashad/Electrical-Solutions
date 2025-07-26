@@ -1984,7 +1984,9 @@ background-image: url('../images/map.png');
     height: 80%;
   }
 }
-
+@media(min-width:767px){
+  .clients-title{margine-left:-15px;}
+}
 .client-card h3 {
   color: #333;
   font-size: 1.4rem;
