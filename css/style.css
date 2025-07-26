@@ -3947,7 +3947,7 @@ padding-bottom:50px;
 .solutions-btn.right { right: -47px; }
 
 @media(max-width:767px){
-  .solutions-btn, .custom-carousel-arrow{display: none;}
+  .solutions-btn, .custom-carousel-arrow, .clients-btn{display: none;}
 }
 /* Product carousel */
 .card-list .card-item .card-link{
