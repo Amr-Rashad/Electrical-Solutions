@@ -1951,11 +1951,15 @@ max-width: 1175px;
   background: #f8f9fa;
   z-index:9;
 }
-.clients-section{
-background-image: url('../images/map.png');
+.clients-section::before{
+   content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../images/map.png');
   background-size: cover;
   background-position: center;
-  
+   opacity: 0.4;
+  z-index: -1;
 }
 
 .client-card {
