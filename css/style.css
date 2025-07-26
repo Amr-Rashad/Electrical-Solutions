@@ -3822,7 +3822,7 @@ padding-bottom:50px;
 /* Solution Slider */
 .solutions-wrapper {
   position: relative;
-  max-width: 1175px;
+  max-width: 1151px;
   margin: 60px auto;
 }
 
@@ -3837,7 +3837,7 @@ padding-bottom:50px;
 
 .solutions-card {
   flex: 0 0 368px;
-  margin: 0 12px;
+  margin: 0 11px;
   position: relative;
   height: 255px;
   overflow: hidden;
