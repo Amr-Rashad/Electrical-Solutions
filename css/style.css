@@ -52,7 +52,7 @@ b{
   width:90%;
 }
 
-
+.main-color{color: var(--primary-color);}
   section{
     display: flex;
     justify-content: center;
