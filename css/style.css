@@ -1984,7 +1984,7 @@ max-width: 1175px;
   }
 }
 @media(min-width:767px){
-  .clients-title{margine-left:-15px;}
+  .clients-title{margin-left:-15px !important;}
 }
 .client-card h3 {
   color: #333;
