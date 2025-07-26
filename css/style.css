@@ -3870,7 +3870,7 @@ padding-bottom:50px;
   left: 0; right: 0;
   padding: 20px;
   padding-top: 50px;
-  background: rgba(30, 136, 229, 0.78);
+  background: var(--primary-color);
   color: #fff;
   transform: translateY(100%);
   opacity: 0;
@@ -3887,7 +3887,7 @@ padding-bottom:50px;
 
 .solutions-overlay-title {
   height: 48px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .solutions-card:hover .solutions-title {
@@ -3895,9 +3895,9 @@ padding-bottom:50px;
 }
 
 .solutions-overlay p {
-  color: #fff;
+  color: #666;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 22px;
   text-align: center;
   margin-top: 12px;
