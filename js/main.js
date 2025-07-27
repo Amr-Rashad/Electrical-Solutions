@@ -481,26 +481,3 @@ updateClientsPosition(false);
 createClientsDots();
 
 // Start Our Projects Slider
-const Projectscarousel = new Swiper(".Projectscarousel-swiper", {
-      loop: true,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-      },
-    });
