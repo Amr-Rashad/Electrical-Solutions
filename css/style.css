@@ -2250,7 +2250,7 @@ max-width: 1175px;
 
 /* Start Our Project Slider */
 
-    .Projectscarousel-container {
+.Projectscarousel-container {
       width: 100%;
       max-width: 1200px;
       margin: auto;
@@ -2301,16 +2301,20 @@ max-width: 1175px;
       background-size: 60%;
       background-repeat: no-repeat;
       background-position: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
     }
 
     .swiper-button-prev {
-      left: -50px;
-      background-image: url("../images/left-arrow.png");
+      left: -60px;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png");
     }
 
     .swiper-button-next {
-      right: -50px;
-      background-image: url("../images/r-arrow.png");
+      right: -60px;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png");
     }
 
     .swiper-button-prev::after,
