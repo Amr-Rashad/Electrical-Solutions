@@ -612,7 +612,7 @@ max-width: 1175px;
 .project-image {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0 ;
 }
 
 .project-image img {
