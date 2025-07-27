@@ -2256,7 +2256,9 @@ max-width: 1175px;
       margin: auto;
       position: relative;
     }
-
+.swiper-slide{
+  width: 364px !important;
+}
     .swiper {
       padding-bottom: 50px;
     }
