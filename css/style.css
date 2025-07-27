@@ -2248,6 +2248,90 @@ max-width: 1175px;
   margin-bottom: 5px;
 }
 
+/* Start Our Project Slider */
+
+    .Projectscarousel-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+    }
+
+    .swiper {
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .Projectscarousel-text {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #333;
+      direction: ltr;
+    }
+
+    .swiper-pagination-bullet {
+      background: #ccc;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #007bff;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .swiper-button-prev {
+      left: -50px;
+      background-image: url("../images/left-arrow.png");
+    }
+
+    .swiper-button-next {
+      right: -50px;
+      background-image: url("../images/r-arrow.png");
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      .swiper-slide img {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+
+/* End Our Project Slider */
 
 /* About Section */
 .custom-gallery {
