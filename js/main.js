@@ -486,92 +486,92 @@ createClientsDots();
 // projects slider
 
 
-const sliderTrack = document.getElementById('projectsSliderTrack');
-const sliderPrevBtn = document.querySelector('.slider-prev-btn');
-const sliderNextBtn = document.querySelector('.slider-next-btn');
-const sliderDots = document.getElementById('projectsSliderDots');
-let projectCards = Array.from(sliderTrack.children);
-let visibleCards = getVisibleCount();
-let sliderIndex = visibleCards;
+// const sliderTrack = document.getElementById('projectsSliderTrack');
+// const sliderPrevBtn = document.querySelector('.slider-prev-btn');
+// const sliderNextBtn = document.querySelector('.slider-next-btn');
+// const sliderDots = document.getElementById('projectsSliderDots');
+// let projectCards = Array.from(sliderTrack.children);
+// let visibleCards = getVisibleCount();
+// let sliderIndex = visibleCards;
 
-function getVisibleCount() {
-  const w = window.innerWidth;
-  if (w <= 768) return 1;
-  if (w <= 992) return 2;
-  return 3;
-}
+// function getVisibleCount() {
+//   const w = window.innerWidth;
+//   if (w <= 768) return 1;
+//   if (w <= 992) return 2;
+//   return 3;
+// }
 
-function cloneSliderCards() {
-  const firstClones = projectCards.slice(0, visibleCards).map(card => card.cloneNode(true));
-  const lastClones = projectCards.slice(-visibleCards).map(card => card.cloneNode(true));
-  firstClones.forEach(card => sliderTrack.appendChild(card));
-  lastClones.reverse().forEach(card => sliderTrack.insertBefore(card, sliderTrack.firstChild));
-}
+// function cloneSliderCards() {
+//   const firstClones = projectCards.slice(0, visibleCards).map(card => card.cloneNode(true));
+//   const lastClones = projectCards.slice(-visibleCards).map(card => card.cloneNode(true));
+//   firstClones.forEach(card => sliderTrack.appendChild(card));
+//   lastClones.reverse().forEach(card => sliderTrack.insertBefore(card, sliderTrack.firstChild));
+// }
 
-function updateSliderPosition(animate = true) {
-  const width = sliderTrack.clientWidth / visibleCards;
-  sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-  sliderTrack.style.transform = `translateX(-${sliderIndex * width}px)`;
-}
+// function updateSliderPosition(animate = true) {
+//   const width = sliderTrack.clientWidth / visibleCards;
+//   sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//   sliderTrack.style.transform = `translateX(-${sliderIndex * width}px)`;
+// }
 
-function resetSliderLoop() {
-  sliderTrack.addEventListener('transitionend', () => {
-    if (sliderIndex >= projectCards.length + visibleCards) {
-      sliderIndex = visibleCards;
-      updateSliderPosition(false);
-    } else if (sliderIndex < visibleCards) {
-      sliderIndex = projectCards.length;
-      updateSliderPosition(false);
-    }
-  }, { once: true });
-}
+// function resetSliderLoop() {
+//   sliderTrack.addEventListener('transitionend', () => {
+//     if (sliderIndex >= projectCards.length + visibleCards) {
+//       sliderIndex = visibleCards;
+//       updateSliderPosition(false);
+//     } else if (sliderIndex < visibleCards) {
+//       sliderIndex = projectCards.length;
+//       updateSliderPosition(false);
+//     }
+//   }, { once: true });
+// }
 
-function createSliderDots() {
-  const totalDots = 6;
-  sliderDots.innerHTML = '';
-  for (let i = 0; i < totalDots; i++) {
-    const dot = document.createElement('span');
-    dot.classList.add('slider-dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-      sliderIndex = i + visibleCards;
-      updateSliderPosition();
-      updateSliderDots();
-    });
-    sliderDots.appendChild(dot);
-  }
-}
+// function createSliderDots() {
+//   const totalDots = 6;
+//   sliderDots.innerHTML = '';
+//   for (let i = 0; i < totalDots; i++) {
+//     const dot = document.createElement('span');
+//     dot.classList.add('slider-dot');
+//     if (i === 0) dot.classList.add('active');
+//     dot.addEventListener('click', () => {
+//       sliderIndex = i + visibleCards;
+//       updateSliderPosition();
+//       updateSliderDots();
+//     });
+//     sliderDots.appendChild(dot);
+//   }
+// }
 
-function updateSliderDots() {
-  const dots = sliderDots.querySelectorAll('.slider-dot');
-  dots.forEach(dot => dot.classList.remove('active'));
-  let visibleIndex = (sliderIndex - visibleCards) % 6;
-  if (visibleIndex < 0) visibleIndex += 6;
-  if (dots[visibleIndex]) dots[visibleIndex].classList.add('active');
-}
+// function updateSliderDots() {
+//   const dots = sliderDots.querySelectorAll('.slider-dot');
+//   dots.forEach(dot => dot.classList.remove('active'));
+//   let visibleIndex = (sliderIndex - visibleCards) % 6;
+//   if (visibleIndex < 0) visibleIndex += 6;
+//   if (dots[visibleIndex]) dots[visibleIndex].classList.add('active');
+// }
 
-sliderPrevBtn.addEventListener('click', () => {
-  sliderIndex--;
-  updateSliderPosition();
-  resetSliderLoop();
-  updateSliderDots();
-});
+// sliderPrevBtn.addEventListener('click', () => {
+//   sliderIndex--;
+//   updateSliderPosition();
+//   resetSliderLoop();
+//   updateSliderDots();
+// });
 
-sliderNextBtn.addEventListener('click', () => {
-  sliderIndex++;
-  updateSliderPosition();
-  resetSliderLoop();
-  updateSliderDots();
-});
+// sliderNextBtn.addEventListener('click', () => {
+//   sliderIndex++;
+//   updateSliderPosition();
+//   resetSliderLoop();
+//   updateSliderDots();
+// });
 
-window.addEventListener('resize', () => {
-  location.reload();
-});
+// window.addEventListener('resize', () => {
+//   location.reload();
+// });
 
-cloneSliderCards();
-projectCards = Array.from(sliderTrack.children);
-updateSliderPosition(false);
-createSliderDots();
+// cloneSliderCards();
+// projectCards = Array.from(sliderTrack.children);
+// updateSliderPosition(false);
+// createSliderDots();
 
 
 
@@ -634,5 +634,35 @@ createSliderDots();
   });
 
   // end product slider
+
+  // start projects slider
+
+    $(document).ready(function(){
+    $('.projects-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="custom-prev"><img src="images/left-arrow.png" alt="Previous"></button>',
+      nextArrow: '<button class="custom-next"><img src="images/r-arrow.png" alt="Next"></button>',
+      dots: true,
+      Infinity: true ,
+      responsive: [
+        {
+          breakpoint: 992, 
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768, 
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+
+  // end projects slider
 
 
