@@ -857,7 +857,7 @@ max-width: 1175px;
     .contact-form-home .field input,
     .contact-form-home .field textarea {
       width: 100%;
-      padding: 18px 25px;
+      padding: 1.6875rem 1.25rem .5rem;
       border: 2px solid #e8eef7;
       border-radius: 5px;
       font-size: 16px;
