@@ -156,129 +156,129 @@ document.querySelectorAll('.project-card').forEach(card => {
 
 //Solutions Slider
 
-const solutionsTrack = document.getElementById('solutionsTrack');
-const solutionsPrevBtn = document.querySelector('.solutions-btn.left');
-const solutionsNextBtn = document.querySelector('.solutions-btn.right');
-const solutionsDots = document.getElementById('solutionsDots');
+// const solutionsTrack = document.getElementById('solutionsTrack');
+// const solutionsPrevBtn = document.querySelector('.solutions-btn.left');
+// const solutionsNextBtn = document.querySelector('.solutions-btn.right');
+// const solutionsDots = document.getElementById('solutionsDots');
 
-let solutionsCards = Array.from(solutionsTrack.children);
-let solutionsVisible = getSolutionsVisible();
-let solutionsIndex = solutionsVisible;
+// let solutionsCards = Array.from(solutionsTrack.children);
+// let solutionsVisible = getSolutionsVisible();
+// let solutionsIndex = solutionsVisible;
 
-function getSolutionsVisible() {
-    const w = window.innerWidth;
-    if (w <= 768) return 1;
-    if (w <= 992) return 2;
-    return 3;
-}
+// function getSolutionsVisible() {
+//     const w = window.innerWidth;
+//     if (w <= 768) return 1;
+//     if (w <= 992) return 2;
+//     return 3;
+// }
 
-function cloneSolutionsSlides() {
-    const firstClones = solutionsCards.slice(0, solutionsVisible).map(el => el.cloneNode(true));
-    const lastClones = solutionsCards.slice(-solutionsVisible).map(el => el.cloneNode(true));
-    firstClones.forEach(el => solutionsTrack.appendChild(el));
-    lastClones.reverse().forEach(el => solutionsTrack.insertBefore(el, solutionsTrack.firstChild));
-}
+// function cloneSolutionsSlides() {
+//     const firstClones = solutionsCards.slice(0, solutionsVisible).map(el => el.cloneNode(true));
+//     const lastClones = solutionsCards.slice(-solutionsVisible).map(el => el.cloneNode(true));
+//     firstClones.forEach(el => solutionsTrack.appendChild(el));
+//     lastClones.reverse().forEach(el => solutionsTrack.insertBefore(el, solutionsTrack.firstChild));
+// }
 
-function updateSolutionsPosition(animate = true) {
-    const width = solutionsTrack.clientWidth / solutionsVisible;
-    solutionsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-    solutionsTrack.style.transform = `translateX(-${solutionsIndex * width}px)`;
-}
+// function updateSolutionsPosition(animate = true) {
+//     const width = solutionsTrack.clientWidth / solutionsVisible;
+//     solutionsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//     solutionsTrack.style.transform = `translateX(-${solutionsIndex * width}px)`;
+// }
 
-function resetSolutionsLoop() {
-    solutionsTrack.addEventListener('transitionend', () => {
-        if (solutionsIndex >= solutionsCards.length + solutionsVisible) {
-            solutionsIndex = solutionsVisible;
-            updateSolutionsPosition(false);
-        } else if (solutionsIndex < solutionsVisible) {
-            solutionsIndex = solutionsCards.length;
-            updateSolutionsPosition(false);
-        }
-    }, { once: true });
-}
+// function resetSolutionsLoop() {
+//     solutionsTrack.addEventListener('transitionend', () => {
+//         if (solutionsIndex >= solutionsCards.length + solutionsVisible) {
+//             solutionsIndex = solutionsVisible;
+//             updateSolutionsPosition(false);
+//         } else if (solutionsIndex < solutionsVisible) {
+//             solutionsIndex = solutionsCards.length;
+//             updateSolutionsPosition(false);
+//         }
+//     }, { once: true });
+// }
 
-function updateSolutionsDots() {
-    const allDots = solutionsDots.querySelectorAll('.solutions-dot');
-    allDots.forEach(dot => dot.classList.remove('active'));
-    let visibleIndex = (solutionsIndex - solutionsVisible) % solutionsCards.length;
-    if (visibleIndex < 0) visibleIndex += solutionsCards.length;
-    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
-}
+// function updateSolutionsDots() {
+//     const allDots = solutionsDots.querySelectorAll('.solutions-dot');
+//     allDots.forEach(dot => dot.classList.remove('active'));
+//     let visibleIndex = (solutionsIndex - solutionsVisible) % solutionsCards.length;
+//     if (visibleIndex < 0) visibleIndex += solutionsCards.length;
+//     if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+// }
 
-function createSolutionsDots() {
-    solutionsDots.innerHTML = '';
-    for (let i = 0; i < solutionsCards.length; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('solutions-dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            solutionsIndex = i + solutionsVisible;
-            updateSolutionsPosition();
-            updateSolutionsDots();
-        });
-        solutionsDots.appendChild(dot);
-    }
-}
+// function createSolutionsDots() {
+//     solutionsDots.innerHTML = '';
+//     for (let i = 0; i < solutionsCards.length; i++) {
+//         const dot = document.createElement('span');
+//         dot.classList.add('solutions-dot');
+//         if (i === 0) dot.classList.add('active');
+//         dot.addEventListener('click', () => {
+//             solutionsIndex = i + solutionsVisible;
+//             updateSolutionsPosition();
+//             updateSolutionsDots();
+//         });
+//         solutionsDots.appendChild(dot);
+//     }
+// }
 
-solutionsPrevBtn.addEventListener('click', () => {
-    solutionsIndex--;
-    updateSolutionsPosition();
-    resetSolutionsLoop();
-    updateSolutionsDots();
-});
+// solutionsPrevBtn.addEventListener('click', () => {
+//     solutionsIndex--;
+//     updateSolutionsPosition();
+//     resetSolutionsLoop();
+//     updateSolutionsDots();
+// });
 
-solutionsNextBtn.addEventListener('click', () => {
-    solutionsIndex++;
-    updateSolutionsPosition();
-    resetSolutionsLoop();
-    updateSolutionsDots();
-});
+// solutionsNextBtn.addEventListener('click', () => {
+//     solutionsIndex++;
+//     updateSolutionsPosition();
+//     resetSolutionsLoop();
+//     updateSolutionsDots();
+// });
 
-window.addEventListener('resize', () => {
-    location.reload();
-});
+// window.addEventListener('resize', () => {
+//     location.reload();
+// });
 
-// Init
-cloneSolutionsSlides();
-updateSolutionsPosition(false);
-createSolutionsDots();
+// // Init
+// cloneSolutionsSlides();
+// updateSolutionsPosition(false);
+// createSolutionsDots();
 
-let startX = 0;
-let isDragging = false;
+// let startX = 0;
+// let isDragging = false;
 
-solutionsTrack.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-    isDragging = true;
-}, { passive: true });
+// solutionsTrack.addEventListener('touchstart', (e) => {
+//     startX = e.touches[0].clientX;
+//     isDragging = true;
+// }, { passive: true });
 
-solutionsTrack.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
-    const currentX = e.touches[0].clientX;
-    const diffX = currentX - startX;
+// solutionsTrack.addEventListener('touchmove', (e) => {
+//     if (!isDragging) return;
+//     const currentX = e.touches[0].clientX;
+//     const diffX = currentX - startX;
 
-}, { passive: true });
+// }, { passive: true });
 
-solutionsTrack.addEventListener('touchend', (e) => {
-    isDragging = false;
-    const endX = e.changedTouches[0].clientX;
-    const diffX = endX - startX;
+// solutionsTrack.addEventListener('touchend', (e) => {
+//     isDragging = false;
+//     const endX = e.changedTouches[0].clientX;
+//     const diffX = endX - startX;
 
-    const threshold = 50; // The minimum distance you need to move to calculate it 
+//     const threshold = 50; // The minimum distance you need to move to calculate it 
 
-    if (diffX > threshold) {
-        // Swipe Prev
-        solutionsIndex--;
-        updateSolutionsPosition();
-        resetSolutionsLoop();
-        updateSolutionsDots();
-    } else if (diffX < -threshold) {
-        // Swipe Next
-        solutionsIndex++;
-        updateSolutionsPosition();
-        resetSolutionsLoop();
-        updateSolutionsDots();
-    }
-});
+//     if (diffX > threshold) {
+//         // Swipe Prev
+//         solutionsIndex--;
+//         updateSolutionsPosition();
+//         resetSolutionsLoop();
+//         updateSolutionsDots();
+//     } else if (diffX < -threshold) {
+//         // Swipe Next
+//         solutionsIndex++;
+//         updateSolutionsPosition();
+//         resetSolutionsLoop();
+//         updateSolutionsDots();
+//     }
+// });
 
 // Products Carousel
 
@@ -572,3 +572,35 @@ cloneSliderCards();
 projectCards = Array.from(sliderTrack.children);
 updateSliderPosition(false);
 createSliderDots();
+
+
+
+// start solution slider
+
+  $(document).ready(function(){
+    $('.solution-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+      arrows: true,
+      dots: true,
+      Infinity: true ,
+      responsive: [
+        {
+          breakpoint: 992, // تابلت
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768, // موبايل
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+
+
