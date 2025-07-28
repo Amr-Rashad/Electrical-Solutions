@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ECDM - Electrical Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=1" />
+  <link rel="stylesheet" href="css/style.css?v=1"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="common/loadHTML.js" defer></script>
@@ -786,44 +786,37 @@
     <!-- <div class=" ">
       <div class=""> -->
         <div class="contact-form-home">
-          <h2>Contact Us</h2>
+          <h2>Get in touch with us</h2>
           <!-- <p class="text-center mb-5">Our video security experts can help you implement the right security system for your business.</p> -->
           <form id="contact-form-home">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="field">
-                  <input type="text" name="first_name" placeholder="First name*" />
+                  <h4> What can we help you with?</h4>
+            <option value="" selected="selected"></option>
+                <option value="Contact our sales team">I want to know more about Axis products and solutions</option>
+                <option value="Media inquiries">I am a journalist</option>
+                <option value="Support">I want support</option>
+                <option value="General inquiries">General inquiries</option>
+                <option value="I am interested in career opportunities">I am interested in career opportunities</option>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="field">
-                  <input type="text" name="last_name" placeholder="Last name*" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="field">
-                  <input type="email" name="email" placeholder="Work email*" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="field">
-                  <input type="tel" name="phone" placeholder="Phone number*" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="field">
-                  <input type="text" name="company" placeholder="Company name*" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="field">
-                  <input type="text" name="postal" placeholder="Postal code*" />
+                  <input type="Subject" name="Subject" placeholder="Subject*" />
                 </div>
               </div>
               <div class="col-12">
                 <div class="field">
-                  <textarea name="message" placeholder="Optional: Tell us about your security needs or projects"></textarea>
+                  <textarea name="message" placeholder="Message *"></textarea>
                 </div>
+              </div>
+              <div class="col-12">
+
+        <input data-webform-required-error="Please confirm." data-drupal-selector="edit-privacy-notice" aria-describedby="edit-privacy-notice--description" type="checkbox" id="edit-privacy-notice" name="privacy_notice" value="True" class="form-checkbox" data-drupal-states="{&quot;optional&quot;:[{&quot;.webform-submission-contact-us-refactoring-node-3357-add-form :input[name=\u0022type\u0022]&quot;:{&quot;value&quot;:&quot;I am interested in career opportunities&quot;}},&quot;or&quot;,{&quot;.webform-submission-contact-us-refactoring-node-3357-add-form :input[name=\u0022type\u0022]&quot;:{&quot;value&quot;:&quot;Support&quot;}},&quot;or&quot;,{&quot;.webform-submission-contact-us-refactoring-node-3357-add-form :input[name=\u0022type\u0022]&quot;:{&quot;value&quot;:&quot;General inquiries&quot;}}]}" data-once="states webform-required-error" required="required" aria-required="true">
+            <div class="description">
+      <div id="edit-privacy-notice--description" class="webform-element-description">I have read and understood Axis <a href="https://www.axis.com/my-axis/change-your-settings/privacy-notice" target="_new">Privacy Notice.</a> For information about what personal data we collect, what the purpose is for collecting it and what rights you have related to your data, please see our Privacy Notice.</div>
+               </div>
               </div>
               <div class="col-12 text-center">
                 <button type="submit" id="button">Submit</button>
