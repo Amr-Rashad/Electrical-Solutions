@@ -4065,7 +4065,8 @@ padding-bottom:50px;
     justify-content: center !important; 
     align-items: center !important;
     margin-top: 20px !important;
-    gap: 5px !important; 
+    /* gap: 3px !important;  */
+    text-align: center !important;
 }
 
 .slick-dots li button {
@@ -4075,12 +4076,14 @@ padding-bottom:50px;
   background-color: #ccc !important;
   border: none !important;
   cursor: pointer !important;
+  text-align: center !important;
 }
 .slick-dots li.slick-active button {
   width: 25px !important;
   height: 12px !important;
   border-radius: 20px !important;
   background-color: #2196f3 !important;
+  text-align: center!important;
   transition: all 0.3s ease !important;
 
 }
@@ -4196,21 +4199,23 @@ padding-bottom:50px;
 }
 
 /* Start Product carousel */
-   .custom-carousel-wrapper {
+   /* .custom-carousel-wrapper {
       position: relative;
       max-width: 1170px;
       margin: auto;
       overflow: visible;
-    }
+    } */
 
-    .custom-carousel-track {
+    /* .custom-carousel-track {
       display: flex;
       transition: transform 0.5s ease;
-    }
+    } */
 
     .custom-carousel-card {
-      flex: 0 0 25%;
+      /* flex: 0 0 25%; */
+      width: calc(25% - 10px);
       padding: 0px 10px 0px 6px;
+      margin: 0 5px;
     }
 
     .custom-card {
@@ -4257,7 +4262,7 @@ padding-bottom:50px;
       background: #00a8e1;
     }
 
-    .custom-carousel-arrow {
+    /* .custom-carousel-arrow {
       position: absolute;
       top: 50%;
       background: rgba(0, 123, 255, 0);
@@ -4296,8 +4301,8 @@ padding-bottom:50px;
 
     .custom-dot.active {
       background-color: #007bff;
-    }
-
+    } */
+/* 
     @media (max-width: 992px) {
       .custom-carousel-card {
         flex: 0 0 33.333%;
@@ -4317,7 +4322,7 @@ padding-bottom:50px;
         max-width: -moz-available;
         
       }
-    }
+    } */
 
 
     .new-header{

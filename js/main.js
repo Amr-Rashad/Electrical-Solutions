@@ -282,91 +282,91 @@ document.querySelectorAll('.project-card').forEach(card => {
 
 // Products Carousel
 
-const customTrack = document.getElementById('customCarouselTrack');
-const customPrevBtn = document.querySelector('.prev-btn');
-const customNextBtn = document.querySelector('.next-btn');
-const customDots = document.getElementById('customCarouselDots');
-let customCards = Array.from(customTrack.children);
-let customVisible = getCustomVisible();
-let customIndex = customVisible;
+// const customTrack = document.getElementById('customCarouselTrack');
+// const customPrevBtn = document.querySelector('.prev-btn');
+// const customNextBtn = document.querySelector('.next-btn');
+// const customDots = document.getElementById('customCarouselDots');
+// let customCards = Array.from(customTrack.children);
+// let customVisible = getCustomVisible();
+// let customIndex = customVisible;
 
-function getCustomVisible() {
-    const w = window.innerWidth;
-    if (w <= 768) return 1;
-    if (w <= 992) return 3;
-    return 4;
-}
+// function getCustomVisible() {
+//     const w = window.innerWidth;
+//     if (w <= 768) return 1;
+//     if (w <= 992) return 3;
+//     return 4;
+// }
 
-function customCloneSlides() {
-    const firstClones = customCards.slice(0, customVisible).map(el => el.cloneNode(true));
-    const lastClones = customCards.slice(-customVisible).map(el => el.cloneNode(true));
-    firstClones.forEach(el => customTrack.appendChild(el));
-    lastClones.reverse().forEach(el => customTrack.insertBefore(el, customTrack.firstChild));
-}
+// function customCloneSlides() {
+//     const firstClones = customCards.slice(0, customVisible).map(el => el.cloneNode(true));
+//     const lastClones = customCards.slice(-customVisible).map(el => el.cloneNode(true));
+//     firstClones.forEach(el => customTrack.appendChild(el));
+//     lastClones.reverse().forEach(el => customTrack.insertBefore(el, customTrack.firstChild));
+// }
 
-function customUpdatePosition(animate = true) {
-    const width = customTrack.clientWidth / customVisible;
-    customTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-    customTrack.style.transform = `translateX(-${customIndex * width}px)`;
-}
+// function customUpdatePosition(animate = true) {
+//     const width = customTrack.clientWidth / customVisible;
+//     customTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//     customTrack.style.transform = `translateX(-${customIndex * width}px)`;
+// }
 
-function customResetLoop() {
-    customTrack.addEventListener('transitionend', () => {
-        if (customIndex >= customCards.length + customVisible) {
-            customIndex = customVisible;
-            customUpdatePosition(false);
-        } else if (customIndex < customVisible) {
-            customIndex = customCards.length;
-            customUpdatePosition(false);
-        }
-    }, { once: true });
-}
+// function customResetLoop() {
+//     customTrack.addEventListener('transitionend', () => {
+//         if (customIndex >= customCards.length + customVisible) {
+//             customIndex = customVisible;
+//             customUpdatePosition(false);
+//         } else if (customIndex < customVisible) {
+//             customIndex = customCards.length;
+//             customUpdatePosition(false);
+//         }
+//     }, { once: true });
+// }
 
-function customUpdateDots() {
-    const allDots = customDots.querySelectorAll('.custom-dot');
-    allDots.forEach(dot => dot.classList.remove('active'));
-    let visibleIndex = (customIndex - customVisible) % customCards.length;
-    if (visibleIndex < 0) visibleIndex += customCards.length;
-    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
-}
+// function customUpdateDots() {
+//     const allDots = customDots.querySelectorAll('.custom-dot');
+//     allDots.forEach(dot => dot.classList.remove('active'));
+//     let visibleIndex = (customIndex - customVisible) % customCards.length;
+//     if (visibleIndex < 0) visibleIndex += customCards.length;
+//     if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+// }
 
-function customCreateDots() {
-    customDots.innerHTML = '';
-    for (let i = 0; i < customCards.length; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('custom-dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            customIndex = i + customVisible;
-            customUpdatePosition();
-            customUpdateDots();
-        });
-        customDots.appendChild(dot);
-    }
-}
+// function customCreateDots() {
+//     customDots.innerHTML = '';
+//     for (let i = 0; i < customCards.length; i++) {
+//         const dot = document.createElement('span');
+//         dot.classList.add('custom-dot');
+//         if (i === 0) dot.classList.add('active');
+//         dot.addEventListener('click', () => {
+//             customIndex = i + customVisible;
+//             customUpdatePosition();
+//             customUpdateDots();
+//         });
+//         customDots.appendChild(dot);
+//     }
+// }
 
-customPrevBtn.addEventListener('click', () => {
-    customIndex--;
-    customUpdatePosition();
-    customResetLoop();
-    customUpdateDots();
-});
+// customPrevBtn.addEventListener('click', () => {
+//     customIndex--;
+//     customUpdatePosition();
+//     customResetLoop();
+//     customUpdateDots();
+// });
 
-customNextBtn.addEventListener('click', () => {
-    customIndex++;
-    customUpdatePosition();
-    customResetLoop();
-    customUpdateDots();
-});
+// customNextBtn.addEventListener('click', () => {
+//     customIndex++;
+//     customUpdatePosition();
+//     customResetLoop();
+//     customUpdateDots();
+// });
 
-window.addEventListener('resize', () => {
-    location.reload(); // To recalculate on resize (can be improved if needed)
-});
+// window.addEventListener('resize', () => {
+//     location.reload(); // To recalculate on resize (can be improved if needed)
+// });
 
-// Init carousel
-customCloneSlides();
-customUpdatePosition(false);
-customCreateDots();
+// // Init carousel
+// customCloneSlides();
+// customUpdatePosition(false);
+// customCreateDots();
 
 //Our clients slider
 const clientsTrack = document.getElementById('clientsTrack');
@@ -588,13 +588,13 @@ createSliderDots();
       Infinity: true ,
       responsive: [
         {
-          breakpoint: 992, // تابلت
+          breakpoint: 992, 
           settings: {
             slidesToShow: 2
           }
         },
         {
-          breakpoint: 768, // موبايل
+          breakpoint: 768, 
           settings: {
             slidesToShow: 1
           }
@@ -602,5 +602,37 @@ createSliderDots();
       ]
     });
   });
+
+  // end solutions slider
+
+  // start product slider
+
+    $(document).ready(function(){
+    $('.products-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="custom-prev"><img src="images/left-arrow.png" alt="Previous"></button>',
+      nextArrow: '<button class="custom-next"><img src="images/r-arrow.png" alt="Next"></button>',
+      dots: true,
+      Infinity: true ,
+      responsive: [
+        {
+          breakpoint: 992, 
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768, 
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+
+  // end product slider
 
 
