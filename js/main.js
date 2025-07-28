@@ -581,9 +581,9 @@ createSliderDots();
     $('.solution-slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
       arrows: true,
+      prevArrow: '<button class="custom-prev"><img src="images/left-arrow.png" alt="Previous"></button>',
+      nextArrow: '<button class="custom-next"><img src="images/r-arrow.png" alt="Next"></button>',
       dots: true,
       Infinity: true ,
       responsive: [
