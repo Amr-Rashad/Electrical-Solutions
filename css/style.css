@@ -853,27 +853,13 @@ max-width: 1175px;
       margin-bottom: 28px;
       position: relative;
     }
-    .contact-form-home .field:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 3px;
-      height: 0;
-      background: linear-gradient(to bottom, #1b3e6d, #2697f3);
-      transition: height 0.3s ease, top 0.3s ease;
-      border-radius: 3px;
-    }
-    .contact-form-home .field:focus-within:before {
-      height: 70%;
-      top: 15%;
-    }
+
     .contact-form-home .field input,
     .contact-form-home .field textarea {
       width: 100%;
       padding: 18px 25px;
       border: 2px solid #e8eef7;
-      border-radius: 15px;
+      border-radius: 5px;
       font-size: 16px;
       color: #1b3e6d;
       background: #ffffff;
@@ -884,14 +870,12 @@ max-width: 1175px;
     .contact-form-home .field textarea:hover {
       border-color: #2697f3;
       background: linear-gradient(to right, #f8fafd, #ffffff);
-      transform: translateX(5px);
     }
     .field input:focus,
     .field textarea:focus {
       border-color: #2697f3;
       background: #ffffff;
       box-shadow: 0 8px 20px rgba(38, 151, 243, 0.12);
-      transform: translateX(8px);
       outline: none;
     }
     .contact-form-home .field input::placeholder,
@@ -912,7 +896,7 @@ max-width: 1175px;
       background: linear-gradient(135deg, #1b3e6d, #2697f3);
       color: white;
       border: none;
-      border-radius: 15px;
+      border-radius: 5px;
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
