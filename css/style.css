@@ -845,7 +845,20 @@ max-width: 1175px;
     margin-bottom: 15px;
     font-weight: 600;
   }
-
+ 
+   #contact-form-home label{
+    text-transform: uppercase;
+  letter-spacing: .0625rem;
+  color: #666;
+  margin-top: 1.3rem;
+  margin-left: 1.25rem;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.1875em;
+  transition: all .1s ease-in-out;
+  display: block;
+  position: absolute;
+   }
   .floating-field {
     position: relative;
     margin-bottom: 28px;
