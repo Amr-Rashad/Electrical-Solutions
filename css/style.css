@@ -895,7 +895,6 @@ max-width: 1175px;
   .floating-field-textarea .label-inpt {
     top: 15%;
   }
-<<<<<<< HEAD
 
   .floating-field input:focus + label,
   .floating-field input:not(:placeholder-shown) + label,
@@ -907,7 +906,6 @@ max-width: 1175px;
     left: 12px !important;
     font-size: 12px !important;
     color: #666 ;
-=======
   .floating-field input:focus + .label-inpt,
   .floating-field input:not(:placeholder-shown) + .label-inpt,
   .floating-field textarea:focus + .label-inpt,
@@ -918,7 +916,6 @@ max-width: 1175px;
     left: 12px;
     font-size: 11px;
     color: #1b3e6d;
->>>>>>> a833fc0ad02f978af04d185d97bf834257c4f732
   }
 
   .floating-field textarea {
