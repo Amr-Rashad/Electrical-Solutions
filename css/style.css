@@ -4262,6 +4262,7 @@ padding-bottom:50px;
   border: none !important;
   cursor: pointer !important;
   text-align: center !important;
+  margin: 0 3px !important;
 }
 .slick-dots li.slick-active  {
   width: 40px !important;
