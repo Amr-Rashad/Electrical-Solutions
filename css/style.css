@@ -932,6 +932,12 @@ max-width: 1175px;
   #button-home:hover {
     background-color: var(--accent-color);
   }
+  .contact-home-section .detect-button-contact,
+  .contact-home-section .form-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   @media (max-width: 768px) {
     .contact-form-home h2 {
@@ -942,6 +948,14 @@ max-width: 1175px;
     .floating-field select {
       font-size: 14px;
     }
+    .contact-home-section .detect-button-contact,
+    .contact-home-section .form-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
   }
     /*end home contact form */
 
