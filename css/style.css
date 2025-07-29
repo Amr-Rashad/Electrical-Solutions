@@ -846,8 +846,8 @@ max-width: 1175px;
     font-weight: 600;
   }
  
-   #contact-form-home label{
-    text-transform: uppercase;
+#contact-form-home .label-input{
+  text-transform: uppercase;
   letter-spacing: .0625rem;
   color: #666;
   font-size: .875rem;
@@ -914,19 +914,20 @@ max-width: 1175px;
   }
 
 
-  #contact-home-section .form-check{
+  /* #contact-home-section .form-check{
   letter-spacing: 0;
   margin-left: .4375rem;
   font-size: .875rem;
   line-height: 1.714;
   color:#666;
-  }
+  } */
 
   #contact-home-section .form-check input{
     width: 18px;
     height: 16px;
     border: solid 1px var(--primary-color);
     outline: none;
+    cursor: pointer;
   }
   .contact-home-section .form-check input:focus,
   .contact-home-section .form-check input:active{
@@ -934,7 +935,12 @@ max-width: 1175px;
     box-shadow: none;
   }
   .contact-home-section .form-check label{
-    font-size: 14px;
+    letter-spacing: 0;
+    margin-left: .4375rem;
+    font-size: .875rem;
+    line-height: 1.714;
+    color:#666 ;
+    cursor: pointer;
   }
 
   .recaptcha-wrapper {
@@ -942,7 +948,7 @@ max-width: 1175px;
     margin: 0 auto;
   }
   
-  #contact-home-section .required span{
+ #required-text{
     color: #666;
     letter-spacing: 0;
     margin-bottom: .9375rem;
@@ -951,10 +957,10 @@ max-width: 1175px;
     line-height: 1.714;
   }
 
-  #button-home {
+  .contact-home-section .detect-button-contact button {
     background-color: var(--primary-color);
     color: white;
-    padding: 13px 60px;
+    padding: 12px 55px;
     border: none;
     border-radius: 4px;
     font-size: 14px;
@@ -987,8 +993,14 @@ max-width: 1175px;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    gap: 20px;
   }
+  .contact-home-section .detect-button-contact .btn-div{
+    width: 100%;
+  }
+      .contact-home-section .detect-button-contact #button-home{
+        width: 100% ;
+        margin-top: 20px;
+      }
   }
     /*end home contact form */
 

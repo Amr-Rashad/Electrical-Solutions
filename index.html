@@ -985,31 +985,31 @@
                 <option value="general">General inquiries</option>
                 <option value="career">I am interested in career opportunities</option>
               </select>
-              <label>WHAT BRINGS YOU HERE? *</label>
+              <label class="label-input" >WHAT BRINGS YOU HERE? *</label>
             </div>
           </div>
 
           <div class="col-12">
             <div class="floating-field">
               <input type="text" name="subject" required placeholder=" " />
-              <label>SUBJECT *</label>
+              <label class="label-input">SUBJECT *</label>
             </div>
           </div>
 
           <div class="col-12">
             <div class="floating-field floating-field-textarea">
               <textarea name="message" required placeholder=" "></textarea>
-              <label>MESSAGE *</label>
+              <label class="label-input">MESSAGE *</label>
             </div>
           </div>
 
         <div class="col-12">
             <div class="required mb-2">
-              <span>* Required</span>
+              <span id="required-text">* Required</span>
             </div>
-            <div class="form-check">
-              <input class="form-check-input me-3" type="checkbox" value="" id="checkDefault">
-              <label class="form-check-label" for="checkDefault">
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+              <label class="form-check-label " for="checkDefault">
                   I have read and understood Axis <a href="#" target="_blank">Privacy Notice</a>. For information about what personal data we collect, what the purpose is for collecting it and what rights you have related to your data, please see our Privacy Notice.
               </label>
             </div>
@@ -1022,7 +1022,7 @@
                   <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 </div>
               </div>
-              <div class=" text-center ">
+              <div class=" text-center btn-div ">
                 <button type="submit" id="button-home">SUBMIT</button>
               </div>
             </div>
