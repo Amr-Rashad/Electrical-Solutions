@@ -868,13 +868,11 @@
   </section>
 
   <!-- Contact Section -->
-<section class="contact-section ">
+<!-- <section class="contact-section ">
   <div class="container justify-content-center">
-    <!-- <div class=" ">
-      <div class=""> -->
+
         <div class="contact-form">
           <h2>Contact Us</h2>
-          <!-- <p class="text-center mb-5">Our video security experts can help you implement the right security system for your business.</p> -->
           <form id="contact-form">
             <div class="row">
               <div class="col-md-6">
@@ -918,25 +916,85 @@
             </div>
           </form>
         </div>
-      <!-- </div>
-    </div> -->
   </div>
-</section>
+</section> -->
 
 <!--Second Form-->
 
-<section class="contact-home-section ">
+  <section class="contact-home-section">
+  <div class="container">
+    <div class="contact-form-home">
+      <h2 class="section-title">Get in touch with us</h2>
+      <form id="contact-form-home">
+        <div class="row">
+          <div class="col-12">
+            <h4 >What can we help you with?</h4>
+            <div class="floating-field">
+              <select name="reason" required>
+                <option value=""  selected></option>
+                <option value="sales">I want to know more about ECDM products and solutions</option>
+                <option value="journalist">I am a journalist</option>
+                <option value="support">I want support</option>
+                <option value="general">General inquiries</option>
+                <option value="career">I am interested in career opportunities</option>
+              </select>
+              <label>WHAT BRINGS YOU HERE? *</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="floating-field">
+              <input type="text" name="subject" required placeholder=" " />
+              <label>SUBJECT *</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="floating-field floating-field-textarea">
+              <textarea name="message" required placeholder=" "></textarea>
+              <label>MESSAGE *</label>
+            </div>
+          </div>
+
+        <div class="col-12">
+            <div class="required mb-2">
+              <small>* Required</small>
+            </div>
+            <div class="form-check d-flex align-items-center justify-content-between">
+              <input class="form-check-input me-3" type="checkbox" value="" id="checkDefault">
+              <label class="form-check-label" for="checkDefault">
+                  I have read and understood Axis <a href="#" target="_blank">Privacy Notice</a>. For information about what personal data we collect, what the purpose is for collecting it and what rights you have related to your data, please see our Privacy Notice.
+              </label>
+            </div>
+          </div>
+          <div class="col-12 ">
+            <div class="d-flex justify-content-between align-items-center mt-4">
+
+              <div class=" " >
+                <div class="recaptcha-wrapper">
+                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                </div>
+              </div>
+              <div class=" text-center ">
+                <button type="submit" id="button-home">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="contact-home-section ">
   <div class="container justify-content-center">
-    <!-- <div class=" ">
-      <div class=""> -->
         <div class="contact-form-home">
           <h2>Get in touch with us</h2>
-          <!-- <p class="text-center mb-5">Our video security experts can help you implement the right security system for your business.</p> -->
           <form id="contact-form-home">
             <div class="row">
               <div class="col-md-12">
                 <h4> What can we help you with?</h4>
-                <div class="field">
+                <div class="field-home">
             <option value="" selected="selected"></option>
                 <option value="Contact our sales team">I want to know more about ECDM products and solutions</option>
                 <option value="Media inquiries">I am a journalist</option>
@@ -968,10 +1026,8 @@
             </div>
           </form>
         </div>
-      <!-- </div>
-    </div> -->
   </div>
-</section>
+</section> -->
 
 
 
@@ -1094,9 +1150,12 @@
 
   <!-- Footer -->
   <div id="footer"></div>
-
+  
   <!-- Scripts -->
+   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- detect box -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- Slick JS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
