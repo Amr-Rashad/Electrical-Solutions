@@ -2178,7 +2178,7 @@ max-width: 1175px;
 /* Clients Section */
 .clients-section,
 .consultants-section {
-  padding: 20px 0;
+  padding: 60px 0;
   background: #f8f9fa;
   z-index:9;
 }
@@ -2189,8 +2189,8 @@ max-width: 1175px;
 }
 
 .client-card {
-  border-radius: 10px;
-  padding-bottom: 30px;
+  /* border-radius: 10px; */
+  /* padding-bottom: 30px; */
   text-align: center;
   margin-bottom: 30px;
   transition: all 0.3s ease;
@@ -2206,6 +2206,7 @@ max-width: 1175px;
   border-radius: 50%;
   margin-bottom: 20px;
   object-fit: cover;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2217,11 +2218,11 @@ max-width: 1175px;
 @media(min-width:767px){
   .clients-title{margin-left:-15px !important;}
 }
-.client-card h3 {
+/* .client-card h3 {
   color: #333;
   font-size: 1.4rem;
   margin-bottom: 10px;
-}
+} */
 
 .client-card p {
   color: #666;
@@ -2282,7 +2283,7 @@ max-width: 1175px;
 
 /* Our Clients Slider */
 
-.slider-wrapper-clients {
+/* .slider-wrapper-clients {
   position: relative;
   max-width: 1180px;
   margin: 20px auto;
@@ -2296,10 +2297,12 @@ max-width: 1175px;
 .clients-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-}
+} */
 
 .clients-card {
-  flex: 0 0 25%;
+  /* flex: 0 0 25%; */
+  width: calc(25% - 10px);
+  margin: 0 5px;
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
@@ -2314,6 +2317,7 @@ max-width: 1175px;
   height: 200px;
   border-radius: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .clients-card p {
@@ -2321,7 +2325,7 @@ max-width: 1175px;
   color: #333;
   line-height: 1.4;
 }
-
+/* 
 .clients-btn {
   position: absolute;
   top: 50%;
@@ -2356,7 +2360,7 @@ max-width: 1175px;
   width: 40px;
   height: 15px;
   border-radius: 20px;
-}
+} */
 
 @media (max-width: 992px) {
   .clients-card { flex: 0 0 33.333%; }
@@ -4168,6 +4172,14 @@ padding-bottom:50px;
 }
 .custom-next {
   right: -40px !important;
+}
+@media(max-width : 576px){
+  .custom-prev {
+  left: 0 !important;
+}
+.custom-next {
+  right: 0 !important;
+}
 }
 .custom-prev img,
 .custom-next img {

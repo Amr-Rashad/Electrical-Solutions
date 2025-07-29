@@ -369,116 +369,116 @@ document.querySelectorAll('.project-card').forEach(card => {
 // customCreateDots();
 
 //Our clients slider
-const clientsTrack = document.getElementById('clientsTrack');
-const clientsPrevBtn = document.querySelector('.clients-btn.left');
-const clientsNextBtn = document.querySelector('.clients-btn.right');
-const clientsDots = document.getElementById('clientsDots');
+// const clientsTrack = document.getElementById('clientsTrack');
+// const clientsPrevBtn = document.querySelector('.clients-btn.left');
+// const clientsNextBtn = document.querySelector('.clients-btn.right');
+// const clientsDots = document.getElementById('clientsDots');
 
-let clientsCards = Array.from(clientsTrack.children);
-let clientsVisible = getClientsVisible();
-let clientsIndex = clientsVisible;
+// let clientsCards = Array.from(clientsTrack.children);
+// let clientsVisible = getClientsVisible();
+// let clientsIndex = clientsVisible;
 
-function getClientsVisible() {
-    const w = window.innerWidth;
-    if (w <= 768) return 1;
-    if (w <= 992) return 3;
-    return 4;
-}
+// function getClientsVisible() {
+//     const w = window.innerWidth;
+//     if (w <= 768) return 1;
+//     if (w <= 992) return 3;
+//     return 4;
+// }
 
-function cloneClientsSlides() {
-    const firstClones = clientsCards.slice(0, clientsVisible).map(el => el.cloneNode(true));
-    const lastClones = clientsCards.slice(-clientsVisible).map(el => el.cloneNode(true));
-    firstClones.forEach(el => clientsTrack.appendChild(el));
-    lastClones.reverse().forEach(el => clientsTrack.insertBefore(el, clientsTrack.firstChild));
-}
+// function cloneClientsSlides() {
+//     const firstClones = clientsCards.slice(0, clientsVisible).map(el => el.cloneNode(true));
+//     const lastClones = clientsCards.slice(-clientsVisible).map(el => el.cloneNode(true));
+//     firstClones.forEach(el => clientsTrack.appendChild(el));
+//     lastClones.reverse().forEach(el => clientsTrack.insertBefore(el, clientsTrack.firstChild));
+// }
 
-function updateClientsPosition(animate = true) {
-    const width = clientsTrack.clientWidth / clientsVisible;
-    clientsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-    clientsTrack.style.transform = `translateX(-${clientsIndex * width}px)`;
-}
+// function updateClientsPosition(animate = true) {
+//     const width = clientsTrack.clientWidth / clientsVisible;
+//     clientsTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//     clientsTrack.style.transform = `translateX(-${clientsIndex * width}px)`;
+// }
 
-function resetClientsLoop() {
-    clientsTrack.addEventListener('transitionend', () => {
-        if (clientsIndex >= clientsCards.length + clientsVisible) {
-            clientsIndex = clientsVisible;
-            updateClientsPosition(false);
-        } else if (clientsIndex < clientsVisible) {
-            clientsIndex = clientsCards.length;
-            updateClientsPosition(false);
-        }
-    }, { once: true });
-}
+// function resetClientsLoop() {
+//     clientsTrack.addEventListener('transitionend', () => {
+//         if (clientsIndex >= clientsCards.length + clientsVisible) {
+//             clientsIndex = clientsVisible;
+//             updateClientsPosition(false);
+//         } else if (clientsIndex < clientsVisible) {
+//             clientsIndex = clientsCards.length;
+//             updateClientsPosition(false);
+//         }
+//     }, { once: true });
+// }
 
-function updateClientsDots() {
-    const allDots = clientsDots.querySelectorAll('.clients-dot');
-    allDots.forEach(dot => dot.classList.remove('active'));
-    let visibleIndex = (clientsIndex - clientsVisible) % clientsCards.length;
-    if (visibleIndex < 0) visibleIndex += clientsCards.length;
-    if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
-}
+// function updateClientsDots() {
+//     const allDots = clientsDots.querySelectorAll('.clients-dot');
+//     allDots.forEach(dot => dot.classList.remove('active'));
+//     let visibleIndex = (clientsIndex - clientsVisible) % clientsCards.length;
+//     if (visibleIndex < 0) visibleIndex += clientsCards.length;
+//     if (allDots[visibleIndex]) allDots[visibleIndex].classList.add('active');
+// }
 
-function createClientsDots() {
-    clientsDots.innerHTML = '';
-    for (let i = 0; i < clientsCards.length; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('clients-dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            clientsIndex = i + clientsVisible;
-            updateClientsPosition();
-            updateClientsDots();
-        });
-        clientsDots.appendChild(dot);
-    }
-}
+// function createClientsDots() {
+//     clientsDots.innerHTML = '';
+//     for (let i = 0; i < clientsCards.length; i++) {
+//         const dot = document.createElement('span');
+//         dot.classList.add('clients-dot');
+//         if (i === 0) dot.classList.add('active');
+//         dot.addEventListener('click', () => {
+//             clientsIndex = i + clientsVisible;
+//             updateClientsPosition();
+//             updateClientsDots();
+//         });
+//         clientsDots.appendChild(dot);
+//     }
+// }
 
-clientsPrevBtn.addEventListener('click', () => {
-    clientsIndex--;
-    updateClientsPosition();
-    resetClientsLoop();
-    updateClientsDots();
-});
+// clientsPrevBtn.addEventListener('click', () => {
+//     clientsIndex--;
+//     updateClientsPosition();
+//     resetClientsLoop();
+//     updateClientsDots();
+// });
 
-clientsNextBtn.addEventListener('click', () => {
-    clientsIndex++;
-    updateClientsPosition();
-    resetClientsLoop();
-    updateClientsDots();
-});
+// clientsNextBtn.addEventListener('click', () => {
+//     clientsIndex++;
+//     updateClientsPosition();
+//     resetClientsLoop();
+//     updateClientsDots();
+// });
 
-window.addEventListener('resize', () => location.reload());
+// window.addEventListener('resize', () => location.reload());
 
-// Touch Support
-let startXClients = 0;
-let isDraggingClients = false;
-clientsTrack.addEventListener('touchstart', (e) => {
-    startXClients = e.touches[0].clientX;
-    isDraggingClients = true;
-}, { passive: true });
+// // Touch Support
+// let startXClients = 0;
+// let isDraggingClients = false;
+// clientsTrack.addEventListener('touchstart', (e) => {
+//     startXClients = e.touches[0].clientX;
+//     isDraggingClients = true;
+// }, { passive: true });
 
-clientsTrack.addEventListener('touchend', (e) => {
-    isDraggingClients = false;
-    const endXClients = e.changedTouches[0].clientX;
-    const diffXClients = endXClients - startXClients;
-    const threshold = 50;
-    if (diffXClients > threshold) {
-        clientsIndex--;
-        updateClientsPosition();
-        resetClientsLoop();
-        updateClientsDots();
-    } else if (diffXClients < -threshold) {
-        clientsIndex++;
-        updateClientsPosition();
-        resetClientsLoop();
-        updateClientsDots();
-    }
-});
+// clientsTrack.addEventListener('touchend', (e) => {
+//     isDraggingClients = false;
+//     const endXClients = e.changedTouches[0].clientX;
+//     const diffXClients = endXClients - startXClients;
+//     const threshold = 50;
+//     if (diffXClients > threshold) {
+//         clientsIndex--;
+//         updateClientsPosition();
+//         resetClientsLoop();
+//         updateClientsDots();
+//     } else if (diffXClients < -threshold) {
+//         clientsIndex++;
+//         updateClientsPosition();
+//         resetClientsLoop();
+//         updateClientsDots();
+//     }
+// });
 
-// Init
-cloneClientsSlides();
-updateClientsPosition(false);
-createClientsDots();
+// // Init
+// cloneClientsSlides();
+// updateClientsPosition(false);
+// createClientsDots();
 
 // Start Our Projects Slider
 
@@ -664,5 +664,34 @@ createClientsDots();
   });
 
   // end projects slider
+
+  // start client slider
+    $(document).ready(function(){
+    $('.client-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="custom-prev"><img src="images/left-arrow.png" alt="Previous"></button>',
+      nextArrow: '<button class="custom-next"><img src="images/r-arrow.png" alt="Next"></button>',
+      dots: true,
+      Infinity: true ,
+      responsive: [
+        {
+          breakpoint: 992, 
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768, 
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+
+  // end client slider
 
 
