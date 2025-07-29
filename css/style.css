@@ -878,7 +878,10 @@ max-width: 1175px;
    .floating-field input:focus ,
    .floating-field select:focus ,
    .floating-field textarea:focus{
+
     outline: none !important;
+
+
     border: solid 2px var(--primary-color) !important;
   }
 
@@ -896,6 +899,17 @@ max-width: 1175px;
   .floating-field-textarea .label-inpt {
     top: 15%;
   }
+
+  .floating-field input:focus + label,
+  .floating-field input:not(:placeholder-shown) + label,
+  .floating-field textarea:focus + label,
+  .floating-field textarea:not(:placeholder-shown) + label,
+  .floating-field select:focus + label,
+  .floating-field select:valid + label {
+    top: 10px !important;
+    left: 12px !important;
+    font-size: 12px !important;
+    color: #666 ;
   .floating-field input:focus + .label-inpt,
   .floating-field input:not(:placeholder-shown) + .label-inpt,
   .floating-field textarea:focus + .label-inpt,
