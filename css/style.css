@@ -843,6 +843,7 @@ max-width: 1175px;
     font-size: 1.375rem;
     line-height: 1.45;
     margin-bottom: 15px;
+    font-weight: 600;
   }
 
   .floating-field {
