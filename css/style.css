@@ -846,7 +846,7 @@ max-width: 1175px;
     font-weight: 600;
   }
  
-#contact-form-home .label-input{
+#contact-form-home .label-inpt{
   text-transform: uppercase;
   letter-spacing: .0625rem;
   color: #666;
@@ -881,7 +881,7 @@ max-width: 1175px;
     border: solid 2px var(--primary-color);
   }
 
-  .floating-field label {
+  .floating-field .label-inpt {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -892,15 +892,15 @@ max-width: 1175px;
     transition: all 0.2s ease;
     padding: 0 4px;
   }
-  .floating-field-textarea label {
+  .floating-field-textarea .label-inpt {
     top: 15%;
   }
-  .floating-field input:focus + label,
-  .floating-field input:not(:placeholder-shown) + label,
-  .floating-field textarea:focus + label,
-  .floating-field textarea:not(:placeholder-shown) + label,
-  .floating-field select:focus + label,
-  .floating-field select:valid + label {
+  .floating-field input:focus + .label-inpt,
+  .floating-field input:not(:placeholder-shown) + .label-inpt,
+  .floating-field textarea:focus + .label-inpt,
+  .floating-field textarea:not(:placeholder-shown) + .label-inpt,
+  .floating-field select:focus + .label-inpt,
+  .floating-field select:valid + .label-inpt {
     top: 10px;
     left: 12px;
     font-size: 11px;
@@ -4249,11 +4249,10 @@ padding-bottom:50px;
     justify-content: center !important; 
     align-items: center !important;
     margin-top: 20px !important;
-    /* gap: 3px !important;  */
     text-align: center !important;
 }
 
-.slick-dots li button {
+.slick-dots li  {
   width: 12px !important;
   height: 12px !important;
   border-radius: 50% !important;
@@ -4262,9 +4261,9 @@ padding-bottom:50px;
   cursor: pointer !important;
   text-align: center !important;
 }
-.slick-dots li.slick-active button {
-  width: 25px !important;
-  height: 12px !important;
+.slick-dots li.slick-active  {
+  width: 40px !important;
+  height: 15px !important;
   border-radius: 20px !important;
   background-color: #2196f3 !important;
   text-align: center!important;
