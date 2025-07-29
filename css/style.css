@@ -4569,7 +4569,7 @@ padding-bottom:50px;
 }
 } */
 
- .project-card {
+ .project-card-slider {
   width: calc(33.333% - 20px );
   box-sizing: border-box;
   margin: 0 10px;
