@@ -942,7 +942,7 @@ max-width: 1175px;
     margin: 0 auto;
   }
   
-  #contact-home-section .required small{
+  #contact-home-section .required span{
     color: #666;
     letter-spacing: 0;
     margin-bottom: .9375rem;
