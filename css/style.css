@@ -895,7 +895,6 @@ max-width: 1175px;
   .floating-field-textarea label {
     top: 15%;
   }
-
   .floating-field input:focus + label,
   .floating-field input:not(:placeholder-shown) + label,
   .floating-field textarea:focus + label,
@@ -904,7 +903,7 @@ max-width: 1175px;
   .floating-field select:valid + label {
     top: 10px;
     left: 12px;
-    font-size: 12px;
+    font-size: 11px;
     color: #1b3e6d;
   }
 
@@ -912,15 +911,6 @@ max-width: 1175px;
     resize: none;
     height: 200px;
   }
-
-
-  /* #contact-home-section .form-check{
-  letter-spacing: 0;
-  margin-left: .4375rem;
-  font-size: .875rem;
-  line-height: 1.714;
-  color:#666;
-  } */
 
   #contact-home-section .form-check input{
     width: 18px;
@@ -952,7 +942,7 @@ max-width: 1175px;
     color: #666;
     letter-spacing: 0;
     margin-bottom: .9375rem;
-    font-size: .875rem;
+    font-size: 15px;
     font-style: italic;
     line-height: 1.714;
   }
@@ -971,12 +961,26 @@ max-width: 1175px;
   #button-home:hover {
     background-color: var(--accent-color);
   }
-  .contact-home-section .detect-button-contact,
-  .contact-home-section .form-check{
+  .contact-home-section .detect-button-contact
+  {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .contact-home-section .form-check{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+    .contact-home-section .form-check label{
+      width: 75%;
+    }
+    @media(max-width : 991px){
+      .contact-home-section .form-check label{
+        width: 100%;
+      }
+
+    }
 
   @media (max-width: 768px) {
     .contact-form-home h2 {
@@ -987,8 +991,7 @@ max-width: 1175px;
     .floating-field select {
       font-size: 14px;
     }
-    .contact-home-section .detect-button-contact,
-    .contact-home-section .form-check{
+    .contact-home-section .detect-button-contact{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
