@@ -915,7 +915,7 @@ max-width: 1175px;
 
 
   #contact-home-section .form-check{
-    letter-spacing: 0;
+  letter-spacing: 0;
   margin-left: .4375rem;
   font-size: .875rem;
   line-height: 1.714;
@@ -940,6 +940,15 @@ max-width: 1175px;
   .recaptcha-wrapper {
     max-width: 300px;
     margin: 0 auto;
+  }
+  
+  #contact-home-section .required{
+    color: #666;
+    letter-spacing: 0;
+    margin-bottom: .9375rem;
+    font-size: .875rem;
+    font-style: italic;
+    line-height: 1.714;
   }
 
   #button-home {
