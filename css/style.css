@@ -906,10 +906,7 @@ max-width: 1175px;
     top: 10px !important;
     left: 12px !important;
     font-size: 12px !important;
-    color: #666 ;
-    top: 10px !important;
-    left: 12px !important;
-    font-size: 11px !important;
+    color: #666 !important;
   }
 
   .floating-field textarea {
@@ -1368,9 +1365,9 @@ max-width: 1175px;
   padding-bottom: 8px;
 }
 
-.contact-item .action {
-  /* margin-left: auto; */
-}
+/* .contact-item .action {
+
+} */
 
 .contact-btn {
   background-color: #1b3e6d;
@@ -4119,11 +4116,11 @@ padding-bottom:50px;
 }
 
 /* Solution Slider */
-.solutions-wrapper {
-  /* position: relative; */
-  /* max-width: 1151px; */
-  /* margin: 60px auto; */
-}
+/* .solutions-wrapper {
+ position: relative; 
+ max-width: 1151px; 
+ margin: 60px auto; 
+} */
 
 /* .solutions-container {
   overflow: hidden;
