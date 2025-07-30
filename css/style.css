@@ -53,6 +53,8 @@ b{
   width:90%;
 }
 
+.pl-0{padding-left: 0px;}
+
 .main-color{
   color: var(--primary-color);
 }
