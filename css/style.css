@@ -18,6 +18,7 @@
   --accent-color: #2697f3;
   --white: #ffffff;
   --dark: #193e6d;
+  --hover: #00a8e1;
 }
 
 
@@ -174,7 +175,7 @@ footer.footer {
   color:#00a8e1 !important
 }
 .Newsletter-btn {
-  background-color: #1b3e6d;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px 18px;
   border-radius: 8px;
@@ -185,7 +186,7 @@ footer.footer {
 }
 
 .Newsletter-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--hover);
 }
 
 
@@ -961,7 +962,7 @@ max-width: 1175px;
   }
 
   #button-home:hover {
-    background-color: var(--accent-color);
+    background-color: var(--hover);
   }
   .contact-home-section .detect-button-contact
   {
@@ -1800,6 +1801,10 @@ max-width: 1175px;
   background-color: #00a8e1;
   color: var(--white);
   transform: translateY(-2px);
+}
+
+.btn-view:active{
+  color: white;
 }
 
 @media (max-width: 768px) {
