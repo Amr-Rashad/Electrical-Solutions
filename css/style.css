@@ -110,7 +110,7 @@ b{
 
 /* Footer Styles */
 footer.footer {
-  background-color: #313131 !important;
+  background: linear-gradient(to bottom, #4d4d4d, #3e3e3e, #343434, #313131) !important;
   color: #fff !important;
   padding: 60px 0 0 0;
 }
