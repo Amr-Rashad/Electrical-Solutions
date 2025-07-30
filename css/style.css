@@ -944,9 +944,8 @@ max-width: 1175px;
   }
   
 
-  .custom-select {
+.custom-select {
   position: relative;
-  width: 200px;
 }
 
 .custom-select select {
