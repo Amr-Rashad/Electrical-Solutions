@@ -943,6 +943,36 @@ max-width: 1175px;
     margin: 0 auto;
   }
   
+
+  .custom-select {
+  position: relative;
+  width: 200px;
+}
+
+.custom-select select {
+  appearance: none;         /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+}
+
+/* The custom arrow for select */
+.custom-select::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 14px;
+  color: #555;
+}
+
  #required-text{
     color: #666;
     letter-spacing: 0;
