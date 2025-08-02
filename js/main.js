@@ -694,4 +694,25 @@ document.querySelectorAll('.project-card').forEach(card => {
 
   // end client slider
 
+  // start feedback toggle
+    const toggle = document.getElementById("feedbackToggle");
+    const box = document.getElementById("feedbackBox");
+    const wrapper = document.getElementById("toggleWrapper");
+    const stars = document.querySelectorAll(".stars i");
+
+    toggle.addEventListener("click" , ()=>{
+        wrapper.classList.toggle("open") ;
+    }) ;
+
+    stars.forEach(star => {
+      star.addEventListener("click", () => {
+        stars.forEach(s => s.classList.remove("selected"));
+        for (let i of stars) {
+          i.classList.add("selected");
+          if (i === star) break;
+        }
+      });
+    });
+  // end feedback toggle
+
 
