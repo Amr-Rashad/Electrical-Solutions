@@ -115,6 +115,7 @@ footer.footer {
   color: #fff !important;
   padding: 60px 0 0 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* .footer::after {
@@ -2707,7 +2708,7 @@ max-width: 1175px;
 
 
 .about-section {
-  padding: 100px 0;
+  padding: 20px 0;
   background: #f8f9fa;
 }
 
