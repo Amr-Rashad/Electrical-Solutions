@@ -3565,6 +3565,7 @@ padding-bottom:50px;
 
 .product-detail .product-cta .btn:hover {
   transform: translateY(-2px);
+  background-color: var(--hover);
 }
 
 .product-detail .product-cta .btn-outline-primary {
