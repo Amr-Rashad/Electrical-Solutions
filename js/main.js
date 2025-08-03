@@ -694,11 +694,21 @@ document.querySelectorAll('.project-card').forEach(card => {
 
   // end client slider
 
-  // start feedback toggle
-    const toggle = document.getElementById("feedbackToggle");
-    const box = document.getElementById("feedbackBox");
+
+
+// start feedback toggle
     const wrapper = document.getElementById("toggleWrapper");
+    const toggle = document.getElementById("feedbackToggle");
+    const feedback_box = document.getElementById("feedbackBox");
+    const message_box = document.querySelector(".massage-box");
+    const close_box = document.querySelector(".feedback-toggle-wrapper .close-box");
     const stars = document.querySelectorAll(".stars i");
+    const feedback_Alert =document.querySelector(".feedback-box small") ; 
+    const textarea = document.querySelector(".massage-box .message-textarea") ;
+    const messageBox_Alert =document.querySelector(".massage-box small") ; 
+    const nextBtn1 = document.querySelector(".btn-next-1") ;
+    const nextBtn2 = document.querySelector(".btn-next-2") ;
+    const closeBtn = document.querySelector(".btn-next-3") ;
 
     toggle.addEventListener("click" , ()=>{
         wrapper.classList.toggle("open") ;
@@ -713,6 +723,57 @@ document.querySelectorAll('.project-card').forEach(card => {
         }
       });
     });
+
+    stars.forEach((i)=>{
+      i.addEventListener("click" , ()=>{
+        nextBtn1.classList.add("nextBtnBg") ;
+        feedback_Alert.classList.add("d-none") ;
+      })
+    }) ;
+
+    nextBtn1.addEventListener("click" , (e)=>{
+      const selected = [...stars].some((star)=>{
+        return star.classList.contains("selected") ;
+      }) ;
+      if(!selected){
+        e.preventDefault() ;
+        feedback_Alert.classList.remove("d-none") ;
+      }else{
+        feedback_box.classList.add("d-none") ;
+        message_box.classList.remove("d-none") ;
+      }
+    }) ;
+
+    textarea.addEventListener("input" , ()=>{
+      if(textarea.value.trim().length > 0){
+        nextBtn2.classList.add("nextBtnBg") ;
+        messageBox_Alert.classList.add("d-none") ;
+      }else{
+        nextBtn2.classList.remove("nextBtnBg") ;
+        messageBox_Alert.classList.remove("d-none") ;
+        
+      }
+    }) ;
+
+    nextBtn2.addEventListener("click", (e) => {
+      if (textarea.value.trim().length === 0) {
+        e.preventDefault(); 
+        textarea.focus();
+        messageBox_Alert.classList.remove("d-none") ;
+        return;
+      }else{
+        messageBox_Alert.classList.add("d-none") ;
+        message_box.classList.add("d-none");
+        close_box.classList.remove("d-none");
+        toggle.classList.add("d-none");
+      }
+    });
+
+    closeBtn.addEventListener("click" , ()=>{
+      wrapper.classList.add("d-none") ;
+    }) ;
+
+
   // end feedback toggle
 
 

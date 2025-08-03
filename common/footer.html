@@ -1,4 +1,51 @@
-<footer class="footer">
+<footer class="footer position-relative">
+
+
+
+  <div class="feedback-toggle-wrapper rounded-start-3" id="toggleWrapper">
+
+    <div class="feedback-toggle rounded-start-3 py-4 d-flex justify-content-between align-items-center" id="feedbackToggle">
+       <i class="fa-solid fa-chevron-down mt-3"></i>
+         Feedback
+    </div>
+
+    <!-- feedback box -->
+    <div class="feedback-box" id="feedbackBox">
+      <h5>Rate the new site to help us improve!</h5>
+      <div class="stars my-4" id="stars">
+        <i class="fa fa-star feedback-star" data-value="1"></i>
+        <i class="fa fa-star feedback-star" data-value="2"></i>
+        <i class="fa fa-star feedback-star" data-value="3"></i>
+        <i class="fa fa-star feedback-star" data-value="4"></i>
+        <i class="fa fa-star feedback-star" data-value="5"></i>
+      </div>
+      <div class="labels">
+        <span>Hate</span>
+        <span>Love</span>
+      </div>
+      <div class=" btn-box">        
+        <button class="btn btn-next-1 nextBtn" id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <!-- massage box -->
+    <div class="massage-box d-none">
+      <h5 class=""> Tell us about your experience </h5>
+      <textarea name="message" required placeholder=" "></textarea>
+      <div class=" btn-box">        
+        <button class="btn btn-next-2 nextBtn" id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <!-- close box -->
+     <div class="close-box d-none py-3">
+      <h5 class="text-center mb-5">Thank you for sharing your feedback with us !</h5>
+      <button class="w-100 btn" >Close</button>
+     </div>
+  </div>
+
+
+
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-12">
@@ -162,5 +209,6 @@
       </div>
 
     </div>
+  </div>
   </div>
 </footer>
