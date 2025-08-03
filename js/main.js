@@ -710,10 +710,12 @@ document.querySelectorAll('.project-card').forEach(card => {
     const nextBtn2 = document.querySelector(".btn-next-2") ;
     const closeBtn = document.querySelector(".btn-next-3") ;
 
+    // open ande close toggle feedback 
     toggle.addEventListener("click" , ()=>{
         wrapper.classList.toggle("open") ;
     }) ;
-
+    
+    // rate by stars 
     stars.forEach(star => {
       star.addEventListener("click", () => {
         stars.forEach(s => s.classList.remove("selected"));
@@ -724,6 +726,7 @@ document.querySelectorAll('.project-card').forEach(card => {
       });
     });
 
+    // change feedback btn color
     stars.forEach((i)=>{
       i.addEventListener("click" , ()=>{
         nextBtn1.classList.add("nextBtnBg") ;
