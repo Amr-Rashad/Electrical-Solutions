@@ -3563,6 +3563,14 @@ padding-bottom:50px;
   transition: all 0.3s ease;
 }
 
+.product-detail .product-cta .btn-primary{
+  background-color: var(--primary-color);
+}
+
+.product-detail .product-cta .btn-primary:hover{
+  background-color: var(--hover);
+}
+
 .product-detail .product-cta .btn:hover {
   transform: translateY(-2px);
   background-color: var(--hover);
@@ -3574,7 +3582,7 @@ padding-bottom:50px;
 }
 
 .product-detail .product-cta .btn-outline-primary:hover {
-  background-color: var(--primary-color);
+  background-color: var(--hover);
   color: var(--white);
 }
 @media(min-width : 1200px){
