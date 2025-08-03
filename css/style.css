@@ -3569,6 +3569,7 @@ padding-bottom:50px;
 
 .product-detail .product-cta .btn-primary:hover{
   background-color: var(--hover);
+  border: none;
 }
 
 .product-detail .product-cta .btn:hover {
@@ -3584,6 +3585,7 @@ padding-bottom:50px;
 .product-detail .product-cta .btn-outline-primary:hover {
   background-color: var(--hover);
   color: var(--white);
+  border: none;
 }
 @media(min-width : 1200px){
   .product-detail .list-content ,
