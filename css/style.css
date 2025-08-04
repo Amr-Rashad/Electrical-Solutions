@@ -4660,6 +4660,7 @@ padding-bottom:50px;
     }
     .new-header .new-header-arrow-icon {
       font-size: 11px;
+      color: #666;
     }
     .new-header-content a small{
       transition:0.3s;
