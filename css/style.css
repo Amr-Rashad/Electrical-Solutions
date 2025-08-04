@@ -1948,7 +1948,7 @@ max-width: 1175px;
 }
 
 .gallery-content h3 {
-  color: #333;
+  color: var(--primary-color);
   font-size: 1.4rem;
   font-weight: 600;
   text-align:center;
