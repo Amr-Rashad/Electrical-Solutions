@@ -4649,7 +4649,7 @@ padding-bottom:50px;
     }
 
     .new-header .new-header-arrow-home a:hover{
-      color: var(--primary-color);
+      color: var(--primary-color) ;
     }
 
     .new-header .new-header-arrow-home:hover{
@@ -4661,8 +4661,16 @@ padding-bottom:50px;
     .new-header .new-header-arrow-icon {
       font-size: 11px;
     }
+    .new-header-content a small{
+      transition:0.3s;
+      color: #666 ;
+    }
+    .new-header-content a small:hover{
+      color: var(--primary-color) !important;
+    }
     .current-page-color{
       font-weight: bold;
+      color :var(--dark)
     }
 
 
