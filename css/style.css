@@ -1923,6 +1923,10 @@ max-width: 1175px;
   background: #f8f9fa;
 }
 
+.product-gallery .section-title{
+  text-align: center;
+}
+
 .gallery-item {
   background: #fff;
   border-radius: 10px;
