@@ -4839,6 +4839,52 @@ padding-bottom:50px;
    }
 
 
+   @media (max-width: 768px) {
+  .feedback-toggle-wrapper {
+    width: 90vw;
+    right: -91vw; 
+  }
+
+  .feedback-toggle-wrapper.open {
+    right: 0;
+  }
+
+  .feedback-toggle {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .feedback-box h5,
+  .massage-box h5,
+  .close-box h5 {
+    font-size: 14px;
+  }
+
+  .stars .feedback-star {
+    font-size: 24px;
+  }
+
+  .feedback-toggle-wrapper .nextBtn {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+
+  .massage-box textarea {
+    font-size: 14px;
+    height: 80px;
+  }
+
+  .feedback-toggle-wrapper .close-box button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .feedback-toggle-wrapper small.alert {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
    
 
 /* end feedback toggle */
