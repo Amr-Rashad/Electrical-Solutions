@@ -4647,14 +4647,22 @@ padding-bottom:50px;
     .new-header .new-header-arrow-home , small{
       font-size: 13px;
     }
+
+    .new-header .new-header-arrow-home a:hover{
+      color: var(--primary-color);
+    }
+
+    .new-header .new-header-arrow-home:hover{
+      color: var(--hover);
+    }
     .new-header-arrow-home{
-      color: var(--accent-color);
+      color: var(--primary-color);
     }
     .new-header .new-header-arrow-icon {
       font-size: 11px;
     }
     .current-page-color{
-      color: #a5a5a5;
+      font-weight: bold;
     }
 
 
