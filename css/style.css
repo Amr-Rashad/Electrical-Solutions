@@ -55,6 +55,8 @@ b{
 
 .pl-0{padding-left: 0px;}
 
+.rotate-180{transform: rotate(180deg);}
+
 .main-color{
   color: var(--primary-color);
 }
