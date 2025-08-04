@@ -1798,6 +1798,13 @@ max-width: 1175px;
   /* margin: 0 10px; */
 }
 
+.product-card h3{
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  
+}
+
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -1862,7 +1869,7 @@ max-width: 1175px;
 }
 
 .btn-view:active{
-  color: white;
+  color: white !important;
 }
 
 @media (max-width: 768px) {
