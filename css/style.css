@@ -3629,6 +3629,7 @@ padding-bottom:50px;
 .product-detail .product-cta .btn-outline-primary {
   border-color: var(--primary-color);
   color: var(--primary-color);
+  padding: 10px 21px;
 }
 
 .product-detail .product-cta .btn-outline-primary:hover {
