@@ -4673,7 +4673,7 @@ padding-bottom:50px;
     } */
 
 
-    .new-header{
+    .new-header, #knx-page-bg{
       background-color: #fff;
     }
     .new-header-content{
