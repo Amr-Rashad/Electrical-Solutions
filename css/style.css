@@ -2864,7 +2864,9 @@ max-width: 1175px;
 .shop-categories {
   padding: 80px 0;
 }
-
+#products-shop{
+  background: white !important;
+}
 .categories-sidebar {
   background: var(--white);
   padding: 30px;
