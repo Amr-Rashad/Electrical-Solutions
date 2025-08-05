@@ -1993,6 +1993,18 @@ max-width: 1175px;
   }
 }
 
+.product-gallery .BMS-row{
+  display: flex;
+  justify-content: center;
+}
+@media(max-width : 991px){
+  .product-gallery .BMS-row{
+    display: flex;
+    justify-content: start;
+  }
+
+}
+
 
 
 
