@@ -3592,18 +3592,6 @@ padding-bottom:50px;
   justify-content: start;
   align-items: center;
 }
-@media(max-width : 402px){
-  .product-detail .product-cta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
-  .product-detail .product-cta .btn-primary {
-    margin-bottom: 15px;
-  }
-  
-}
 
 .product-detail .product-cta .btn {
   margin-right: 5px;
@@ -3660,6 +3648,18 @@ padding-bottom:50px;
   padding-bottom: 25px;
 
 }
+}
+@media(max-width : 402px){
+  .product-detail .product-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .product-detail .product-cta .btn-primary {
+    margin-bottom: 15px;
+  }
+  
 }
 /* Vision and Mission Sections */
 .vision-section,
@@ -4707,6 +4707,30 @@ padding-bottom:50px;
       font-weight: bold;
       color :var(--dark)
     }
+
+@media (max-width: 576px) {
+  .new-header-content {
+    flex-wrap: wrap;
+    row-gap: 8px; 
+  }
+
+  .new-header-content > *:nth-child(7),
+  .new-header-content > *:nth-child(8),
+  .new-header-content > *:nth-child(9),
+  .new-header-content > *:nth-child(10),
+  .new-header-content > *:nth-child(11),
+  .new-header-content > *:nth-child(12),
+  .new-header-content > *:nth-child(13) {
+    /* flex-basis: auto; */
+    display: inline-flex;
+  }
+
+  .new-header-content > *:nth-child(7) {
+    /* flex-basis: 100%; */
+  }
+}
+
+
 
 
 
