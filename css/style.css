@@ -4671,8 +4671,9 @@ padding-bottom:50px;
         
       }
     } */
-    .SHA-details-page p{
-      pa
+    strong{
+      color: #666;
+      font-size: 17px;
     }
 
     .new-header, #knx-page-bg, .product-detail{
