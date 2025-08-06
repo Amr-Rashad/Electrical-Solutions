@@ -1,14 +1,10 @@
 <footer class="footer position-relative">
 
-
-
   <div class="feedback-toggle-wrapper rounded-start-3" id="toggleWrapper">
-
     <div class="feedback-toggle rounded-start-3 py-4 d-flex justify-content-between align-items-center" id="feedbackToggle">
-       <i class="fa-solid fa-chevron-down mt-3"></i>
+       <small><i class="fa-solid fa-chevron-down mt-3"></i></small>
          Feedback
     </div>
-
     <!-- feedback box -->
     <div class="feedback-box" id="feedbackBox">
       <h5>Rate the new site to help us improve!</h5>
@@ -23,6 +19,9 @@
         <span>Hate</span>
         <span>Love</span>
       </div>
+      <small class=" d-block alert alert-danger py-1 px-2 my-3 w-100 d-none ">
+        You should rate by stars
+      </small>
       <div class=" btn-box">        
         <button class="btn btn-next-1 nextBtn" id="nextBtn">Next</button>
       </div>
@@ -31,7 +30,10 @@
     <!-- massage box -->
     <div class="massage-box d-none">
       <h5 class=""> Tell us about your experience </h5>
-      <textarea name="message" required placeholder=" "></textarea>
+      <textarea class="message-textarea" name="message" required placeholder=" "></textarea>
+      <small class=" d-block alert alert-danger py-1 px-2 my-3 w-100 d-none ">
+        You should leave message
+      </small>
       <div class=" btn-box">        
         <button class="btn btn-next-2 nextBtn" id="nextBtn">Next</button>
       </div>
@@ -40,7 +42,7 @@
     <!-- close box -->
      <div class="close-box d-none py-3">
       <h5 class="text-center mb-5">Thank you for sharing your feedback with us !</h5>
-      <button class="w-100 btn" >Close</button>
+      <button class="w-100 btn-next-3 btn" >Close</button>
      </div>
   </div>
 
