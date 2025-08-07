@@ -4307,6 +4307,7 @@ padding-bottom:50px;
   position: relative;
   height: 255px !important;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 @media(max-width:767px){
