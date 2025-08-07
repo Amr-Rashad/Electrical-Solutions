@@ -2037,6 +2037,7 @@ max-width: 1175px;
     font-size: 32px !important;
     font-weight: 400 !important;
     padding-left: 10px;
+    padding-bottom: 15px;
   }
 
   .feature-box {
@@ -4300,6 +4301,12 @@ padding-bottom:50px;
   position: relative;
   height: 255px !important;
   overflow: hidden;
+}
+
+@media(max-width:767px){
+  .solutions-card{
+    height: 150px !important;
+  }
 }
 
 .solutions-card img {
