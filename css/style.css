@@ -2659,6 +2659,9 @@ max-width: 1175px;
   .about-section .about-content-contain .about-content{
     width: 100%;
   }
+  .about-content p{
+    text-align: left !important;
+  }
 
 }
 
