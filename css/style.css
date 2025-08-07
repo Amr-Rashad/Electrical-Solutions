@@ -2046,6 +2046,10 @@ max-width: 1175px;
     padding-bottom: 15px !important;
   }
 
+  .contact-form-home .section-title{
+    padding-left: 0px !important;
+  }
+
   .feature-box {
     margin-bottom: 30px;
   }
