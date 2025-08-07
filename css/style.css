@@ -391,7 +391,7 @@ footer.footer {
 
   }
    .about-content {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 }
 .about-content b{
@@ -2035,6 +2035,8 @@ max-width: 1175px;
 
   .section-title {
     font-size: 32px !important;
+    font-weight: 400 !important;
+    padding-left: 10px;
   }
 
   .feature-box {
