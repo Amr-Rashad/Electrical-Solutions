@@ -2764,11 +2764,7 @@ max-width: 1175px;
 
 .values-section {
   padding: 80px 0;
-  background: linear-gradient(
-    to right,
-    rgba(30, 136, 229, 0.05),
-    rgba(100, 181, 246, 0.1)
-  );
+  background: #F8F9FA;
 }
 
 .value-card {
