@@ -416,6 +416,12 @@ footer.footer {
 margin-bottom:100px;
 }
 
+@media (max-width:767px){
+  .hero-section{
+    margin-bottom:35px !important;
+  }
+}
+
 .hero-slide {
   position: relative;
   height: 100vh;
@@ -2037,7 +2043,7 @@ max-width: 1175px;
     font-size: 32px !important;
     font-weight: 400 !important;
     padding-left: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
   }
 
   .feature-box {
