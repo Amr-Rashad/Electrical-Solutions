@@ -656,7 +656,7 @@ document.querySelectorAll('.project-card').forEach(card => {
         {
           breakpoint: 768, 
           settings: {
-            slidesToShow: 2
+            slidesToShow: 1
           }
         }
       ]
