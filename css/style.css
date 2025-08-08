@@ -713,7 +713,9 @@ max-width: 1175px;
 }
 
 /* Contact Section */
-
+.detect-button-contact-page{
+  justify-content: flex-start !important;
+}
 
   .contact-section {
       padding: 100px 0;
