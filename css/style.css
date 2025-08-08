@@ -5054,7 +5054,6 @@ padding-bottom:50px;
   .stars .feedback-star {
       font-size: 25px;
       margin: 0 0px;
-      transition: color 0.2s;
     }
 
   .feedback-box .labels {
@@ -5080,6 +5079,28 @@ padding-bottom:50px;
     padding: 7px;
     font-size: 14px;
    }
+}
+@media(max-width : 576px){
+    .feedback-toggle-wrapper {
+    width: 250px;
+    right: -250px;
+    padding: 10px;
+  }
+
+  .feedback-toggle-wrapper.open {
+    right: 0;
+  }
+  .feedback-toggle-wrapper h5 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+    }
+  .stars .feedback-star {
+      font-size: 25px;
+      margin: 0 0px;
+    }
+
 }
 
    
