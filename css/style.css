@@ -2955,6 +2955,15 @@ max-width: 1175px;
   font-weight: bold;
   color: var(--dark);
 }
+
+
+@media (max-width: 767.98px) {
+
+  .smart-title {
+    font-size: 32px !important;
+    font-weight: 400 !important;
+  }
+}
 .slider {
   width: 100%;
   height: 5px;
