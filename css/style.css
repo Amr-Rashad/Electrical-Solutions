@@ -2627,6 +2627,11 @@ max-width: 1175px;
   color: #666;
   margin-bottom: 5px;
 }
+@media(max-width : 767px){
+  .project-details p{
+  text-align: start;
+}
+}
 
 /* Start Our Project Slider */
 
@@ -4421,7 +4426,7 @@ padding-bottom:50px;
 }
 @media(max-width : 576px){
   .custom-next , .custom-prev{
-    display: none;
+    display: none !important;
   }
 }
 .custom-prev img,
