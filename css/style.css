@@ -3622,6 +3622,12 @@ padding-bottom:50px;
   font-weight: 700;
 }
 
+@media (max-width:767px){
+  .product-detail h1{
+    font-size: 33px !important;
+  }
+}
+
 .product-detail .product-description {
   margin-bottom: 30px;
 }
