@@ -390,7 +390,6 @@ footer.footer {
 }
 
 @media(max-width : 991px){
-  
   .dropdown-item {
     color: rgb(0, 3, 5) !important ;
 
@@ -2708,6 +2707,8 @@ max-width: 1175px;
     width: 100%;
     margin-left: 0px;
   }
+  .show-first{order: 1;}
+  .show-second{order: 2;}
 }
 @media(max-width : 450px){
   .custem-about-gallary{
