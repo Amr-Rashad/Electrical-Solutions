@@ -5084,7 +5084,7 @@ padding-bottom:50px;
     .feedback-toggle-wrapper {
     width: 250px;
     right: -250px;
-    padding: 10px;
+    padding: 15px 10px;
   }
 
   .feedback-toggle-wrapper.open {
@@ -5100,7 +5100,6 @@ padding-bottom:50px;
       font-size: 25px;
       margin: 0 0px;
     }
-
 }
 
    
