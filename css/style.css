@@ -873,6 +873,11 @@ max-width: 1175px;
     padding: 100px 0;
     background-color: #f8f9fa;
   }
+  @media(max-width : 767px){
+    .contact-home-section {
+        padding: 40px 0;
+      }
+  }
 
   #contact-form-home h4 {
     letter-spacing: -.3px;
