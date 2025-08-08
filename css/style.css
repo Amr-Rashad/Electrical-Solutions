@@ -3629,6 +3629,9 @@ padding-bottom:50px;
   .product-detail .product-info{
     padding: 30px 0px !important;
   }
+  .product-description .d-flex{
+    display: block !important;
+  }
 }
 
 .product-detail .product-description {
