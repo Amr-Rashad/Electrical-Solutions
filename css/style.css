@@ -305,7 +305,7 @@ footer.footer {
 
 .footer-bottom {
   background-color: #0f3057 !important; 
-  padding: 15px 227px;
+  padding: 15px 0px;
   margin-top: 40px;
   border-top: 1px solid #B7D0E1;
 }
@@ -1643,7 +1643,7 @@ max-width: 1175px;
 .footer-bottom {
   /* background: ; */
   margin-top: 60px;
-  padding: 15px 227px;
+  padding: 15px 0px;
 }
 
 .footer-bottom .copyright {
