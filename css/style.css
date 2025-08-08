@@ -2822,9 +2822,24 @@ max-width: 1175px;
   margin-bottom: 30px;
   height: 275px;
 }
+@media(max-width : 1200px){
+  .value-card{
+    height: 330px;
+  }
+}
+@media(max-width : 767px){
+  .value-card{
+    height: 275px;
+  }
+}
 @media(max-width : 576px){
   .value-card{
     height: 300px;
+  }
+}
+@media(max-width : 300px){
+  .value-card{
+    height: 340px;
   }
 }
 
