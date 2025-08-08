@@ -1751,7 +1751,7 @@ max-width: 1175px;
 }
 @media(max-width :767px){
   .footer .footer-links{
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .card-vision p, .card-mision p{
     font-size:18px;
@@ -4937,7 +4937,7 @@ padding-bottom:50px;
       position: absolute;
       top: 50%;
       /* right: 0; */
-      right: -355px;
+      right: -350px;
       width: 350px;
       padding: 20px;
       transform: translateY(-50%);
@@ -5037,48 +5037,49 @@ padding-bottom:50px;
 
    @media (max-width: 768px) {
   .feedback-toggle-wrapper {
-    width: 90vw;
-    right: -91vw; 
+    width: 300px;
+    right: -300px;
+    padding: 15px;
   }
 
   .feedback-toggle-wrapper.open {
     right: 0;
   }
+  .feedback-toggle-wrapper h5 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 15px;
 
-  .feedback-toggle {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-
-  .feedback-box h5,
-  .massage-box h5,
-  .close-box h5 {
-    font-size: 14px;
-  }
-
+    }
   .stars .feedback-star {
-    font-size: 24px;
-  }
+      font-size: 25px;
+      margin: 0 0px;
+      transition: color 0.2s;
+    }
+
+  .feedback-box .labels {
+      font-size: 13px;
+      margin-top: 6px;
+    }
+  .feedback-toggle-wrapper .btn-box{
+      margin-top: 15px;
+    } 
 
   .feedback-toggle-wrapper .nextBtn {
+      padding: 3px 10px;
     font-size: 14px;
-    padding: 4px 12px;
-  }
+    }
 
-  .massage-box textarea {
-    font-size: 14px;
+ .massage-box textarea{
     height: 80px;
-  }
+    padding: 5px 15px;
+    border-radius: 3px;
+    }
 
-  .feedback-toggle-wrapper .close-box button {
+  .feedback-toggle-wrapper .close-box button{
+    padding: 7px;
     font-size: 14px;
-    padding: 8px;
-  }
-
-  .feedback-toggle-wrapper small.alert {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
+   }
 }
 
    
