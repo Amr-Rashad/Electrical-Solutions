@@ -4387,6 +4387,21 @@ padding-bottom:50px;
   text-decoration: none;
 }
 
+@media(max-width:767px){
+  .solutions-overlay{
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .solutions-overlay-title {
+    height: 28px;
+    font-size: 20px;
+}
+.solutions-overlay p {
+  line-height: 18px;
+  margin-top: 10px;
+}
+}
+
 
 .custom-prev,
 .custom-next {
