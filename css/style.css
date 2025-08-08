@@ -2832,12 +2832,12 @@ max-width: 1175px;
     height: 330px;
   }
 }
-@media(max-width : 767px){
+@media(max-width : 991px){
   .value-card{
     height: 275px;
   }
 }
-@media(max-width : 576px){
+@media(max-width : 400px){
   .value-card{
     height: 300px;
   }
