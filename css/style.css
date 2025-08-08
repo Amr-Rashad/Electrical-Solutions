@@ -4850,6 +4850,11 @@ padding-bottom:50px;
 
 } 
 
+@media (max-width:767px){
+  .new-header-content{
+    padding: 10px 12px !important;
+  }
+}
 
 
     /* project slider */
