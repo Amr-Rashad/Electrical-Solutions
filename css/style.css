@@ -109,6 +109,11 @@ b{
   height: 80px;
   transition: transform 0.3s ease;
 }
+@media(max-width : 576px){
+  .navbar-brand img{
+    height:100%;
+  }
+}
 
 /* Footer Styles */
 footer.footer {
