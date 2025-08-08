@@ -95,19 +95,76 @@
       </div>
     </div>
 
-    <!-- Page Header 
-    <div class="page-header">
-      <div class="container">
-        <h1>Contact Us</h1>
-        <p>Get in Touch with Our Expert Team</p>
-      </div>
-    </div>
-  -->
     <!-- Contact Section -->
     <section class="contact-section">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-6  ">
+          <div class="col-lg-6">
+
+            <section class="contact-home-section">
+  <div class="container">
+    <div class="contact-form-home">
+      <h2 class="section-title">Get in touch with us</h2>
+      <form id="contact-form-home">
+        <div class="row">
+          <div class="col-12">
+            <h4 >What can we help you with?</h4>
+            <div class="floating-field custom-select">
+              <select name="reason" required>
+                <option value=""  selected></option>
+                <option value="sales">Marketing</option>
+                <option value="journalist">Support</option>
+                <option value="support">Sales</option>
+              </select>
+              <label class="label-inpt" >WHAT BRINGS YOU HERE? *</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="floating-field">
+              <input type="text" name="subject" required placeholder=" " />
+              <label class="label-inpt">SUBJECT *</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="floating-field floating-field-textarea">
+              <textarea name="message" required placeholder=" "></textarea>
+              <label class="label-inpt">MESSAGE *</label>
+            </div>
+          </div>
+
+        <div class="col-12">
+            <div class="required mb-2">
+              <span id="required-text">* Required</span>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+              <label class="form-check-label " for="checkDefault">
+                  I have read and understood Axis <a href="#" target="_blank">Privacy Notice</a>. For information about what personal data we collect, what the purpose is for collecting it and what rights you have related to your data, please see our Privacy Notice.
+              </label>
+            </div>
+          </div>
+          <div class="col-12 ">
+            <div class="detect-button-contact mt-4">
+
+              <div class=" " >
+                <div class="recaptcha-wrapper">
+                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                </div>
+              </div>
+              <div class=" text-center btn-div ">
+                <button type="submit" id="button-home">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--
             <div class="contact-form-wrapper">
               <div class="form-section">
                 <h2>GET IN TOUCH</h2>
@@ -136,6 +193,8 @@
                 </form>
               </div>
           </div>
+
+        -->
           </div>
           <div class="col-lg-6  d-flex flex-column justify-content-center ">
               <div class="contact-info-section  d-flex flex-column justify-content-center ">
