@@ -3626,6 +3626,9 @@ padding-bottom:50px;
   .product-detail h1{
     font-size: 33px !important;
   }
+  .product-detail .product-info{
+    padding: 30px 0px !important;
+  }
 }
 
 .product-detail .product-description {
