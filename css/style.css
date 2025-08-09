@@ -118,7 +118,8 @@ b{
 /* Footer Styles */
 footer.footer {
 
-  background-color: #0e2e55;
+  /* background-color: #0e2e55; */
+  background-color: #1B263B;
   color: #fff !important;
   padding: 60px 0 0 0;
     position: relative;
@@ -304,7 +305,8 @@ footer.footer {
 }
 
 .footer-bottom {
-  background-color: #0a1f39 !important; 
+  /* background-color: #0a1f39 !important;  */
+  background-color: #0D1B2A !important; 
   padding: 15px 0px;
   margin-top: 40px;
 }
