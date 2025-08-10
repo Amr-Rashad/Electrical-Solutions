@@ -409,12 +409,16 @@ footer.footer {
     color: var(--white) !important;
 }
 
-.home-navbar{
-  position: absolute !important;
+#home-nav{
+  position: sticky !important;
   background: transparent !important;
   border-bottom: none!important;
   color: white!;
   box-shadow: none;
+}
+#home-nav.sticky{
+  background: var(--dark);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .home-navbar .navbar-brand img{
   height: 60px;
