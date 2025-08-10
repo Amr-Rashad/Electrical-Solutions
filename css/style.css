@@ -417,7 +417,7 @@ footer.footer {
   box-shadow: none;
 }
 #home-nav.sticky{
-  background: var(--dark) !important;
+  background: #043F5F !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .home-navbar .navbar-brand img{
