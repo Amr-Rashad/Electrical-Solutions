@@ -428,7 +428,7 @@ footer.footer {
   color: var(--primary-color) !important;
 }
 .home-navbar .social-contact a {
-    background-color: none !important;
+    background-color: #2e303500 !important;
     transition: all 1s ease;
 }
 .home-navbar .social-contact a:hover{
