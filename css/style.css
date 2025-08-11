@@ -228,8 +228,11 @@ footer.footer {
     bottom: 70px;
     left: 0;
     z-index: 10;
+    padding-left: 0 !important;
+    background-color: transparent !important;
     .new-header-content{
       padding-left: 0;
+      background: none !important;
     }
   }
   .current-page-color {
@@ -5188,15 +5191,15 @@ strong {
 
 .new-header,
 #knx-page-bg,
-/* .product-detail {
+.product-detail {
   background-color: #f8f9fa;
-} */
+}
 .new-header-content {
-  /* background: linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(30, 136, 229, 0.05),
     rgba(100, 181, 246, 0.1)
-  ); */
+  );
   display: flex;
   justify-content: start;
   align-items: center;
