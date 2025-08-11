@@ -590,7 +590,7 @@ footer.footer {
 
 */
 
-.about-toggler{
+.about-toggler .navbar-toggler-icon{
   filter: invert(1) brightness(2) !important;
 }
 
