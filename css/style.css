@@ -613,7 +613,7 @@ footer.footer {
 @media (max-width: 991px) {
   .home-navbar .nav-link,
   #about-nav .nav-link {
-    color: #666;
+    color: #ffffff;
   }
   .home-navbar .nav-link:hover,
   .home-navbar .nav-link.active,
