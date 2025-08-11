@@ -1,5 +1,4 @@
-#home-nav .navbar-toggler:focus,
-#about-nav .navbar-toggler:focus {
+.navbar .navbar-toggler:focus{
   box-shadow: none !important;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
