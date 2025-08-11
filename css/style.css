@@ -238,6 +238,9 @@ footer.footer {
   .current-page-color {
     color: var(--white);
   }
+  .hero-content{
+    margin-top: 50px;
+  }
 }
 .hero-section.about-hero {
   margin-bottom: 0 !important;
@@ -430,7 +433,7 @@ footer.footer {
 .nav-link:hover,
 .nav-link.active {
   /* color: var(--accent-color) !important; */
-  color: #1b3e6d !important;
+  color: var(--primary-color) !important;
 }
 
 .navbar.hidden {
