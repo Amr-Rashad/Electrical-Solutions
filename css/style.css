@@ -580,12 +580,18 @@ footer.footer {
   background: #000000;
   border-radius: 2px;
 }
-*/
+
 
 .navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::before,
 .navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::after,.navbar.about-nav  .navbar-toggler .navbar-toggler-icon::before,
 .navbar.about-nav  .navbar-toggler .navbar-toggler-icon::after {
   background: #fff;
+}
+
+*/
+
+.about-toggler{
+  filter: invert(1) brightness(2) !important;
 }
 
 .navbar  .navbar-toggler .navbar-toggler-icon::before {
