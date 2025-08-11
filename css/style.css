@@ -1,3 +1,7 @@
+#home-nav .navbar-toggler:focus,
+#about-nav .navbar-toggler:focus {
+  box-shadow: none !important;
+}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "MyRFont";
@@ -388,7 +392,7 @@ footer.footer {
   .home-section {
     height: 100vh !important;
   }
-  .home-section  .hero-slide {
+  .home-section .hero-slide {
     height: 100vh !important;
     .hero-content {
       margin-top: 30px;
@@ -546,48 +550,49 @@ footer.footer {
   color: #0964b6 !important;
 }
 /* Make toggler lines and border white for both home and about navbars */
-#home-nav .navbar-toggler .navbar-toggler-icon,
+.navbar .navbar-toggler .navbar-toggler-icon,
 #about-nav .navbar-toggler .navbar-toggler-icon,
 .home-navbar .navbar-toggler .navbar-toggler-icon {
   background-image: none;
   color: white !important;
   border: none;
 }
+
 #home-nav .navbar-toggler,
 #about-nav .navbar-toggler {
   border: 1.5px solid #fff !important;
 }
 /* Custom toggler lines using CSS for white color */
-#home-nav .navbar-toggler .navbar-toggler-icon,
-#about-nav .navbar-toggler .navbar-toggler-icon {
+.navbar  .navbar-toggler .navbar-toggler-icon{
   width: 1.5em;
   height: 1.5em;
   display: inline-block;
   position: relative;
 }
-#home-nav .navbar-toggler .navbar-toggler-icon::before,
-#home-nav .navbar-toggler .navbar-toggler-icon::after,
-#about-nav .navbar-toggler .navbar-toggler-icon::before,
-#about-nav .navbar-toggler .navbar-toggler-icon::after {
+.navbar  .navbar-toggler .navbar-toggler-icon::before,
+.navbar  .navbar-toggler .navbar-toggler-icon::after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
   right: 0;
   height: 2px;
-  background: #fff;
+  background: #000000;
   border-radius: 2px;
 }
-#home-nav .navbar-toggler .navbar-toggler-icon::before,
-#about-nav .navbar-toggler .navbar-toggler-icon::before {
+.navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::before,
+.navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::after,.navbar.about-nav  .navbar-toggler .navbar-toggler-icon::before,
+.navbar.about-nav  .navbar-toggler .navbar-toggler-icon::after {
+  background: #fff;
+}
+
+.navbar  .navbar-toggler .navbar-toggler-icon::before {
   top: 0.3em;
 }
-#home-nav .navbar-toggler .navbar-toggler-icon::after,
-#about-nav .navbar-toggler .navbar-toggler-icon::after {
+.navbar  .navbar-toggler .navbar-toggler-icon::after {
   top: 1em;
 }
-#home-nav .navbar-toggler .navbar-toggler-icon span,
-#about-nav .navbar-toggler .navbar-toggler-icon span {
+.navbar  .navbar-toggler .navbar-toggler-icon span{
   display: block;
   position: absolute;
   left: 0;
