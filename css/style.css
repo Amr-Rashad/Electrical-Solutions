@@ -371,6 +371,19 @@ footer.footer {
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
+.about-hero,
+.hero-slide {
+  height: 60vh !important;
+  min-height: 60vh !important;
+}
+.about-hero video,
+.hero-slide video {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+
 }
 @media (min-width: 768px) {
   .social-links {
@@ -451,7 +464,7 @@ footer.footer {
   .new-header {
     margin: 0 !important;
     padding-left: 0 !important;
-    bottom:300px !important;
+    bottom: 300px !important;
     .new-header-content {
       margin: 0 !important;
       padding-left: 0 !important;
@@ -5257,6 +5270,9 @@ small {
 }
 
 @media (max-width: 767px) {
+  .new-header{
+    bottom: 10px !important;
+  }
   .new-header-content {
     padding: 10px 12px !important;
   }
