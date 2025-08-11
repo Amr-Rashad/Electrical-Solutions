@@ -490,7 +490,7 @@ footer.footer {
     bottom: 300px !important;
     .new-header-content {
       margin: 0 !important;
-      padding-left: 0 !important;
+      padding-left: 10px !important;
     }
   }
 }
@@ -552,7 +552,6 @@ footer.footer {
 .navbar .navbar-toggler .navbar-toggler-icon,
 #about-nav .navbar-toggler .navbar-toggler-icon,
 .home-navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: none;
   color: white !important;
   border: none;
 }
@@ -568,6 +567,8 @@ footer.footer {
   display: inline-block;
   position: relative;
 }
+
+/*
 .navbar  .navbar-toggler .navbar-toggler-icon::before,
 .navbar  .navbar-toggler .navbar-toggler-icon::after {
   content: "";
@@ -579,6 +580,8 @@ footer.footer {
   background: #000000;
   border-radius: 2px;
 }
+*/
+
 .navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::before,
 .navbar.home-navbar  .navbar-toggler .navbar-toggler-icon::after,.navbar.about-nav  .navbar-toggler .navbar-toggler-icon::before,
 .navbar.about-nav  .navbar-toggler .navbar-toggler-icon::after {
