@@ -1,25 +1,25 @@
 // Navbar Hide/Show on Scroll
-let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
+// let lastScroll = 0;
+// const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+// window.addEventListener('scroll', () => {
+//     const currentScroll = window.pageYOffset;
 
-    if (currentScroll <= 0) {
-        navbar.classList.remove('hidden');
-        return;
-    }
+//     if (currentScroll <= 0) {
+//         navbar.classList.remove('hidden');
+//         return;
+//     }
 
-    if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
-        // Scrolling Down
-        navbar.classList.add('hidden');
-    } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
-        // Scrolling Up
-        navbar.classList.remove('hidden');
-    }
+//     if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
+//         // Scrolling Down
+//         navbar.classList.add('hidden');
+//     } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
+//         // Scrolling Up
+//         navbar.classList.remove('hidden');
+//     }
 
-    lastScroll = currentScroll;
-});
+//     lastScroll = currentScroll;
+// });
 
 //Sticky Home Nav
 window.addEventListener("scroll", function() {
