@@ -23,7 +23,10 @@
 
 //Sticky Home Nav
 window.addEventListener("scroll", function() {
-  const navbar = document.getElementById("home-nav");
+  const homeNav = document.getElementById("home-nav");
+  const aboutNav = document.getElementById("about-nav");
+  const navbar = homeNav || aboutNav;
+  if (!navbar) return; // Prevent error if neither exists
   if (window.scrollY > 50) {
     navbar.classList.add("sticky");
   } else {
