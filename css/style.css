@@ -482,7 +482,7 @@ footer.footer {
     color: rgb(0, 3, 5) !important ;
   }
   .about-content {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .new-header {
     margin: 0 !important;
@@ -490,7 +490,7 @@ footer.footer {
     bottom: 300px !important;
     .new-header-content {
       margin: 0 !important;
-      padding-left: 10px !important;
+      padding-left: 0px !important;
     }
   }
 }
@@ -3153,7 +3153,7 @@ margin-bottom:100px;
 }
 @media (max-width: 767px) {
   .custem-about-gallary {
-    padding: 0 14px;
+    padding: 0px;
   }
   .about-section .custem-about-gallary img {
     width: 100%;
@@ -3166,11 +3166,7 @@ margin-bottom:100px;
     order: 2;
   }
 }
-@media (max-width: 450px) {
-  .custem-about-gallary {
-    padding: 0 11px;
-  }
-}
+
 
 .gallery-column {
   flex: 1;
