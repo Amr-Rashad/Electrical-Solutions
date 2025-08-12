@@ -249,7 +249,7 @@ footer.footer {
 }
 .hero-section.about-hero {
   margin-bottom: 0 !important;
-  background-image: url();
+  background-image: url(../images/about/about-bg-header.jpg);
 }
 .hero-slide {
   position: relative;
