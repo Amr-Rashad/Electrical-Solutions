@@ -5440,7 +5440,7 @@ small {
 /* start feedback toggle */
 
 .feedback-toggle-wrapper {
-  position: fixed;
+  position: absolute;
   top: 50%;
   /* right: 0; */
   right: -350px;
@@ -5467,6 +5467,9 @@ small {
   cursor: pointer;
   writing-mode: sideways-lr;
   text-align: center;
+}
+@media(max-width:767px){
+.feedback-toggle{top: 150%;}
 }
 
 .feedback-toggle-wrapper h5 {
