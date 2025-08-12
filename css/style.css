@@ -159,7 +159,7 @@ section {
 /* Footer Styles */
 footer.footer {
   /* background-color: #0e2e55; */
-  /* background-color: #064873; */
+  background-color: #064873;
   color: #fff !important;
   padding: 60px 0 0 0;
   position: relative;
@@ -543,7 +543,7 @@ footer.footer {
 #home-nav.sticky,
 #about-nav.sticky,
 #contact-nav.sticky {
-  background: #043f5f !important;
+  background: #064873 !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .home-navbar .navbar-brand img,
@@ -2006,7 +2006,7 @@ margin-bottom:100px;
 
 /* Footer Styles */
 .footer {
-  background-color: #043f5f ;
+  background-color: var(--primary-color);
   color: var(--white);
   padding: 40px 0;
 }
@@ -5440,7 +5440,7 @@ small {
 /* start feedback toggle */
 
 .feedback-toggle-wrapper {
-  position: absolute;
+  position: fixed;
   top: 50%;
   /* right: 0; */
   right: -350px;
