@@ -250,6 +250,10 @@ footer.footer {
 .hero-section.about-hero {
   margin-bottom: 0 !important;
   background-image: url(../images/about/about-bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
 }
 .hero-slide {
   position: relative;
