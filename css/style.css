@@ -224,20 +224,14 @@ footer.footer {
 }
 .about-hero {
   height: 500px !important;
-  .hero-slide video {
-    height: inherit;
-    /* filter: brightness(40%);  */
-  }
   .new-header {
     position: absolute;
-    bottom: 70px;
-    left: 0;
+    bottom: 0;
     z-index: 10;
     padding-left: 0 !important;
     background-color: transparent !important;
     .new-header-content {
       padding-left: 0;
-      background: none !important;
     }
   }
   .current-page-color {
@@ -402,16 +396,6 @@ footer.footer {
     .hero-content {
       margin-top: 30px;
     }
-  }
-
-  .about-hero video,
-  .hero-slide video,
-  .home-section video,
-  .home-section video {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: cover;
-    display: block;
   }
 }
 @media (min-width: 768px) {
