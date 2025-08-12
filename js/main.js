@@ -25,7 +25,8 @@
 window.addEventListener("scroll", function() {
   const homeNav = document.getElementById("home-nav");
   const aboutNav = document.getElementById("about-nav");
-  const navbar = homeNav || aboutNav;
+  const contactNav = document.getElementById("contact-nav");
+  const navbar = homeNav || aboutNav || contactNav;
   if (!navbar) return; // Prevent error if neither exists
   if (window.scrollY > 50) {
     navbar.classList.add("sticky");
