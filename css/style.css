@@ -254,6 +254,7 @@ footer.footer {
   background-size: cover;
   background-position: center;
   filter: brightness(0.5);
+  height: 500px;
 }
 .hero-slide {
   position: relative;
