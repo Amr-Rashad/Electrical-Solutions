@@ -5818,7 +5818,9 @@ small {
 
 /* Combined media query for min-width: 768px */
 @media (min-width: 768px) {
-  /* All rules from previous @media (min-width: 768px) go here */
+  footer .social-links{
+    float: right;
+  }
 }
 
 /* Combined media query for min-width: 992px */
