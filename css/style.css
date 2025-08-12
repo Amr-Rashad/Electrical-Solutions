@@ -222,15 +222,15 @@ footer.footer {
 .Newsletter-btn:hover {
   background-color: var(--hover);
 }
+
+
 .about-hero {
-  height: 500px !important;
-  .new-header {
+  .new-header.breadcrumb-about {
     position: absolute;
     bottom: 0;
-    z-index: 10;
-    padding-left: 0 !important;
-    background-color: transparent !important;
-    .new-header-content {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    .new-header-content{
       padding-left: 0;
     }
   }
@@ -474,15 +474,7 @@ footer.footer {
   .about-content {
     padding-left: 0px;
   }
-  .new-header {
-    margin: 0 !important;
-    padding-left: 0 !important;
-    bottom: 300px !important;
-    .new-header-content {
-      margin: 0 !important;
-      padding-left: 0px !important;
-    }
-  }
+ 
 }
 .about-content b {
   font-size: 18px;
@@ -5249,6 +5241,9 @@ strong {
   padding: 10px 15px;
   border-radius: 50px;
 }
+.about-hero .new-header-content {
+  background: none;
+}
 .new-header-content a {
   cursor: pointer;
   color: black;
@@ -5556,3 +5551,247 @@ small {
 }
 
 /* end feedback toggle */
+
+
+
+@media (max-width: 576px) {
+  .feedback-toggle-wrapper {
+    width: 250px;
+    right: -250px;
+    padding: 15px 10px;
+  }
+
+  .feedback-toggle-wrapper.open {
+    right: 0;
+  }
+  .feedback-toggle-wrapper h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .stars .feedback-star {
+    font-size: 25px;
+    margin: 0 0px;
+  }
+  .new-header .new-header-arrow-icon {
+    margin: 0 8px;
+  }
+  .custom-next,
+  .custom-prev {
+    display: none !important;
+  }
+}
+/* Combined media query for max-width: 767.98px */
+@media (max-width: 767.98px) {
+  /* All rules from previous @media (max-width: 767px) and (max-width: 767.98px) go here */
+  /* Social links */
+  .social-links {
+    margin-top: 20px;
+  }
+  .about-hero .new-header-content {
+    padding: 10px 10px 10px 0;
+  }
+   .about-hero  .new-header {
+    background: rgb(0, 0, 0, 0.5) ;
+    position: absolute ;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+  }
+
+  /* Hero section and slides */
+  .about-hero{
+    height: 40vh !important;
+    min-height: 20vh;
+  }
+  .home-section {
+    height: 100vh !important;
+  }
+  .home-section .hero-slide {
+    height: 100vh !important;
+  }
+  .hero-section.home-section {
+    margin-bottom: 0 !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: stretch;
+  }
+  .hero-slider {
+    main-height: fit-content;
+  }
+  .hero-content {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-buttons .btn {
+    padding: 10px 18px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+  .hero-btn-vision {
+    padding: 10px 25px !important;
+  }
+  .collapse.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background: #043f5f;
+    z-index: 999;
+  }
+  /* Contact section */
+  .contact-home-section {
+    padding: 40px 0;
+  }
+  /* Footer */
+  .footer .footer-links {
+    margin-top: 30px;
+  }
+  .card-vision p,
+  .card-mision p {
+    font-size: 18px;
+  }
+  /* Section title */
+  .section-title,
+  .smart-title {
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    padding-bottom: 15px !important;
+  }
+  .contact-form-home .section-title {
+    padding-left: 0px !important;
+  }
+  .feature-box {
+    margin-bottom: 30px;
+  }
+  /* Project details */
+  .project-details p {
+    text-align: start;
+  }
+  /* Solutions card */
+  .solutions-card {
+    height: 260px !important;
+  }
+  .solutions-overlay {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .solutions-overlay-title {
+    height: 28px;
+    font-size: 20px;
+  }
+  .solutions-overlay p {
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  /* Custom card */
+  .custom-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-toggle-wrapper {
+    width: 300px;
+    right: -300px;
+    padding: 15px;
+  }
+
+  .feedback-toggle-wrapper.open {
+    right: 0;
+  }
+  .feedback-toggle-wrapper h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .stars .feedback-star {
+    font-size: 25px;
+    margin: 0 0px;
+  }
+
+  .feedback-box .labels {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .feedback-toggle-wrapper .btn-box {
+    margin-top: 15px;
+  }
+
+  .feedback-toggle-wrapper .nextBtn {
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+
+  .massage-box textarea {
+    height: 80px;
+    padding: 5px 15px;
+    border-radius: 3px;
+  }
+
+  .feedback-toggle-wrapper .close-box button {
+    padding: 7px;
+    font-size: 14px;
+  }
+}
+/* Combined media query for max-width: 991.98px */
+@media (max-width: 991.98px) {
+  /* All rules from previous @media (max-width: 991px) and (max-width: 991.98px) go here */
+  .custom-card a {
+    padding: 10px 16px !important;
+  }
+  .custom-card img {
+    height: 200px !important;
+  }
+}
+
+/* Combined media query for min-width: 768px */
+@media (min-width: 768px) {
+  /* All rules from previous @media (min-width: 768px) go here */
+}
+
+/* Combined media query for min-width: 992px */
+@media (min-width: 992px) {
+  /* All rules from previous @media (min-width: 992px) go here */
+}
+
+/* Combined media query for max-width: 1200px */
+@media (max-width: 1200px) {
+  /* All rules from previous @media (max-width: 1200px) go here */
+}
+
+/* Combined media query for min-width: 1200px */
+@media (min-width: 1200px) {
+  /* All rules from previous @media (min-width: 1200px) go here */
+}
+
+/* Combined media query for min-width: 1200px and max-width: 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* All rules from previous @media (min-width: 1200px) and (max-width: 1399.98px) go here */
+}
+@media (max-width: 1400px) {
+  /* All rules from previous @media (max-width: 1400px) go here */
+  .custom-card img {
+    height: 250px !important;
+  }
+  .custom-card a {
+    padding: 10px 20px !important;
+  }
+}
