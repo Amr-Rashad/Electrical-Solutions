@@ -5781,6 +5781,12 @@ small {
   .custom-card {
     width: 100%;
   }
+  .product-detail .row> :nth-child(1) {
+  padding-right: 20px !important;
+}
+  .product-detail .row> :nth-child(2) {
+  padding-left: 20px !important;
+}
 }
 
 @media (max-width: 768px) {
