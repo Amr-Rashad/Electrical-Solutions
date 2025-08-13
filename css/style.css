@@ -296,14 +296,14 @@ footer.footer {
   position: relative;
 }
 
-.hero-slide video {
+/* .hero-slide video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .hero-slide::after {
   content: "";
@@ -701,7 +701,7 @@ footer.footer {
 .hero-slide video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   position: absolute;
   top: 0;
   left: 0;
@@ -5680,6 +5680,11 @@ small {
     position: absolute;
     top: 50%;
   }
+  /* .hero-slide video {
+
+  object-fit:contain;
+
+} */
   .hero-content h1 {
     font-size: 2rem;
   }

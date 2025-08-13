@@ -1,145 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECDM - Electrical Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="common/loadHTML.js" defer></script>
+    <!-- Load the script -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ECDM - Electrical Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=1"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="common/loadHTML.js" defer></script>
-  <!-- Load the script -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Slick Theme (اختياري للتصميم الجاهز) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
 
-  <!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Slick Theme (اختياري للتصميم الجاهز) -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark"> -->
-  <nav id="home-nav" class="navbar navbar-expand-lg home-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img class="navbar-logo" src="images/logo/white-footer-logo.png" alt="ECDM" />
-      </a>
-      <button class="navbar-toggler home-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="shop.html">SHOP</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">NEWS</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link " href="#" id="referencesDropdown" role="button" data-bs-toggle="dropdown">
-              REFERENCES
-            </a>
-            <ul class="dropdown-menu shadow-lg ">
-              <li>
-                <a class="dropdown-item dropdown-hover" href="clients.html">CLIENTS</a>
-              </li>
-              <li>
-                <a class="dropdown-item dropdown-hover" href="projects.html">PROJECTS</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT US</a>
-          </li>
-        </ul>
-        <div class="social-contact">
-          <a href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://x.com/ecdmeg?s=21"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr "><i
-              class="fab fa-instagram"></i></a>
+  <body>
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark"> -->
+    <nav id="home-nav" class="navbar navbar-expand-lg home-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="navbar-logo"
+            src="images/logo/white-footer-logo.png"
+            alt="ECDM"
+          />
+        </a>
+        <button
+          class="navbar-toggler home-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">NEWS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="referencesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                REFERENCES
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li>
+                  <a class="dropdown-item dropdown-hover" href="clients.html"
+                    >CLIENTS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-hover" href="projects.html"
+                    >PROJECTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="social-contact">
+            <a href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/ecdmeg?s=21"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr "
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
+    <!-- Hero Section -->
 
-
-  <section class="hero-section home-section">
-    <div class="swiper hero-slider w-100">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide ">
-          <div class="hero-slide ">
-
-            <video autoplay muted loop class="w-100">
-                <source src="images/hero/Video/1.mp4" type="video/mp4">
-            </video>
-            <div class="container">    
-              <div class="hero-content ">
-                <h1 class="animate__animated animate__fadeInDown">
-                  Advanced Electrical Solutions
-                </h1>
-                <p class="animate__animated animate__fadeInUp">
-                  Leading the industry with innovative electrical control and
-                  automation systems
-                </p>
-                <div class="hero-buttons animate__animated animate__fadeInUp">
-                  <a href="shop.html" class="btn btn-primary">Our Products</a>
-                  <a href="projects.html" class="btn btn-outline-light">Our Projects</a>
+    <section class="hero-section home-section">
+      <div class="swiper hero-slider w-100">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <video autoplay muted loop class="w-100">
+                <source src="images/hero/Video/1.mp4" type="video/mp4" />
+              </video>
+              <div class="container">
+                <div class="hero-content">
+                  <h1 class="animate__animated animate__fadeInDown">
+                    Infrastructure Innovation
+                  </h1>
+                  <p class="animate__animated animate__fadeInUp">
+                    ECDM Electric designs smart, resilient environments
+                    integrating advanced automation, sustainable engineering,
+                    and low-voltage systems to shape the future of
+                    intelligent infrastructure.
+                  </p>
+                  <div class="hero-buttons animate__animated animate__fadeInUp">
+                    <a href="shop.html" class="btn btn-primary">Our Products</a>
+                    <a href="projects.html" class="btn btn-outline-light"
+                      >Our Projects</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Slide 2 -->
-         <div class="swiper-slide">
-          <div class="hero-slide " >
-            <video autoplay muted loop class="w-100">
-                <source src="images/hero/Video/2.mp4" type="video/mp4">
-            </video>
-            <div class="container">
-            <div class="hero-content">
-              <!-- <h1 class="animate__animated animate__fadeInDown">About Us</h1> -->
-              <h1 class="animate__animated animate__fadeInDown">
-                Our Mission
-              </h1>
-              <p class="animate__animated animate__fadeInUp">
-                We provide high-precision repair, preventive maintenance and
-                equipment renovation with affordable prices. We additionally
-                provide simplified monitoring and control all your devices
-              </p>
-              <br />
-              <h1 class="animate__animated animate__fadeInDown">
-                Our Vision
-              </h1>
-              <p class="animate__animated animate__fadeInUp">
-                To lead the Middle East in developing innovative solutions for
-                intelligent equipment by providing superior client service
-              </p>
-              <div class="hero-buttons animate__animated animate__fadeInUp">
-                <a href="our-vision.html" class="btn btn-primary hero-btn-vision">Our Vision</a>
-                <a href="our-mission.html" class="btn btn-secondary">Our Mission</a>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <video autoplay muted loop class="w-100">
+                <source src="images/hero/Video/2.mp4" type="video/mp4" />
+              </video>
+              <div class="container">
+                <div class="hero-content">
+                  <!-- <h1 class="animate__animated animate__fadeInDown">About Us</h1> -->
+
+                  <h1 class="animate__animated animate__fadeInDown">
+                    Smart Sustainability
+                  </h1>
+                  <p class="animate__animated animate__fadeInUp">
+                    At ECDM Electric, we provide tailored solutions to today’s
+                    infrastructure challenges combining end-to-end smart
+                    building integration, advanced asset management,
+                    infrastructure finance and PPP models, with a strong
+                    commitment to ESG and long-term sustainability.
+                  </p>
+                  <div class="hero-buttons animate__animated animate__fadeInUp">
+                    <a
+                      href="our-vision.html"
+                      class="btn btn-primary hero-btn-vision"
+                      >Our Vision</a
+                    >
+                    <a href="our-mission.html" class="btn btn-secondary"
+                      >Our Mission</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            </div>
           </div>
-        </div> 
-        <!-- Slide 3 -->
-       <div class="swiper-slide">
+          <!-- Slide 3 -->
+          <!-- <div class="swiper-slide">
           <div class="hero-slide" >
             <video autoplay muted loop class="w-100">
                 <source src="images/hero/Video/3.mp4" type="video/mp4">
@@ -155,17 +200,15 @@
             </div>
             </div>
           </div>
-        </div> 
-      </div>
-      <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-next "></div>
+        </div>  -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-next "></div>
       <div class="swiper-button-prev "></div> -->
-    </div>
-  </section>
+      </div>
+    </section>
 
-
-
-  <!-- <section class="hero-section">
+    <!-- <section class="hero-section">
     <div class="swiper hero-slider">
       <div class="swiper-wrapper">
 
@@ -233,677 +276,2209 @@
     </div>
   </section> -->
 
-  <!--Solutions slider-->
-  <div class="solutions-wrapper pb-5">
-    <div class="container">
-
-    <h2 class="section-title" data-aos="fade-up">Solutions</h2>
-    <div class="solution-slider">
-      <!-- solution 1 -->
-        <div class="solutions-card">
-          <img   class="img-fluid" src="images/solution/Power-Solutions.png" alt="Solution 1">
-          <div class="solutions-title">Power Solutions</div>
-          <div class="solutions-overlay">
-            <a href="#">
-              <h5 class="solutions-overlay-title">Power Solutions</h5>
-              <p>Smart power infrastructure integrating low-voltage systems and efficient energy control</p>
-            </a>
-          </div>
-        </div>
-        <!-- solution 2 -->
-        <div class="solutions-card">
-          <img  class="img-fluid" src="images/solution/Automation.webp" alt="Solution 2">
-          <div class="solutions-title">Automation</div>
-          <div class="solutions-overlay">
-            <a href="#">
-              <h5 class="solutions-overlay-title">Automation</h5>
-              <p>KNX and BMS automation for centralized control and responsive building environments</p>
-            </a>
-          </div>
-        </div>
-        <!-- solution 3 -->
-        <div class="solutions-card">
-          <img  class="img-fluid" src="images/solution/Maintenance.webp" alt="Solution 3">
-          <div class="solutions-title">Maintenance</div>
-          <div class="solutions-overlay">
-            <a href="#">
-              <h5 class="solutions-overlay-title">Maintenance</h5>
-              <p>Proactive support ensuring resilient, stable, and uninterrupted system performance</p>
-            </a>
-          </div>
-        </div>
-        <!-- solution 4 -->
-        <div  class="solutions-card">
-          <img class="img-fluid" src="images/solution/Integrated Platform.jpg" alt="Solution 4">
-          <div class="solutions-title">Smart Cities</div>
-          <div class="solutions-overlay">
-            <a href="#">
-              <h5 class="solutions-overlay-title">Integrated Platform</h5>
-              <p>Unified system connecting automation and low-current technologies into one adaptive smart solution</p>
-            </a>
-          </div>
-        </div>
-    </div>
-    </div>
-  </div>
-
-  <!-- Products Section -->
-  <section class="products-section">
-    <div class="container">
-      <h2 class="section-title " data-aos="fade-up">
-        Our Products
-      </h2>
-      <div class="products-slider">
-
-        <div class="custom-carousel-card">
-          <div class="custom-card">
-            <img src="images/Low Current.png" alt="Low Current">
-            <h3>Low Current</h3>
-            <a href="products/low.html" type="button">View Details</a>
-          </div>
-        </div>
-
-        <div class="custom-carousel-card ">
-              <div class="custom-card">
-                <img src="images/low voltage.png" alt="Low Voltage">
-                <h3>Low Voltage</h3>
-                <a href="products/din-rail.html" type="button">View
-                  Details</a>
-              </div>
-        </div> 
-        
-            <div class="custom-carousel-card">
-              <div class="custom-card">
-                <img src="images/BMS.png" alt="BMS">
-                <h3>BMS</h3>
-                <a href="products/BMS/BMS.html" type="button">View
-                  Details</a>
-              </div>
+    <!--Solutions slider-->
+    <div class="solutions-wrapper pb-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Solutions</h2>
+        <div class="solution-slider">
+          <!-- solution 1 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Power-Solutions.png"
+              alt="Solution 1"
+            />
+            <div class="solutions-title">Power Solutions</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Power Solutions</h5>
+                <p>
+                  Smart power infrastructure integrating low-voltage systems and
+                  efficient energy control
+                </p>
+              </a>
             </div>
-
-            <div class="custom-carousel-card">
-              <div class="custom-card">
-                <img src="images/knx.jpg" alt="KNX">
-                <h3>KNX</h3>
-                <a href="products/KNX/KNX.html" type="button">View
-                  Details</a>
-              </div>
+          </div>
+          <!-- solution 2 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Automation.webp"
+              alt="Solution 2"
+            />
+            <div class="solutions-title">Automation</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Automation</h5>
+                <p>
+                  KNX and BMS automation for centralized control and responsive
+                  building environments
+                </p>
+              </a>
             </div>
-
-            <div class="custom-carousel-card">
-              <div class="custom-card">
-                <img src="images/medium voltage 2.png" alt="Medium Voltage">
-                <h3>Medium Voltage</h3>
-                <a href="products/Medium-Voltage.html"
-                  type="button">View Details</a>
-              </div>
-            </div>        
-
+          </div>
+          <!-- solution 3 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Maintenance.webp"
+              alt="Solution 3"
+            />
+            <div class="solutions-title">Maintenance</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Maintenance</h5>
+                <p>
+                  Proactive support ensuring resilient, stable, and
+                  uninterrupted system performance
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- solution 4 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Integrated Platform.jpg"
+              alt="Solution 4"
+            />
+            <div class="solutions-title">Smart Cities</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Integrated Platform</h5>
+                <p>
+                  Unified system connecting automation and low-current
+                  technologies into one adaptive smart solution
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
-  </section>
 
-  <!-- Projects Section -->
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Products</h2>
+        <div class="products-slider">
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/Low Current.png" alt="Low Current" />
+              <h3>Low Current</h3>
+              <a href="products/low.html" type="button">View Details</a>
+            </div>
+          </div>
 
-  <div class="projects-section">
-    <div class="container">
-      <h2 class="section-title">
-        Our <span class="main-color">Projects</span>
-      </h2>
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/low voltage.png" alt="Low Voltage" />
+              <h3>Low Voltage</h3>
+              <a href="products/din-rail.html" type="button">View Details</a>
+            </div>
+          </div>
 
-      <div class="projects-slider">
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/BMS.png" alt="BMS" />
+              <h3>BMS</h3>
+              <a href="products/BMS/BMS.html" type="button">View Details</a>
+            </div>
+          </div>
 
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/knx.jpg" alt="KNX" />
+              <h3>KNX</h3>
+              <a href="products/KNX/KNX.html" type="button">View Details</a>
+            </div>
+          </div>
 
-          <div class="project-card project-card-slider ">
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/medium voltage 2.png" alt="Medium Voltage" />
+              <h3>Medium Voltage</h3>
+              <a href="products/Medium-Voltage.html" type="button"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <div class="projects-section">
+      <div class="container">
+        <h2 class="section-title">
+          Our <span class="main-color">Projects</span>
+        </h2>
+
+        <div class="projects-slider">
+          <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/Smart Building Control.webp" alt="Industrial Automation" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Smart Building Control.webp"
+                alt="Industrial Automation"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project1Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project1Modal">Smart Building Control</h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project1Modal">
+                Smart Building Control
+              </h3>
               <p>Integrated building management system</p>
             </div>
           </div>
 
-        <div class="project-card project-card-slider">
+          <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/Light systems.webp" alt="Smart Building" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Light systems.webp"
+                alt="Smart Building"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project2Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project2Modal">Light Systems</h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project2Modal">
+                Light Systems
+              </h3>
               <p>Energy Lighting Systems</p>
             </div>
           </div>
 
           <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/برج الايقوني.webp" alt="Smart Building Control" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/برج الايقوني.webp"
+                alt="Smart Building Control"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project6Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project6Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project6Modal">Smart Building Control</h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project6Modal">
+                Smart Building Control
+              </h3>
               <p>building management system</p>
             </div>
           </div>
 
           <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/Power Distribution.png" alt="Power Distribution" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Power Distribution.png"
+                alt="Power Distribution"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project4Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project4Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project4Modal">Power Distribution</h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project4Modal">
+                Power Distribution
+              </h3>
               <p>Advanced power distribution system</p>
             </div>
           </div>
 
           <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/Access Control.webp" alt="Access Control" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Access Control.webp"
+                alt="Access Control"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project5Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project5Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project5Modal">Access Control </h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project5Modal">
+                Access Control
+              </h3>
               <p>Low Current Solutions</p>
             </div>
           </div>
 
           <div class="project-card project-card-slider">
             <div class="project-image">
-              <img class="img-fluid" src="images/Our Latest Projects/Integrated Systems.webp" alt="Integrated Systems" />
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Integrated Systems.webp"
+                alt="Integrated Systems"
+              />
               <div class="project-overlay">
-                <a href="#" class="project-link" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</a>
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project3Modal"
+                  >View Details</a
+                >
               </div>
             </div>
             <div class="project-content">
-              <h3 data-bs-toggle="modal" data-bs-target="#project3Modal">Integrated Systems</h3>
+              <h3 data-bs-toggle="modal" data-bs-target="#project3Modal">
+                Integrated Systems
+              </h3>
+              <p>Low Current Solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Our Project Popups-->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Smart Building Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Smart Building Control.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Marasi</h4>
+              <p class="details">
+                As part of its vision to lead the smart integration landscape,
+                <span class="main-color">ECDM</span> executed a cutting-edge
+                project using <span class="main-color">KNX technology</span> in
+                collaboration with <span class="main-color">EMAAR</span>. This
+                initiative aimed to create a fully intelligent environment by
+                integrating centralized control systems for lighting, HVAC,
+                curtains, and more ensuring exceptional comfort and operational
+                efficiency across residential and commercial spaces. Executed
+                with top-tier technical precision and rapid delivery, the
+                project highlights ECDM's role as a trusted partner in
+                delivering forward-thinking smart solutions tailored for the
+                future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Light systems</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Light systems.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Suez Canal University</h4>
+              <p class="details">
+                As part of <span class="main-color">ECDM</span>’s continuous
+                contribution to upgrading public and educational facilities, the
+                company successfully delivered advanced lighting systems for the
+                <span class="main-color">Family Medicine Center</span> at
+                <span class="main-color">Suez Canal University</span>. The scope
+                involved designing and implementing efficient lighting solutions
+                tailored to healthcare environments, ensuring optimal
+                visibility, energy savings, and aesthetic integration. This
+                project highlights ECDM’s technical excellence and its
+                commitment to creating safe, functional, and welcoming spaces
+                that serve both medical staff and the community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Integrated Systems</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Integrated Systems.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Haya Karima</h4>
+              <p class="details">
+                As part of Egypt’s national development program,
+                <span class="main-color">ECDM</span> was proud to contribute to
+                the “Decent Life” initiative, delivering comprehensive
+                <span class="main-color">low current systems</span> across
+                multiple service complexes and youth centers in rural
+                communities. The scope included advanced systems such as CCTV,
+                public address, access control, and data networking all tailored
+                to enhance safety, connectivity, and operational efficiency.
+                This project reflects
+                <span class="main-color">ECDM’s</span> commitment to community
+                upliftment and technical excellence, ensuring that vital public
+                facilities are equipped with smart, reliable infrastructure that
+                supports Egypt’s vision for sustainable development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project4Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Power Distribution</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Power Distribution.png"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Haya Karima</h4>
+              <p class="details">
+                Executed installation and commissioning of low voltage panels
+                for the <span class="main-color">“Haya Karima”</span> national
+                initiative, enhancing rural infrastructure.
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <strong
+                    >Executed specialized installation of low voltage electrical
+                    panels for youth centers, covering:</strong
+                  >
+                </li>
+                <li>Detailed load analysis and distribution board assembly.</li>
+                <li>
+                  Selection and integration of circuit breakers, relays, and
+                  protective devices.
+                </li>
+                <li>Integration of monitoring and control systems.</li>
+                <li>
+                  Factory Acceptance Test (FAT) and Site Acceptance Test (SAT).
+                </li>
+                <li>
+                  Handover with on-site technical training for operational
+                  staff.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project5Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Access Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Access Control.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Roche</h4>
+              <p class="details">
+                Successfully executed the installation and configuration of
+                <span class="main-color">Access Control Systems</span> for Roch
+                Company, in collaboration with Acciona. Scope included deploying
+                secure entry solutions, system integration, and operational
+                testing to meet international safety and performance standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project6Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Smart Building Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/برج الايقوني.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Iconic Tower</h4>
+              <p class="details">
+                Participated in the implementation of
+                <span class="main-color">BMS and KNX systems</span> within key
+                areas of the <span class="main-color">Iconic Tower</span>, in
+                collaboration with the Chinese contractor. Scope of work
+                included
+                <span class="main-color">smart integration setups</span>, device
+                configuration, and technical coordination to support centralized
+                building management and automation functions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients Slider Section -->
+    <section class="clients-section">
+      <div class="container">
+        <h1 class="section-title">Our Clients</h1>
+        <div class="client-slider">
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/My Clinic.png" alt="Client 1" />
+            <p>
+              Integrated low current systems: surveillance, networking, and
+              audio. Boosted safety and streamlined clinic operations.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img
+              src="images/Clients/greycolor/أرامــــــاك.png"
+              alt="Client 2"
+            />
+            <p>
+              BMS implementation across facilities. Enabled efficient control of
+              lighting, HVAC, and utilities.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/acciona.png" alt="Client 3" />
+            <p>
+              Provided maintenance for low current and low voltage systems.
+              Enhanced system reliability and reduced downtime.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/Genentech.png" alt="Client 4" />
+            <p>
+              Installed access control with smart system integration. Improved
+              lab security and operational flow.
+            </p>
+          </div>
+          <div
+            class="clients-card d-flex flex-column justify-content-between align-items-center"
+          >
+            <img
+              src="images/Clients/greycolor/amer-vision1.png"
+              style="
+                height: 130px;
+                width: 130px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+              "
+              alt="Client 5"
+            />
+            <p class=" ">
+              Executed low current and low voltage works across Amer locations
+              for military use. Ensured stability and secure infrastructure.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/emaarmisr.webp" alt="Client 6" />
+            <p>
+              Delivered KNX smart integration. Enabled full control over
+              lighting, climate, and security in residential units.
+            </p>
+          </div>
+          <div
+            class="clients-card d-flex flex-column justify-content-end align-items-center"
+          >
+            <img
+              src="images/Clients/greycolor/china.png"
+              style="
+                height: 170px;
+                width: 170px;
+                margin-bottom: 30px;
+                margin-top: 10px;
+              "
+              alt="Client 7"
+            />
+            <p>
+              Installed low voltage systems at the Iconic Tower New Capital.
+              Supported critical infrastructure and safe energy distribution.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/orascom.png" alt="Client 8" />
+            <p>
+              Implemented BMS for construction sites. Improved energy management
+              and centralized control across facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section py-5">
+      <div class="container">
+        <h2 class="section-title">Our History</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="16">0</h3>
+              <span class="plus">+</span>
+              <p>Years Of Experience</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="5000">0</h3>
+              <span class="plus">+</span>
+              <p>Projects Done</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="1500">0</h3>
+              <span class="plus">+</span>
+              <p>Satisfied Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second Form-->
+    <section class="contact-home-section">
+      <div class="container">
+        <div class="contact-form-home">
+          <h2 class="section-title">Get in touch with us</h2>
+          <form id="contact-form-home">
+            <div class="row">
+              <div class="col-12">
+                <h4>What can we help you with?</h4>
+                <div class="floating-field custom-select">
+                  <select name="reason" required>
+                    <option value="" selected></option>
+                    <option value="sales">
+                      I want to know more about ECDM products and solutions
+                    </option>
+                    <option value="journalist">I am a journalist</option>
+                    <option value="support">I want support</option>
+                    <option value="general">General inquiries</option>
+                    <option value="career">
+                      I am interested in career opportunities
+                    </option>
+                  </select>
+                  <label class="label-inpt">WHAT BRINGS YOU HERE? *</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="floating-field">
+                  <input type="text" name="subject" required placeholder=" " />
+                  <label class="label-inpt">SUBJECT *</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="floating-field floating-field-textarea">
+                  <textarea name="message" required placeholder=" "></textarea>
+                  <label class="label-inpt">MESSAGE *</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="required mb-2">
+                  <span id="required-text">* Required</span>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkDefault"
+                  />
+                  <label class="form-check-label" for="checkDefault">
+                    I have read and understood Axis
+                    <a href="#" target="_blank">Privacy Notice</a>. For
+                    information about what personal data we collect, what the
+                    purpose is for collecting it and what rights you have
+                    related to your data, please see our Privacy Notice.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="detect-button-contact mt-4">
+                  <div class=" ">
+                    <div class="recaptcha-wrapper">
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="your_site_key"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="text-center btn-div">
+                    <button type="submit" id="button-home">SUBMIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer position-relative">
+      <div class="feedback-toggle-wrapper rounded-start-3" id="toggleWrapper">
+        <div
+          class="feedback-toggle rounded-start-3 py-4 d-flex justify-content-between align-items-center"
+          id="feedbackToggle"
+        >
+          <small><i class="fa-solid fa-chevron-down mt-3"></i></small>
+          Feedback
+        </div>
+        <!-- feedback box -->
+        <div class="feedback-box" id="feedbackBox">
+          <h5>Rate the new site to help us improve!</h5>
+          <div class="stars my-4" id="stars">
+            <i class="fa fa-star feedback-star" data-value="1"></i>
+            <i class="fa fa-star feedback-star" data-value="2"></i>
+            <i class="fa fa-star feedback-star" data-value="3"></i>
+            <i class="fa fa-star feedback-star" data-value="4"></i>
+            <i class="fa fa-star feedback-star" data-value="5"></i>
+          </div>
+          <div class="labels">
+            <span>Hate</span>
+            <span>Love</span>
+          </div>
+          <small class="d-block alert alert-danger py-1 px-2 my-3 w-100 d-none">
+            You should rate by stars
+          </small>
+          <div class="btn-box">
+            <button class="btn btn-next-1 nextBtn" id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <!-- massage box -->
+        <div class="massage-box d-none">
+          <h5 class="">Tell us about your experience</h5>
+          <textarea
+            class="message-textarea"
+            name="message"
+            required
+            placeholder=" "
+          ></textarea>
+          <small class="d-block alert alert-danger py-1 px-2 my-3 w-100 d-none">
+            You should leave message
+          </small>
+          <div class="btn-box">
+            <button class="btn btn-next-2 nextBtn" id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <!-- close box -->
+        <div class="close-box d-none py-3">
+          <h5 class="text-center mb-5">
+            Thank you for sharing your feedback with us !
+          </h5>
+          <button class="w-100 btn-next-3 btn">Close</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-about">
+              <img
+                src="images/logo/white-footer-logo.png"
+                alt="ECDM"
+                class="footer-logo"
+              />
+              <p class="">
+                Delivering intelligent infrastructure through smart integration
+                and advanced automation technologies.
+              </p>
+              <div class="mt-3 text-white rounded">
+                <form class="d-flex flex-column gap-1">
+                  <label class="form-label">
+                    ECDM Insights Newsletter<span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control rounded-1"
+                    placeholder="your@email.com"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="w-50 btn mt-2 py-2 Newsletter-btn"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Shortcuts</h4>
+              <ul class="list-none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Products</h4>
+              <ul class="list-none">
+                <li>
+                  <a href="products/Medium-Voltage.html">Medium Voltage</a>
+                </li>
+                <li><a href="products/din-rail.html">Low Voltage</a></li>
+                <li><a href="products/low.html">Low Current</a></li>
+                <li><a href="products/BMS/BMS.html">BMS</a></li>
+                <li><a href="products/KNX/KNX.html">KNX</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Solutions</h4>
+              <ul class="list-none">
+                <li>
+                  <a href="products/BMS/BMS pages/BMS.html"
+                    >Building Management System
+                  </a>
+                </li>
+                <li>
+                  <a href="products/BMS/BMS pages/EMS.html"
+                    >Energy Management System</a
+                  >
+                </li>
+                <li>
+                  <a href="products/BMS/BMS pages/PMS.html"
+                    >Preventive Management System
+                  </a>
+                </li>
+                <li>
+                  <a href="products/KNX/KNX pages/System Integration.html"
+                    >System Integration
+                  </a>
+                </li>
+                <li>
+                  <a href="products/KNX/KNX pages/Smart Home Automation.html"
+                    >Smart Home Automation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 align-content-center pl-0">
+              <div class="copyright">
+                &copy; 2025 ECDM. All rights reserved.
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://x.com/ecdmeg?s=21" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- detect box -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_iamnfq9", "template_0ex06h9", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "xNERt114Z5zJF5Yda",
+        });
+      })();
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECDM - Electrical Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="common/loadHTML.js" defer></script>
+    <!-- Load the script -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Slick Theme (اختياري للتصميم الجاهز) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark"> -->
+    <nav id="home-nav" class="navbar navbar-expand-lg home-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="navbar-logo"
+            src="images/logo/white-footer-logo.png"
+            alt="ECDM"
+          />
+        </a>
+        <button
+          class="navbar-toggler home-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">NEWS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="referencesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                REFERENCES
+              </a>
+              <ul class="dropdown-menu shadow-lg">
+                <li>
+                  <a class="dropdown-item dropdown-hover" href="clients.html"
+                    >CLIENTS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-hover" href="projects.html"
+                    >PROJECTS</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="social-contact">
+            <a href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/ecdmeg?s=21"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr "
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section home-section">
+      <div class="swiper hero-slider w-100">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <video autoplay muted loop class="w-100">
+                <source src="images/hero/Video/1.mp4" type="video/mp4" />
+              </video>
+              <div class="container">
+                <div class="hero-content">
+                  <h1 class="animate__animated animate__fadeInDown">
+                    Infrastructure Innovation
+                  </h1>
+                  <p class="animate__animated animate__fadeInUp">
+                    ECDM Electric designs smart, resilient environments
+                    integrating advanced automation, sustainable engineering,
+                    and low-voltage systems to shape the future of
+                    intelligent infrastructure.
+                  </p>
+                  <div class="hero-buttons animate__animated animate__fadeInUp">
+                    <a href="shop.html" class="btn btn-primary">Our Products</a>
+                    <a href="projects.html" class="btn btn-outline-light"
+                      >Our Projects</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <video autoplay muted loop class="w-100">
+                <source src="images/hero/Video/2.mp4" type="video/mp4" />
+              </video>
+              <div class="container">
+                <div class="hero-content">
+                  <!-- <h1 class="animate__animated animate__fadeInDown">About Us</h1> -->
+
+                  <h1 class="animate__animated animate__fadeInDown">
+                    Smart Sustainability
+                  </h1>
+                  <p class="animate__animated animate__fadeInUp">
+                    At ECDM Electric, we provide tailored solutions to today’s
+                    infrastructure challenges combining end-to-end smart
+                    building integration, advanced asset management,
+                    infrastructure finance and PPP models, with a strong
+                    commitment to ESG and long-term sustainability.
+                  </p>
+                  <div class="hero-buttons animate__animated animate__fadeInUp">
+                    <a
+                      href="our-vision.html"
+                      class="btn btn-primary hero-btn-vision"
+                      >Our Vision</a
+                    >
+                    <a href="our-mission.html" class="btn btn-secondary"
+                      >Our Mission</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <!-- <div class="swiper-slide">
+          <div class="hero-slide" >
+            <video autoplay muted loop class="w-100">
+                <source src="images/hero/Video/3.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+            <div class="hero-content">
+              <h1 class="animate__animated animate__fadeInDown">
+                Excellence in Automation
+              </h1>
+              <p class="animate__animated animate__fadeInUp">
+                Transforming industries with cutting-edge solutions
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>  -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-next "></div>
+      <div class="swiper-button-prev "></div> -->
+      </div>
+    </section>
+
+    <!-- <section class="hero-section">
+    <div class="swiper hero-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('images/hero/Designer\ \(4\).jpeg')">
+            <div class="hero-content">
+              <h1 class="animate__animated animate__fadeInDown">
+                Advanced Electrical Solutions
+              </h1>
+              <p class="animate__animated animate__fadeInUp">
+                Leading the industry with innovative electrical control and
+                automation systems
+              </p>
+              <div class="hero-buttons animate__animated animate__fadeInUp">
+                <a href="shop.html" class="btn btn-primary">Our Products</a>
+                <a href="projects.html" class="btn btn-outline-light">Our Projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('images/hero/Designer\ \(5\).jpeg')">
+            <div class="hero-content">
+              <h1 class="animate__animated animate__fadeInDown">About Us</h1>
+              <h3 class="animate__animated animate__fadeInDown">
+                Our Mission
+              </h3>
+
+              We provide high-precision repair, preventive maintenance and
+              equipment renovation with affordable prices. We additionally
+              provide simplified monitoring and control all your devices
+              <br />
+              <h3 class="animate__animated animate__fadeInDown">
+                Our Vision
+              </h3>
+              <p class="animate__animated animate__fadeInUp">
+                To lead the Middle East in developing innovative solutions for
+                intelligent equipment by providing superior client service
+              </p>
+              <div class="hero-buttons animate__animated animate__fadeInUp">
+                <a href="our-vision.html" class="btn btn-primary">Our Vision</a>
+                <a href="our-mission.html" class="btn btn-secondary">Our Mission</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="hero-slide" style="background-image: url('images/hero/Designer\ \(6\).jpeg')">
+            <div class="hero-content">
+              <h1 class="animate__animated animate__fadeInDown">
+                Excellence in Automation
+              </h1>
+              <p class="animate__animated animate__fadeInUp">
+                Transforming industries with cutting-edge solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next "></div>
+      <div class="swiper-button-prev "></div>
+    </div>
+  </section> -->
+
+    <!--Solutions slider-->
+    <div class="solutions-wrapper pb-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Solutions</h2>
+        <div class="solution-slider">
+          <!-- solution 1 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Power-Solutions.png"
+              alt="Solution 1"
+            />
+            <div class="solutions-title">Power Solutions</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Power Solutions</h5>
+                <p>
+                  Smart power infrastructure integrating low-voltage systems and
+                  efficient energy control
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- solution 2 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Automation.webp"
+              alt="Solution 2"
+            />
+            <div class="solutions-title">Automation</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Automation</h5>
+                <p>
+                  KNX and BMS automation for centralized control and responsive
+                  building environments
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- solution 3 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Maintenance.webp"
+              alt="Solution 3"
+            />
+            <div class="solutions-title">Maintenance</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Maintenance</h5>
+                <p>
+                  Proactive support ensuring resilient, stable, and
+                  uninterrupted system performance
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- solution 4 -->
+          <div class="solutions-card">
+            <img
+              class="img-fluid"
+              src="images/solution/Integrated Platform.jpg"
+              alt="Solution 4"
+            />
+            <div class="solutions-title">Smart Cities</div>
+            <div class="solutions-overlay">
+              <a href="#">
+                <h5 class="solutions-overlay-title">Integrated Platform</h5>
+                <p>
+                  Unified system connecting automation and low-current
+                  technologies into one adaptive smart solution
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Products</h2>
+        <div class="products-slider">
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/Low Current.png" alt="Low Current" />
+              <h3>Low Current</h3>
+              <a href="products/low.html" type="button">View Details</a>
+            </div>
+          </div>
+
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/low voltage.png" alt="Low Voltage" />
+              <h3>Low Voltage</h3>
+              <a href="products/din-rail.html" type="button">View Details</a>
+            </div>
+          </div>
+
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/BMS.png" alt="BMS" />
+              <h3>BMS</h3>
+              <a href="products/BMS/BMS.html" type="button">View Details</a>
+            </div>
+          </div>
+
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/knx.jpg" alt="KNX" />
+              <h3>KNX</h3>
+              <a href="products/KNX/KNX.html" type="button">View Details</a>
+            </div>
+          </div>
+
+          <div class="custom-carousel-card">
+            <div class="custom-card">
+              <img src="images/medium voltage 2.png" alt="Medium Voltage" />
+              <h3>Medium Voltage</h3>
+              <a href="products/Medium-Voltage.html" type="button"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <div class="projects-section">
+      <div class="container">
+        <h2 class="section-title">
+          Our <span class="main-color">Projects</span>
+        </h2>
+
+        <div class="projects-slider">
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Smart Building Control.webp"
+                alt="Industrial Automation"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project1Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project1Modal">
+                Smart Building Control
+              </h3>
+              <p>Integrated building management system</p>
+            </div>
+          </div>
+
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Light systems.webp"
+                alt="Smart Building"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project2Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project2Modal">
+                Light Systems
+              </h3>
+              <p>Energy Lighting Systems</p>
+            </div>
+          </div>
+
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/برج الايقوني.webp"
+                alt="Smart Building Control"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project6Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project6Modal">
+                Smart Building Control
+              </h3>
+              <p>building management system</p>
+            </div>
+          </div>
+
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Power Distribution.png"
+                alt="Power Distribution"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project4Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project4Modal">
+                Power Distribution
+              </h3>
+              <p>Advanced power distribution system</p>
+            </div>
+          </div>
+
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Access Control.webp"
+                alt="Access Control"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project5Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project5Modal">
+                Access Control
+              </h3>
               <p>Low Current Solutions</p>
             </div>
           </div>
 
-
-      </div>
-    </div>
-  </div>
-
-  <!--Our Project Popups-->
-  <div class="modal fade" id="project1Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Smart Building Control</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/Smart Building Control.webp" alt="Project Details" class="img-fluid mb-4" />
-            <h4 class="main-color">Marasi</h4>
-            <p class="details">
-              As part of its vision to lead the smart integration landscape, <span class="main-color">ECDM</span> executed a cutting-edge project using <span class="main-color">KNX technology</span> in collaboration with <span class="main-color">EMAAR</span>.  
-              This initiative aimed to create a fully intelligent environment by integrating centralized control systems for lighting, HVAC, curtains, and more ensuring exceptional comfort and operational efficiency across residential and commercial spaces.  
-              Executed with top-tier technical precision and rapid delivery, the project highlights ECDM's role as a trusted partner in delivering forward-thinking smart solutions tailored for the future.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="project2Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Light systems</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/Light systems.webp" alt="Project Details" class="img-fluid mb-4" />
-          <h4 class="main-color">Suez Canal University</h4>
-            <p class="details">
-              As part of <span class="main-color">ECDM</span>’s continuous contribution to upgrading public and educational facilities, the company successfully delivered advanced lighting systems for the <span class="main-color">Family Medicine Center</span> at <span class="main-color">Suez Canal University</span>.  
-              The scope involved designing and implementing efficient lighting solutions tailored to healthcare environments, ensuring optimal visibility, energy savings, and aesthetic integration.  
-              This project highlights ECDM’s technical excellence and its commitment to creating safe, functional, and welcoming spaces that serve both medical staff and the community.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="project3Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Integrated Systems</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/Integrated Systems.webp" alt="Project Details" class="img-fluid mb-4" />
-          <h4 class="main-color">Haya Karima</h4>
-            <p class="details">
-              As part of Egypt’s national development program, <span class="main-color">ECDM</span> was proud to contribute to the “Decent Life” initiative, delivering comprehensive <span class="main-color">low current systems</span> across multiple service complexes and youth centers in rural communities.  
-              The scope included advanced systems such as CCTV, public address, access control, and data networking all tailored to enhance safety, connectivity, and operational efficiency.  
-              This project reflects <span class="main-color">ECDM’s</span> commitment to community upliftment and technical excellence, ensuring that vital public facilities are equipped with smart, reliable infrastructure that supports Egypt’s vision for sustainable development.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="project4Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Power Distribution</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/Power Distribution.png" alt="Project Details" class="img-fluid mb-4" />
-          <h4 class="main-color">Haya Karima</h4>
-            <p class="details">
-              Executed installation and commissioning of low voltage panels for the <span class="main-color">“Haya Karima”</span> national initiative, enhancing rural infrastructure.  
-            </p>
-            <ul class="list-unstyled">
-              <li><strong>Executed specialized installation of low voltage electrical panels for youth centers, covering:</strong></li>
-              <li>Detailed load analysis and distribution board assembly.</li>
-              <li>Selection and integration of circuit breakers, relays, and protective devices.</li>
-              <li>Integration of monitoring and control systems.</li>
-              <li>Factory Acceptance Test (FAT) and Site Acceptance Test (SAT).</li>
-              <li>Handover with on-site technical training for operational staff.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="project5Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Access Control </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/Access Control.webp" alt="Project Details" class="img-fluid mb-4" />
-          <h4 class="main-color">Roche</h4>
-            <p class="details">
-              Successfully executed the installation and configuration of 
-              <span class="main-color">Access Control Systems</span> for Roch Company, in collaboration with Acciona.
-              Scope included deploying secure entry solutions, system integration,
-              and operational testing to meet international safety and performance standards.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="project6Modal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Smart Building Control</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <div class="project-details">
-            <img src="images/Our Latest Projects/برج الايقوني.webp" alt="Project Details" class="img-fluid mb-4" />
-          <h4 class="main-color">Iconic Tower</h4>
-            <p class="details">
-              Participated in the implementation of <span class="main-color" >BMS and KNX systems</span> within key areas of the <span class="main-color">Iconic Tower</span>,
-              in collaboration with the Chinese contractor. Scope of work included <span class="main-color">smart integration setups</span>,
-              device configuration, and technical coordination to support centralized building management
-              and automation functions.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Clients Slider Section -->
-  <section class="clients-section">
-    <div class="container">
-    <h1 class="section-title">
-        Our Clients
-    </h1>
-    <div class="client-slider">
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/greycolor/My Clinic.png" alt="Client 1">
-            <p>Integrated low current systems: surveillance, networking, and audio. Boosted safety and streamlined
-              clinic operations.</p>
-          </div>
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/greycolor/أرامــــــاك.png" alt="Client 2">
-            <p>BMS implementation across facilities. Enabled efficient control of lighting, HVAC, and utilities.</p>
-          </div>
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/greycolor/acciona.png" alt="Client 3">
-            <p>Provided maintenance for low current and low voltage systems. Enhanced system reliability and reduced
-              downtime.</p>
-          </div>
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/greycolor/Genentech.png" alt="Client 4">
-            <p>Installed access control with smart system integration. Improved lab security and operational flow.
-            </p>
-          </div>
-          <div class="clients-card d-flex flex-column justify-content-between align-items-center ">
-            <img src="images/Clients/greycolor/amer-vision1.png" style="height: 130px; width: 130px; margin-bottom: 40px ; margin-top: 40px;"  alt="Client 5">
-            <p class=" ">Executed low current and low voltage works across Amer locations for military use. Ensured stability
-              and secure infrastructure.</p>
-          </div>
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/emaarmisr.webp" alt="Client 6">
-            <p>Delivered KNX smart integration. Enabled full control over lighting, climate, and security in
-              residential units.</p>
-          </div>
-          <div class="clients-card d-flex flex-column justify-content-end align-items-center">
-            <img src="images/Clients/greycolor/china.png"  style="height: 170px; width: 170px; margin-bottom: 30px; margin-top: 10px;" alt="Client 7" >
-            <p>Installed low voltage systems at the Iconic Tower New Capital. Supported critical infrastructure
-              and safe energy distribution.</p>
-          </div>
-          <div class="clients-card d-flex flex-column align-items-center">
-            <img src="images/Clients/greycolor/orascom.png" alt="Client 8">
-            <p>Implemented BMS for construction sites. Improved energy management and centralized control across
-              facilities.</p>
-          </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Statistics Section -->
-  <section class="statistics-section py-5">
-    <div class="container">
-      <h2 class="section-title " >
-        Our History
-      </h2>
-      <div class="row text-center">
-        <div class="col-md-4"  >
-          <div class="stat-item">
-            <h3 class="counter" data-target="16">0</h3>
-            <span class="plus">+</span>
-            <p>Years Of Experience</p>
-          </div>
-        </div>
-        <div class="col-md-4"  >
-          <div class="stat-item">
-            <h3 class="counter" data-target="5000">0</h3>
-            <span class="plus">+</span>
-            <p>Projects Done</p>
-          </div>
-        </div>
-        <div class="col-md-4"  >
-          <div class="stat-item">
-            <h3 class="counter" data-target="1500">0</h3>
-            <span class="plus">+</span>
-            <p>Satisfied Customers</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!--Second Form-->
-<section class="contact-home-section">
-  <div class="container">
-    <div class="contact-form-home">
-      <h2 class="section-title">Get in touch with us</h2>
-      <form id="contact-form-home">
-        <div class="row">
-          <div class="col-12">
-            <h4 >What can we help you with?</h4>
-            <div class="floating-field custom-select">
-              <select name="reason" required>
-                <option value=""  selected></option>
-                <option value="sales">I want to know more about ECDM products and solutions</option>
-                <option value="journalist">I am a journalist</option>
-                <option value="support">I want support</option>
-                <option value="general">General inquiries</option>
-                <option value="career">I am interested in career opportunities</option>
-              </select>
-              <label class="label-inpt" >WHAT BRINGS YOU HERE? *</label>
+          <div class="project-card project-card-slider">
+            <div class="project-image">
+              <img
+                class="img-fluid"
+                src="images/Our Latest Projects/Integrated Systems.webp"
+                alt="Integrated Systems"
+              />
+              <div class="project-overlay">
+                <a
+                  href="#"
+                  class="project-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project3Modal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 data-bs-toggle="modal" data-bs-target="#project3Modal">
+                Integrated Systems
+              </h3>
+              <p>Low Current Solutions</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-12">
-            <div class="floating-field">
-              <input type="text" name="subject" required placeholder=" " />
-              <label class="label-inpt">SUBJECT *</label>
+    <!--Our Project Popups-->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Smart Building Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Smart Building Control.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Marasi</h4>
+              <p class="details">
+                As part of its vision to lead the smart integration landscape,
+                <span class="main-color">ECDM</span> executed a cutting-edge
+                project using <span class="main-color">KNX technology</span> in
+                collaboration with <span class="main-color">EMAAR</span>. This
+                initiative aimed to create a fully intelligent environment by
+                integrating centralized control systems for lighting, HVAC,
+                curtains, and more ensuring exceptional comfort and operational
+                efficiency across residential and commercial spaces. Executed
+                with top-tier technical precision and rapid delivery, the
+                project highlights ECDM's role as a trusted partner in
+                delivering forward-thinking smart solutions tailored for the
+                future.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-12">
-            <div class="floating-field floating-field-textarea">
-              <textarea name="message" required placeholder=" "></textarea>
-              <label class="label-inpt">MESSAGE *</label>
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Light systems</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Light systems.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Suez Canal University</h4>
+              <p class="details">
+                As part of <span class="main-color">ECDM</span>’s continuous
+                contribution to upgrading public and educational facilities, the
+                company successfully delivered advanced lighting systems for the
+                <span class="main-color">Family Medicine Center</span> at
+                <span class="main-color">Suez Canal University</span>. The scope
+                involved designing and implementing efficient lighting solutions
+                tailored to healthcare environments, ensuring optimal
+                visibility, energy savings, and aesthetic integration. This
+                project highlights ECDM’s technical excellence and its
+                commitment to creating safe, functional, and welcoming spaces
+                that serve both medical staff and the community.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="col-12">
-            <div class="required mb-2">
-              <span id="required-text">* Required</span>
-            </div>
-            <div class="form-check ">
-              <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-              <label class="form-check-label " for="checkDefault">
-                  I have read and understood Axis <a href="#" target="_blank">Privacy Notice</a>. For information about what personal data we collect, what the purpose is for collecting it and what rights you have related to your data, please see our Privacy Notice.
-              </label>
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Integrated Systems</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Integrated Systems.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Haya Karima</h4>
+              <p class="details">
+                As part of Egypt’s national development program,
+                <span class="main-color">ECDM</span> was proud to contribute to
+                the “Decent Life” initiative, delivering comprehensive
+                <span class="main-color">low current systems</span> across
+                multiple service complexes and youth centers in rural
+                communities. The scope included advanced systems such as CCTV,
+                public address, access control, and data networking all tailored
+                to enhance safety, connectivity, and operational efficiency.
+                This project reflects
+                <span class="main-color">ECDM’s</span> commitment to community
+                upliftment and technical excellence, ensuring that vital public
+                facilities are equipped with smart, reliable infrastructure that
+                supports Egypt’s vision for sustainable development.
+              </p>
             </div>
           </div>
-          <div class="col-12 ">
-            <div class="detect-button-contact mt-4">
+        </div>
+      </div>
+    </div>
 
-              <div class=" " >
-                <div class="recaptcha-wrapper">
-                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+    <div class="modal fade" id="project4Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Power Distribution</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Power Distribution.png"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Haya Karima</h4>
+              <p class="details">
+                Executed installation and commissioning of low voltage panels
+                for the <span class="main-color">“Haya Karima”</span> national
+                initiative, enhancing rural infrastructure.
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <strong
+                    >Executed specialized installation of low voltage electrical
+                    panels for youth centers, covering:</strong
+                  >
+                </li>
+                <li>Detailed load analysis and distribution board assembly.</li>
+                <li>
+                  Selection and integration of circuit breakers, relays, and
+                  protective devices.
+                </li>
+                <li>Integration of monitoring and control systems.</li>
+                <li>
+                  Factory Acceptance Test (FAT) and Site Acceptance Test (SAT).
+                </li>
+                <li>
+                  Handover with on-site technical training for operational
+                  staff.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project5Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Access Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/Access Control.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Roche</h4>
+              <p class="details">
+                Successfully executed the installation and configuration of
+                <span class="main-color">Access Control Systems</span> for Roch
+                Company, in collaboration with Acciona. Scope included deploying
+                secure entry solutions, system integration, and operational
+                testing to meet international safety and performance standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project6Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Smart Building Control</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-details">
+              <img
+                src="images/Our Latest Projects/برج الايقوني.webp"
+                alt="Project Details"
+                class="img-fluid mb-4"
+              />
+              <h4 class="main-color">Iconic Tower</h4>
+              <p class="details">
+                Participated in the implementation of
+                <span class="main-color">BMS and KNX systems</span> within key
+                areas of the <span class="main-color">Iconic Tower</span>, in
+                collaboration with the Chinese contractor. Scope of work
+                included
+                <span class="main-color">smart integration setups</span>, device
+                configuration, and technical coordination to support centralized
+                building management and automation functions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients Slider Section -->
+    <section class="clients-section">
+      <div class="container">
+        <h1 class="section-title">Our Clients</h1>
+        <div class="client-slider">
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/My Clinic.png" alt="Client 1" />
+            <p>
+              Integrated low current systems: surveillance, networking, and
+              audio. Boosted safety and streamlined clinic operations.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img
+              src="images/Clients/greycolor/أرامــــــاك.png"
+              alt="Client 2"
+            />
+            <p>
+              BMS implementation across facilities. Enabled efficient control of
+              lighting, HVAC, and utilities.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/acciona.png" alt="Client 3" />
+            <p>
+              Provided maintenance for low current and low voltage systems.
+              Enhanced system reliability and reduced downtime.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/Genentech.png" alt="Client 4" />
+            <p>
+              Installed access control with smart system integration. Improved
+              lab security and operational flow.
+            </p>
+          </div>
+          <div
+            class="clients-card d-flex flex-column justify-content-between align-items-center"
+          >
+            <img
+              src="images/Clients/greycolor/amer-vision1.png"
+              style="
+                height: 130px;
+                width: 130px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+              "
+              alt="Client 5"
+            />
+            <p class=" ">
+              Executed low current and low voltage works across Amer locations
+              for military use. Ensured stability and secure infrastructure.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/emaarmisr.webp" alt="Client 6" />
+            <p>
+              Delivered KNX smart integration. Enabled full control over
+              lighting, climate, and security in residential units.
+            </p>
+          </div>
+          <div
+            class="clients-card d-flex flex-column justify-content-end align-items-center"
+          >
+            <img
+              src="images/Clients/greycolor/china.png"
+              style="
+                height: 170px;
+                width: 170px;
+                margin-bottom: 30px;
+                margin-top: 10px;
+              "
+              alt="Client 7"
+            />
+            <p>
+              Installed low voltage systems at the Iconic Tower New Capital.
+              Supported critical infrastructure and safe energy distribution.
+            </p>
+          </div>
+          <div class="clients-card d-flex flex-column align-items-center">
+            <img src="images/Clients/greycolor/orascom.png" alt="Client 8" />
+            <p>
+              Implemented BMS for construction sites. Improved energy management
+              and centralized control across facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section py-5">
+      <div class="container">
+        <h2 class="section-title">Our History</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="16">0</h3>
+              <span class="plus">+</span>
+              <p>Years Of Experience</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="5000">0</h3>
+              <span class="plus">+</span>
+              <p>Projects Done</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-item">
+              <h3 class="counter" data-target="1500">0</h3>
+              <span class="plus">+</span>
+              <p>Satisfied Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second Form-->
+    <section class="contact-home-section">
+      <div class="container">
+        <div class="contact-form-home">
+          <h2 class="section-title">Get in touch with us</h2>
+          <form id="contact-form-home">
+            <div class="row">
+              <div class="col-12">
+                <h4>What can we help you with?</h4>
+                <div class="floating-field custom-select">
+                  <select name="reason" required>
+                    <option value="" selected></option>
+                    <option value="sales">
+                      I want to know more about ECDM products and solutions
+                    </option>
+                    <option value="journalist">I am a journalist</option>
+                    <option value="support">I want support</option>
+                    <option value="general">General inquiries</option>
+                    <option value="career">
+                      I am interested in career opportunities
+                    </option>
+                  </select>
+                  <label class="label-inpt">WHAT BRINGS YOU HERE? *</label>
                 </div>
               </div>
-              <div class=" text-center btn-div ">
-                <button type="submit" id="button-home">SUBMIT</button>
+
+              <div class="col-12">
+                <div class="floating-field">
+                  <input type="text" name="subject" required placeholder=" " />
+                  <label class="label-inpt">SUBJECT *</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="floating-field floating-field-textarea">
+                  <textarea name="message" required placeholder=" "></textarea>
+                  <label class="label-inpt">MESSAGE *</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="required mb-2">
+                  <span id="required-text">* Required</span>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkDefault"
+                  />
+                  <label class="form-check-label" for="checkDefault">
+                    I have read and understood Axis
+                    <a href="#" target="_blank">Privacy Notice</a>. For
+                    information about what personal data we collect, what the
+                    purpose is for collecting it and what rights you have
+                    related to your data, please see our Privacy Notice.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="detect-button-contact mt-4">
+                  <div class=" ">
+                    <div class="recaptcha-wrapper">
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="your_site_key"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="text-center btn-div">
+                    <button type="submit" id="button-home">SUBMIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer position-relative">
+      <div class="feedback-toggle-wrapper rounded-start-3" id="toggleWrapper">
+        <div
+          class="feedback-toggle rounded-start-3 py-4 d-flex justify-content-between align-items-center"
+          id="feedbackToggle"
+        >
+          <small><i class="fa-solid fa-chevron-down mt-3"></i></small>
+          Feedback
+        </div>
+        <!-- feedback box -->
+        <div class="feedback-box" id="feedbackBox">
+          <h5>Rate the new site to help us improve!</h5>
+          <div class="stars my-4" id="stars">
+            <i class="fa fa-star feedback-star" data-value="1"></i>
+            <i class="fa fa-star feedback-star" data-value="2"></i>
+            <i class="fa fa-star feedback-star" data-value="3"></i>
+            <i class="fa fa-star feedback-star" data-value="4"></i>
+            <i class="fa fa-star feedback-star" data-value="5"></i>
+          </div>
+          <div class="labels">
+            <span>Hate</span>
+            <span>Love</span>
+          </div>
+          <small class="d-block alert alert-danger py-1 px-2 my-3 w-100 d-none">
+            You should rate by stars
+          </small>
+          <div class="btn-box">
+            <button class="btn btn-next-1 nextBtn" id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <!-- massage box -->
+        <div class="massage-box d-none">
+          <h5 class="">Tell us about your experience</h5>
+          <textarea
+            class="message-textarea"
+            name="message"
+            required
+            placeholder=" "
+          ></textarea>
+          <small class="d-block alert alert-danger py-1 px-2 my-3 w-100 d-none">
+            You should leave message
+          </small>
+          <div class="btn-box">
+            <button class="btn btn-next-2 nextBtn" id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <!-- close box -->
+        <div class="close-box d-none py-3">
+          <h5 class="text-center mb-5">
+            Thank you for sharing your feedback with us !
+          </h5>
+          <button class="w-100 btn-next-3 btn">Close</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-about">
+              <img
+                src="images/logo/white-footer-logo.png"
+                alt="ECDM"
+                class="footer-logo"
+              />
+              <p class="">
+                Delivering intelligent infrastructure through smart integration
+                and advanced automation technologies.
+              </p>
+              <div class="mt-3 text-white rounded">
+                <form class="d-flex flex-column gap-1">
+                  <label class="form-label">
+                    ECDM Insights Newsletter<span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control rounded-1"
+                    placeholder="your@email.com"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="w-50 btn mt-2 py-2 Newsletter-btn"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Shortcuts</h4>
+              <ul class="list-none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Products</h4>
+              <ul class="list-none">
+                <li>
+                  <a href="products/Medium-Voltage.html">Medium Voltage</a>
+                </li>
+                <li><a href="products/din-rail.html">Low Voltage</a></li>
+                <li><a href="products/low.html">Low Current</a></li>
+                <li><a href="products/BMS/BMS.html">BMS</a></li>
+                <li><a href="products/KNX/KNX.html">KNX</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-links">
+              <h4>Solutions</h4>
+              <ul class="list-none">
+                <li>
+                  <a href="products/BMS/BMS pages/BMS.html"
+                    >Building Management System
+                  </a>
+                </li>
+                <li>
+                  <a href="products/BMS/BMS pages/EMS.html"
+                    >Energy Management System</a
+                  >
+                </li>
+                <li>
+                  <a href="products/BMS/BMS pages/PMS.html"
+                    >Preventive Management System
+                  </a>
+                </li>
+                <li>
+                  <a href="products/KNX/KNX pages/System Integration.html"
+                    >System Integration
+                  </a>
+                </li>
+                <li>
+                  <a href="products/KNX/KNX pages/Smart Home Automation.html"
+                    >Smart Home Automation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 align-content-center pl-0">
+              <div class="copyright">
+                &copy; 2025 ECDM. All rights reserved.
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://x.com/ecdmeg?s=21" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-  <!-- Footer -->
-<footer class="footer position-relative ">
-  <div class="feedback-toggle-wrapper rounded-start-3" id="toggleWrapper">
-    <div class="feedback-toggle rounded-start-3 py-4 d-flex justify-content-between align-items-center" id="feedbackToggle">
-       <small><i class="fa-solid fa-chevron-down mt-3"></i></small>
-         Feedback
-    </div>
-    <!-- feedback box -->
-    <div class="feedback-box" id="feedbackBox">
-      <h5>Rate the new site to help us improve!</h5>
-      <div class="stars my-4" id="stars">
-        <i class="fa fa-star feedback-star" data-value="1"></i>
-        <i class="fa fa-star feedback-star" data-value="2"></i>
-        <i class="fa fa-star feedback-star" data-value="3"></i>
-        <i class="fa fa-star feedback-star" data-value="4"></i>
-        <i class="fa fa-star feedback-star" data-value="5"></i>
       </div>
-      <div class="labels">
-        <span>Hate</span>
-        <span>Love</span>
-      </div>
-      <small class=" d-block alert alert-danger py-1 px-2 my-3 w-100 d-none ">
-        You should rate by stars
-      </small>
-      <div class=" btn-box">        
-        <button class="btn btn-next-1 nextBtn" id="nextBtn">Next</button>
-      </div>
-    </div>
+    </footer>
 
-    <!-- massage box -->
-    <div class="massage-box d-none">
-      <h5 class=""> Tell us about your experience </h5>
-      <textarea class="message-textarea" name="message" required placeholder=" "></textarea>
-      <small class=" d-block alert alert-danger py-1 px-2 my-3 w-100 d-none ">
-        You should leave message
-      </small>
-      <div class=" btn-box">        
-        <button class="btn btn-next-2 nextBtn" id="nextBtn">Next</button>
-      </div>
-    </div>
-
-    <!-- close box -->
-     <div class="close-box d-none py-3">
-      <h5 class="text-center mb-5">Thank you for sharing your feedback with us !</h5>
-      <button class="w-100 btn-next-3 btn" >Close</button>
-     </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="footer-about">
-          <img src="images/logo/white-footer-logo.png" alt="ECDM" class="footer-logo" />
-          <p class="">
-            Delivering intelligent infrastructure through smart integration and advanced automation technologies.
-          </p>
-          <div class="mt-3 text-white rounded" >
-            <form class="d-flex flex-column gap-1">
-              <label class="form-label">
-                ECDM Insights Newsletter<span class="text-danger">*</span>
-              </label>
-              <input
-                type="email"
-                class="form-control  rounded-1"
-                placeholder="your@email.com"
-                required
-              />
-              <button type="submit" class=" w-50  btn mt-2 py-2 Newsletter-btn">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="footer-links">
-          <h4>Shortcuts</h4>
-          <ul class="list-none">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="shop.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 ">
-        <div class="footer-links  ">
-          <h4>Products</h4>
-          <ul class="list-none">
-            <li><a href="products/Medium-Voltage.html">Medium Voltage</a></li>
-            <li><a href="products/din-rail.html">Low Voltage</a></li>
-            <li><a href="products/low.html">Low Current</a></li>
-            <li><a href="products/BMS/BMS.html">BMS</a></li>
-            <li><a href="products/KNX/KNX.html">KNX</a></li>
-          </ul>
-        </div>
-    </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="footer-links">
-          <h4>Solutions</h4>
-          <ul class="list-none">
-            <li><a href="products/BMS/BMS pages/BMS.html">Building Management System </a></li>
-            <li><a href="products/BMS/BMS pages/EMS.html">Energy Management System</a></li>
-            <li><a href="products/BMS/BMS pages/PMS.html">Preventive Management System </a></li>
-            <li><a href="products/KNX/KNX pages/System Integration.html">System Integration </a></li>
-            <li><a href="products/KNX/KNX pages/Smart Home Automation.html">Smart Home Automation   </a></li>
-          </ul>
-        </div>
-    </div>
-  </div>
-  </div>
-
-    <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-content-center pl-0">
-          <div class="copyright">&copy; 2025 ECDM. All rights reserved.</div>
-        </div>
-        <div class="col-lg-6">
-          <div class="social-links">
-            <a href="https://www.facebook.com/share/1Br2TzUyyS/?mibextid=wwXIfr" target="_blank"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/ecdmeg?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/ecdmelectricalsolutions?igsh=N281Z2wxNWJwbWw4&utm_source=qr"
-              target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-  
-  <!-- Scripts -->
-   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- detect box -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- Slick JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/counter.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          // these IDs from the previous steps
-          emailjs.sendForm("service_iamnfq9", "template_0ex06h9", this).then(
-            () => {
-              console.log("SUCCESS!");
-            },
-            (error) => {
-              console.log("FAILED...", error);
-            }
-          );
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- detect box -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("service_iamnfq9", "template_0ex06h9", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "xNERt114Z5zJF5Yda",
         });
-    };
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      // https://dashboard.emailjs.com/admin/account
-      emailjs.init({
-        publicKey: "xNERt114Z5zJF5Yda",
-      });
-    })();
-  </script>
-</body>
-
+      })();
+    </script>
+  </body>
 </html>
