@@ -2638,7 +2638,7 @@ margin-bottom:100px;
 }
 
 .news-content {
-  padding: 20px;
+  padding:0 20px 20px 20px;
 }
 
 .news-date {
@@ -3805,10 +3805,10 @@ margin-bottom:100px;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
-
+/* 
 .news-content {
   padding: 25px;
-}
+} */
 
 .news-category {
   color: var(--secondary-color);
