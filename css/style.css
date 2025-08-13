@@ -5705,6 +5705,9 @@ small {
     margin-bottom: 15px;
     width: fit-content;
   }
+  .hero-buttons .btn-primary {
+    margin-right: 5px !important;
+  }
   .btn-special-size {
     font-size: 8px !important;
   }
