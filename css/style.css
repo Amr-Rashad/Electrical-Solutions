@@ -575,9 +575,9 @@ footer.footer {
 #contact-nav .social-contact a:hover {
   background-color: white !important;
 }
-.home-navbar .social-contact a i {
-  color: #0964b6 !important;
-}
+/* .home-navbar .social-contact a i {
+  color: #0964b6 ;
+} */
 /* Make toggler lines and border white for both home and about navbars*/
 
 .navbar .navbar-toggler .navbar-toggler-icon,
@@ -5710,9 +5710,6 @@ small {
   }
   .btn-special-size {
     font-size: 8px !important;
-  }
-  .hero-buttons .hero-buttons .btn-primary {
-    margin-right: 3px;
   }
   .hero-btn-vision {
     padding: 10px 25px !important;
