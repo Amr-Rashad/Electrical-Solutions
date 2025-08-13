@@ -826,7 +826,7 @@ footer.footer {
   }
 }
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .hero-content {
     width: 300;
     position: absolute;
@@ -856,7 +856,7 @@ footer.footer {
   .hero-btn-vision {
     padding: 10px 25px !important;
   }
-}
+} */
 @media (max-width: 460px) {
   .hero-content {
     max-width: 250px;
@@ -5689,7 +5689,7 @@ small {
   }
   .hero-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
   }
   .hero-buttons .btn {
