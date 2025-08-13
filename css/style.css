@@ -3794,6 +3794,12 @@ margin-bottom:100px;
   border-radius: 5px;
   text-align: center;
 }
+.news-date:hover{
+
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+
+}
 
 .news-date .day {
   font-size: 1.5rem;
