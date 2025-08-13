@@ -3788,7 +3788,7 @@ margin-bottom:100px;
   position: absolute;
   top: 20px;
   left: 20px;
-  background: var(--primary-color);
+  background: rgba(30, 136, 229, 0.5);
   color: var(--white);
   padding: 10px 15px;
   border-radius: 5px;
