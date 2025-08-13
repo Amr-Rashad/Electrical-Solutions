@@ -5731,6 +5731,9 @@ small {
   .hero-btn-vision {
     padding: 10px 25px !important;
   }
+  .news-content {
+  padding:10px 20px 20px 20px;
+}
   .collapse.navbar-collapse {
     position: absolute;
     top: 100%;
