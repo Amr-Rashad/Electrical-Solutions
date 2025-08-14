@@ -510,13 +510,13 @@ footer.footer {
 
 .dropdown-item {
   padding: 8px 20px;
-  color: rgb(0, 3, 5);
+  color: var(--dark);
   transition: all 0.3s ease;
 }
 
 @media (max-width: 991px) {
   .dropdown-item {
-    color: rgb(0, 3, 5) !important ;
+    color: var(--dark) ;
   }
   .about-content {
     padding-left: 0px;
