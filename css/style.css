@@ -4456,6 +4456,9 @@ margin-bottom:100px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
+a[href*="x.com"]:hover .fa-x-twitter {
+  color: #000 !important;
+}
 
 .social-contact a i {
   color: var(--black);
