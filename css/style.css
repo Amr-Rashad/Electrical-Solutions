@@ -5562,7 +5562,9 @@ small {
   background-color: var(--primary-color);
   color: white;
 }
-
+.clients-img{
+  margin: auto;
+}
 @media (max-width: 768px) {
   .feedback-toggle-wrapper {
     width: 300px;
