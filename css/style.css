@@ -5850,6 +5850,9 @@ small {
     padding: 7px;
     font-size: 14px;
   }
+  .solutions-wrapper{
+    margin-top: 50px;
+  }
 }
 /* Combined media query for max-width: 991.98px */
 @media (max-width: 991.98px) {
