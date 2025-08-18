@@ -4700,6 +4700,7 @@ small {
   .padding-left {
     padding-left: 2px;
   }
+  .nav-link{color: #fff;}
   .feedback-toggle-wrapper.open {
     right: 0;
   }
