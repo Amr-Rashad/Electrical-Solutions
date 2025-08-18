@@ -4695,6 +4695,9 @@ small {
   .about-section {
     padding-top: 8px !important;
   }
+  .padding-left{
+    padding-left: 2px ;
+  }
   .feedback-toggle-wrapper.open {
     right: 0;
   }
