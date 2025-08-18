@@ -5817,8 +5817,12 @@ small {
 width: 100%;
 height: 100%;
   }
+
   .clients-card p {
     position: relative;
+    top: -48px;
+  }
+  .clients-card p.clients-orascom {
     top: -100px;
   }
   .feedback-toggle-wrapper.open {
