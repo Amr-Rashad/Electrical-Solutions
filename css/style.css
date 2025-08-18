@@ -4694,9 +4694,12 @@ small {
   .clients-card p.clients-orascom {
     top: -100px;
   }
-  .contact-home-section,
+  
   .about-section {
     padding-top: 8px !important;
+  }
+  .contact-home-section {
+    padding-top: 16px !important;
   }
   .padding-left {
     padding-left: 2px;
