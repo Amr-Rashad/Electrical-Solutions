@@ -4684,9 +4684,9 @@ small {
     position: relative;
     top: -48px;
   }
-  .slick-dots {
+  .client-slider .slick-dots {
     position: relative;
-    bottom: 35px !important;
+    bottom: 50px !important;
   }
   .clients-card p.clients-orascom {
     top: -100px;
