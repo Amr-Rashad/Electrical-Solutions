@@ -4324,7 +4324,6 @@ small {
 .feedback-toggle-wrapper {
   position: absolute;
   top: 50%;
-  /* right: 0; */
   right: -350px;
   width: 350px;
   padding: 20px;
@@ -4675,6 +4674,7 @@ small {
     right: -300px;
     padding: 15px;
   }
+
   .clients-card img {
     width: 100%;
     height: 100%;
@@ -4683,6 +4683,10 @@ small {
   .clients-card p {
     position: relative;
     top: -48px;
+  }
+  .slick-dots {
+    position: relative;
+    bottom: 35px !important;
   }
   .clients-card p.clients-orascom {
     top: -100px;
