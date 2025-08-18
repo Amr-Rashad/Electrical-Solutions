@@ -516,7 +516,7 @@ footer.footer {
 
 @media (max-width: 991px) {
   .dropdown-item {
-    color: var(--dark) ;
+    color: var(--dark);
   }
   .about-content {
     padding-left: 0px;
@@ -1250,7 +1250,7 @@ margin-bottom:100px;
   padding: 100px 0;
   background-color: #f8f9fa;
 }
-.form-header{
+.form-header {
   color: var(--primary-color);
 }
 /* @media(min-width:1200px){
@@ -5562,7 +5562,7 @@ small {
   background-color: var(--primary-color);
   color: white;
 }
-.clients-img{
+.clients-img {
   margin: auto;
 }
 @media (max-width: 768px) {
@@ -5813,7 +5813,10 @@ small {
     right: -300px;
     padding: 15px;
   }
-
+  .clients-card p {
+    position: relative;
+    top: -50px;
+  }
   .feedback-toggle-wrapper.open {
     right: 0;
   }
@@ -5850,7 +5853,7 @@ small {
     padding: 7px;
     font-size: 14px;
   }
-  .solutions-wrapper{
+  .solutions-wrapper {
     margin-top: 50px;
   }
 }
