@@ -286,7 +286,8 @@ footer.footer {
 .social-links a:hover {
   background-color: #fff;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--primary-color) !important;
 }
 .social-links a:hover .fa-facebook-f {
@@ -4700,7 +4701,9 @@ small {
   .padding-left {
     padding-left: 2px;
   }
-  .nav-link{color: #fff;}
+  .nav-link {
+    color: var(--white);
+  }
   .feedback-toggle-wrapper.open {
     right: 0;
   }
