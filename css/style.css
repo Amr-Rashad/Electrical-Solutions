@@ -4691,6 +4691,10 @@ small {
   .clients-card p.clients-orascom {
     top: -100px;
   }
+  .contact-home-section,
+  .about-section {
+    padding-top: 8px !important;
+  }
   .feedback-toggle-wrapper.open {
     right: 0;
   }
